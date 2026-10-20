@@ -989,6 +989,6 @@ execute unless score duel08 AC_gamemode matches -1..0 run scoreboard players set
 
 setblock -19 36 23 air
 scoreboard players set time_since_reload AC_misc 0
-
+#tak
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Komponenty minigier zostały załadowane.","color":"gray","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Minigame components have been loaded.","color":"gray","bold":false}]
