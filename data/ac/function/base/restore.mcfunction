@@ -62,6 +62,8 @@ scoreboard objectives add AC_GrenadeUUID dummy
 scoreboard objectives add AC_GrenadeThrower dummy
 scoreboard objectives add AC_GrenadeVisFix dummy
 scoreboard objectives add AC_BubbleCooldown dummy
+#custom world border (air force royale 'n shi)
+scoreboard objectives add AC_BorderData dummy
 #an tournament bany
 scoreboard objectives add AC_banDetect trigger
 scoreboard objectives add AC_voteban dummy "Ban Vote"

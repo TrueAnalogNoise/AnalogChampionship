@@ -1,0 +1,1 @@
+scoreboard players operation distance AC_BorderData -= shrinkrate AC_BorderData
