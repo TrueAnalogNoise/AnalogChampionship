@@ -52,7 +52,7 @@ execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 r
 execute if score bwr AC_running matches 1 if score bwr2 AC_functions matches 1 run execute if score bwr AC_time matches 1200 as @a[tag=InGame,gamemode=adventure] run function ac:games/bwr/reward-60s
 
 
-execute if score bwr AC_running matches 1 if score bwr1 AC_functions matches 1 as @a if entity @s[scores={AC_CurrentY=..20}] run scoreboard players add @s AC_deathmessage 1
+execute if score bwr AC_running matches 1 if score bwr1 AC_functions matches 1 as @a if entity @s[scores={AC_CurrentY=..20},gamemode=adventure] run scoreboard players add @s AC_deathmessage 1
 
 execute if score bwr AC_running matches 1 if score bwr1 AC_functions matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run gamemode spectator @s
 execute if score bwr AC_running matches 1 if score bwr1 AC_functions matches 1 run execute as @a[scores={AC_deathmessage=1..}] if entity @s run scoreboard players add @a[tag=InGame,gamemode=adventure,scores={AC_bwrKills=1..}] AC_bwrRankedKillCount 1
