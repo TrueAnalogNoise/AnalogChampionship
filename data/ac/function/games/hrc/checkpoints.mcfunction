@@ -170,5 +170,6 @@ particle minecraft:lava 1170.0 57.0 937 2 1 0 0 1
 
 particle minecraft:happy_villager -1143 57 -1122 2.7 1 0 100 1
 particle minecraft:happy_villager -1116 57 -873 0 1 2.7 100 1
+particle minecraft:happy_villager -900 57 -961 0 1 2.7 100 1
 particle minecraft:happy_villager -919 57 -1005 0 1 2.7 100 1
 particle minecraft:happy_villager -987 57 -1062 0 1 2.7 100 1

@@ -1,3 +1,2 @@
-execute as @a[tag=tobiko] if predicate {type:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{jump:true}}}} run attribute @s minecraft:gravity base set -0.04
-execute as @a[tag=tobiko] if predicate {type:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{sneak:true}}}} run attribute @s minecraft:gravity base set 0.04
-execute as @a[tag=tobiko] unless predicate {type:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{sneak:true}}}} unless predicate {type:"entity_properties",entity:this,predicate:{"type_specific/player":{input:{jump:true}}}} run attribute @s minecraft:gravity base set 0.00306122443021609948361760888957406
+$$(p)layerability @s fly set true
+$$(m)otion @s add y3

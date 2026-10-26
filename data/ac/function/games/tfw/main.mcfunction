@@ -16,14 +16,21 @@ execute if score tfw AC_running matches 1 if score tfw AC_time matches 6000 run 
 
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwRed,dx=80,dy=-20,dz=5] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[TFW] ","bold":true,"color":"dark_green"},{"text":"Nie możesz przejść dalej, najpierw twoja drużyna musi zabić kogoś z drużyny przeciwnej.","color":"red","bold":false}]
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwRed,dx=80,dy=-20,dz=5] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[TFW] ","bold":true,"color":"dark_green"},{"text":"You can't go any further, your team has to kill an enemy first.","color":"red","bold":false}]
-execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwRed,dx=80,dy=-20,dz=5] run execute at @s run tp @s ~ ~ ~-2
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 if score plugin_active AC_misc matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwRed,dx=80,dy=-20,dz=5] run function ac:games/tfw/add-motion {m:"m",motion:-1}
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 unless score plugin_active AC_misc matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwRed,dx=80,dy=-20,dz=5] run execute at @s run tp @s ~ ~ ~-2
 
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwBlue,dx=80,dy=-20,dz=-5] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[TFW] ","bold":true,"color":"dark_green"},{"text":"Nie możesz przejść dalej, najpierw twoja drużyna musi zabić kogoś z drużyny przeciwnej.","color":"blue","bold":false}]
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwBlue,dx=80,dy=-20,dz=-5] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[TFW] ","bold":true,"color":"dark_green"},{"text":"You can't go any further, your team has to kill an enemy first.","color":"blue","bold":false}]
-execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwBlue,dx=80,dy=-20,dz=-5] run execute at @s run tp @s ~ ~ ~2
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 if score plugin_active AC_misc matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwBlue,dx=80,dy=-20,dz=-5] run function ac:games/tfw/add-motion {m:"m",motion:1}
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 unless score plugin_active AC_misc matches 1 run execute at @e[tag=tfwSplit,limit=1] positioned ~-40 ~ ~ as @a[team=ac_tfwBlue,dx=80,dy=-20,dz=-5] run execute at @s run tp @s ~ ~ ~2
 
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute if entity @a[team=ac_tfwRed,scores={AC_killmessage=1..}] if entity @a[team=ac_tfwBlue,scores={AC_deathmessage=1..}] run function ac:games/tfw/advance-red
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run execute if entity @a[team=ac_tfwRed,scores={AC_deathmessage=1..}] if entity @a[team=ac_tfwBlue,scores={AC_killmessage=1..}] run function ac:games/tfw/advance-blue
+
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run tag @a[scores={AC_deathmessage=1..}] add tfwHasDied
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run effect give @a[tag=tfwHasDied] resistance 5 9 true
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run tag @a[x=-1503,y=52,z=1469,dx=6,dz=6,dy=4] remove tfwHasDied
+execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 run tag @a[x=-1503,y=52,z=1525,dx=6,dz=6,dy=4] remove tfwHasDied
 
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 if score score AC_tfwCheck matches -20 run function ac:games/tfw/red-win
 execute if score tfw AC_running matches 1 if score tfw1 AC_functions matches 1 if score score AC_tfwCheck matches 20 run function ac:games/tfw/blue-win

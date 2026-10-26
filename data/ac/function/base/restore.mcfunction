@@ -1,4 +1,5 @@
-bossbar add ac_time [{"text":"Analog Championship","color":"yellow","bold":true},{"text":" - Czas do następnej rundy","color":"gold","bold":false}]
+bossbar add ac_time ac_time
+bossbar set ac_time name [{"text":"Analog Championship","color":"yellow","bold":true},{"text":" - Czas do następnej rundy","color":"gold","bold":false}]
 bossbar set ac_time color yellow
 scoreboard objectives add AC_misc dummy
 gamerule immediate_respawn true
@@ -94,19 +95,25 @@ execute unless score combatlog AC_misc matches 0..1 run scoreboard players set c
 
 scoreboard objectives setdisplay below_name AC_Health
 scoreboard objectives modify AC_Health numberformat styled {"color":"red"}
-bossbar add ac_queue1 [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
+bossbar add ac_queue1 ac_queue1
+bossbar set ac_queue1 name [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
 bossbar set ac_queue1 max 16
-bossbar add ac_queue2 [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
+bossbar add ac_queue2 ac_queue2
+bossbar set ac_queue2 name [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
 bossbar set ac_queue2 max 16
-bossbar add ac_queue3 [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
+bossbar add ac_queue3 ac_queue3
+bossbar set ac_queue3 name [{"text":"Tryb","color":"white","bold":true},{"text":" - 0 osób w kolejce","color":"gray","bold":false}]
 bossbar set ac_queue3 max 16
-bossbar add ac_duel1 [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
+bossbar add ac_duel1 ac_duel1
+bossbar set ac_duel1 name [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
 bossbar set ac_duel1 color yellow
 bossbar set ac_duel1 max 2
-bossbar add ac_duel2 [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
+bossbar add ac_duel2 ac_duel2
+bossbar set ac_duel2 name [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
 bossbar set ac_duel2 color yellow
 bossbar set ac_duel2 max 2
-bossbar add ac_duel3 [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
+bossbar add ac_duel3 ac_duel3
+bossbar set ac_duel3 name [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - oczekiwanie na gracza","color":"gold","bold":false}]
 bossbar set ac_duel3 color yellow
 bossbar set ac_duel3 max 2
 team add gracz "Gracze"
@@ -147,7 +154,8 @@ team modify dev friendlyFire true
 team modify dev nametagVisibility always
 team modify dev collisionRule never
 team modify dev prefix [{"text":"Dev ","color":"red","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_duel [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - Czas do końca","color":"gold","bold":false}]
+bossbar add ac_duel ac_duel
+bossbar set ac_duel name [{"text":"Pojedynek","color":"yellow","bold":true},{"text":" - Czas do końca","color":"gold","bold":false}]
 bossbar set ac_duel color yellow
 scoreboard objectives add AC_practiceController minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add AC_practiceSelection dummy
@@ -162,7 +170,8 @@ scoreboard objectives add AC_practicePKNSeconds dummy
 scoreboard objectives add AC_practicePKNMiliseconds dummy
 scoreboard objectives add AC_practicePKNLastRecordedZ dummy
 scoreboard objectives add AC_practiceRPLOptions dummy
-bossbar add ac_arb [{"text":"Arrow Barrage","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_arb ac_arb
+bossbar set ac_arb name [{"text":"Arrow Barrage","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_arb color blue
 bossbar set ac_arb max 6000
 bossbar set ac_arb style notched_10
@@ -172,7 +181,8 @@ scoreboard objectives add AC_arbDeathCheck deathCount
 scoreboard objectives add AC_arbCurrentCheckpoint dummy
 scoreboard objectives add AC_arbRNG dummy
 scoreboard objectives add AC_arbReward dummy
-bossbar add ac_asn [{"text":"Assassins","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar add ac_asn ac_asn
+bossbar set ac_asn name [{"text":"Assassins","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_asn color red
 bossbar set ac_asn max 6000
 bossbar set ac_asn style notched_10
@@ -186,12 +196,14 @@ scoreboard objectives add AC_asnKillCount totalKillCount
 scoreboard objectives add AC_asnRespawnCooldown dummy
 scoreboard objectives add AC_aspScores dummy
 scoreboard objectives add AC_aspDeath deathCount
-bossbar add ac_avl [{"text":"Avalanche","color":"light_purple","bold":true},{"text":" - Czas do następnej lawiny","color":"dark_purple","bold":false}]
+bossbar add ac_avl ac_avl
+bossbar set ac_avl name [{"text":"Avalanche","color":"light_purple","bold":true},{"text":" - Czas do następnej lawiny","color":"dark_purple","bold":false}]
 bossbar set ac_avl color pink
 bossbar set ac_avl max 60
 scoreboard objectives add AC_avlDeathCheck deathCount
 scoreboard objectives add AC_avlRound dummy
-bossbar add ac_bed "bedwars"
+bossbar add ac_bed ac_bed
+bossbar set ac_bed name "bedwars"
 bossbar set ac_bed max 36000
 bossbar set ac_bed style notched_6
 scoreboard objectives add AC_bedTimer dummy
@@ -245,7 +257,8 @@ team modify ac_bedBlue collisionRule pushOtherTeams
 team modify ac_bedBlue color blue
 team modify ac_bedBlue friendlyFire false
 team modify ac_bedBlue prefix [{"text":"Nieb ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_blp [{"text":"Block Party","color":"light_purple","bold":true},{"text":" - Czas do zniknięcia bloków","color":"dark_purple","bold":false}]
+bossbar add ac_blp ac_blp
+bossbar set ac_blp name [{"text":"Block Party","color":"light_purple","bold":true},{"text":" - Czas do zniknięcia bloków","color":"dark_purple","bold":false}]
 bossbar set ac_blp color pink
 scoreboard objectives add AC_blpBellHitCheck minecraft.custom:minecraft.bell_ring
 scoreboard objectives add AC_blpBonusUsageCheck minecraft.used:minecraft.carrot_on_a_stick
@@ -254,7 +267,8 @@ scoreboard objectives add AC_blpColorRNG dummy
 scoreboard objectives add AC_blpPlayerUUID dummy
 scoreboard objectives add AC_blpPneumaticChair dummy
 scoreboard objectives add AC_blpRaycastCheck dummy
-bossbar add ac_box [{"text":"Battle Box","color":"#8800ff","bold":true},{"text":" - Czas do końca rundy","color":"#440080","bold":false}]
+bossbar add ac_box ac_box
+bossbar set ac_box name [{"text":"Battle Box","color":"#8800ff","bold":true},{"text":" - Czas do końca rundy","color":"#440080","bold":false}]
 bossbar set ac_box color purple
 bossbar set ac_box max 1200
 bossbar set ac_box style notched_6
@@ -289,7 +303,8 @@ team modify ac_boxBlue collisionRule pushOtherTeams
 team modify ac_boxBlue color blue
 team modify ac_boxBlue friendlyFire false
 team modify ac_boxBlue prefix [{"text":"Nieb ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_brg "brig"
+bossbar add ac_brg ac_brg
+bossbar set ac_brg name "brig"
 bossbar set ac_brg color red
 bossbar set ac_brg max 6000
 bossbar set ac_brg style notched_10
@@ -316,14 +331,16 @@ team modify ac_brgBlue collisionRule pushOtherTeams
 team modify ac_brgBlue color blue
 team modify ac_brgBlue friendlyFire false
 team modify ac_brgBlue prefix [{"text":"Nieb ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_bsp [{"text":"Bow Spleef","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar add ac_bsp ac_bsp
+bossbar set ac_bsp name [{"text":"Bow Spleef","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_bsp color red
 bossbar set ac_bsp max 6000
 bossbar set ac_bsp style notched_10
 scoreboard objectives add AC_bowspleef dummy
 scoreboard objectives add AC_bspCharge dummy
 scoreboard objectives add AC_bspDeath deathCount
-bossbar add ac_bwr "bow rush"
+bossbar add ac_bwr ac_bwr
+bossbar set ac_bwr name "bow rush"
 bossbar set ac_bwr color red
 bossbar set ac_bwr max 10000
 bossbar set ac_bwr style progress
@@ -334,7 +351,8 @@ scoreboard objectives add AC_bwrMeleePenalty dummy
 scoreboard objectives add AC_bwrKills minecraft.custom:minecraft.player_kills
 scoreboard objectives add AC_bwrRankedAliveBonus dummy
 scoreboard objectives add AC_bwrRankedKillCount dummy
-bossbar add ac_cst [{"text":"Castled","color":"#8800ff","bold":true},{"text":" - Czas gry","color":"#440080","bold":false}]
+bossbar add ac_cst ac_cst
+bossbar set ac_cst name [{"text":"Castled","color":"#8800ff","bold":true},{"text":" - Czas gry","color":"#440080","bold":false}]
 bossbar set ac_cst color purple
 bossbar set ac_cst max 24000
 bossbar set ac_cst style notched_20
@@ -355,7 +373,8 @@ team modify ac_cstAttack collisionRule pushOtherTeams
 team modify ac_cstAttack color blue
 team modify ac_cstAttack friendlyFire false
 team modify ac_cstAttack prefix [{"text":"Atak ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_ctf [{"text":"Capture The Flag","color":"#8800ff","bold":true},{"text":" - Czas gry","color":"#440080","bold":false}]
+bossbar add ac_ctf ac_ctf
+bossbar set ac_ctf name [{"text":"Capture The Flag","color":"#8800ff","bold":true},{"text":" - Czas gry","color":"#440080","bold":false}]
 bossbar set ac_ctf color purple
 bossbar set ac_ctf max 24000
 bossbar set ac_ctf style notched_20
@@ -392,7 +411,8 @@ team modify ac_ctfJungler collisionRule pushOtherTeams
 team modify ac_ctfJungler color aqua
 team modify ac_ctfJungler friendlyFire false
 team modify ac_ctfJungler prefix [{"text":"Jung ","color":"aqua","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_ddb [{"text":"Dodgebolt","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_ddb ac_ddb
+bossbar set ac_ddb name [{"text":"Dodgebolt","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_ddb color purple
 bossbar set ac_ddb max 2400
 bossbar set ac_ddb style notched_10
@@ -406,7 +426,8 @@ team add ac_ddbYellow "DDB - Żółci"
 team modify ac_ddbYellow color yellow
 team modify ac_ddbYellow friendlyFire false
 team modify ac_ddbYellow prefix [{"text":"Żół ","color":"yellow","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_dtr [{"text":"Death Run","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_dtr ac_dtr
+bossbar set ac_dtr name [{"text":"Death Run","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_dtr color blue
 bossbar set ac_dtr max 12000
 bossbar set ac_dtr style notched_10
@@ -425,14 +446,16 @@ team add ac_dtrDeath "DTR - Śmierci"
 team modify ac_dtrDeath color dark_purple
 team modify ac_dtrDeath friendlyFire false
 team modify ac_dtrDeath prefix [{"text":"Śmierć ","color":"dark_purple","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_hhh [{"text":"Hoe Hoe Hoe","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
+bossbar add ac_hhh ac_hhh
+bossbar set ac_hhh name [{"text":"Hoe Hoe Hoe","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
 bossbar set ac_hhh color white
 bossbar set ac_hhh max 3600
 bossbar set ac_hhh style notched_12
 scoreboard objectives add AC_hhhUsedHoe minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add AC_hhhTotalWool dummy
 scoreboard objectives add AC_hhhRaycastCheck dummy
-bossbar add ac_hkn [{"text":"Horse Knockout","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_hkn ac_hkn
+bossbar set ac_hkn name [{"text":"Horse Knockout","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_hkn color blue
 bossbar set ac_hkn max 12000
 bossbar set ac_hkn style notched_10
@@ -447,7 +470,8 @@ scoreboard objectives add AC_hknLeader dummy
 scoreboard objectives add AC_hknVelocity dummy
 scoreboard objectives add AC_hknBonusBackend dummy
 scoreboard objectives add AC_hknRankedTotalRewardedHits dummy
-bossbar add ac_hrc [{"text":"Horse Racing","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_hrc ac_hrc
+bossbar set ac_hrc name [{"text":"Horse Racing","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_hrc color blue
 bossbar set ac_hrc max 6000
 bossbar set ac_hrc style notched_10
@@ -457,7 +481,8 @@ scoreboard objectives add AC_hrcCheckpoints dummy
 scoreboard objectives add AC_hrcFinishPlace dummy
 scoreboard objectives add AC_hrcVelocity dummy
 scoreboard objectives add AC_hrcBonusBackend dummy
-bossbar add ac_inf [{"text":"Infection","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_inf ac_inf
+bossbar set ac_inf name [{"text":"Infection","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_inf color purple
 bossbar set ac_inf max 18000
 bossbar set ac_inf style notched_10
@@ -473,7 +498,8 @@ team modify ac_infInfected color dark_red
 team modify ac_infInfected friendlyFire false
 team modify ac_infInfected nametagVisibility hideForOtherTeams
 team modify ac_infInfected prefix [{"text":"Zainf ","color":"dark_red","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_jgt [{"text":"Juggernaut","color":"red","bold":true},{"text":" - Czas do końca rundy","color":"dark_red","bold":false}]
+bossbar add ac_jgt ac_jgt
+bossbar set ac_jgt name [{"text":"Juggernaut","color":"red","bold":true},{"text":" - Czas do końca rundy","color":"dark_red","bold":false}]
 bossbar set ac_jgt color red
 bossbar set ac_jgt max 3000
 bossbar set ac_jgt style notched_10
@@ -484,39 +510,46 @@ team add ac_jgtJuggernaut "JGT - Juggernaut"
 team modify ac_jgtJuggernaut color dark_purple
 team modify ac_jgtJuggernaut nametagVisibility always
 team modify ac_jgtJuggernaut prefix [{"text":"Jugger ","color":"dark_purple","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_koh [{"text":"King Of The Hill","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar add ac_koh ac_koh
+bossbar set ac_koh name [{"text":"King Of The Hill","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_koh color red
 bossbar set ac_koh max 1800
 bossbar set ac_koh style notched_10
 scoreboard objectives add AC_kohScores dummy
-bossbar add ac_lab [{"text":"The Lab","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
+bossbar add ac_lab ac_lab
+bossbar set ac_lab name [{"text":"The Lab","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_lab color green
 bossbar set ac_lab max 1800
 scoreboard objectives add AC_labFinishPlace dummy
 scoreboard objectives add AC_labReward dummy
 scoreboard objectives add AC_labGenerate dummy
-bossbar add ac_lbr [{"text":"Labyrinth","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_lbr ac_lbr
+bossbar set ac_lbr name [{"text":"Labyrinth","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_lbr color blue
 bossbar set ac_lbr max 1800
 scoreboard objectives add AC_lbrFinishPlace dummy
 scoreboard objectives add AC_lbrReward dummy
-bossbar add ac_mfl [{"text":"Minefield","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_mfl ac_mfl
+bossbar set ac_mfl name [{"text":"Minefield","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_mfl color blue
 bossbar set ac_mfl max 2400
 bossbar set ac_mfl style notched_12
-bossbar add ac_mtl [{"text":"Mow The Lawn","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
+bossbar add ac_mtl ac_mtl
+bossbar set ac_mtl name [{"text":"Mow The Lawn","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_mtl color green
 bossbar set ac_mtl max 1200
 bossbar set ac_mtl style notched_6
 scoreboard objectives add AC_mtlGrassToPoints mined:minecraft.tall_grass
 scoreboard objectives add AC_mtlTotalGrassDestroyed mined:minecraft.tall_grass
-bossbar add ac_mmc [{"text":"Musical Minecarts","color":"light_purple","bold":true},{"text":" - Czas na wejście do wózka","color":"dark_purple","bold":false}]
+bossbar add ac_mmc ac_mmc
+bossbar set ac_mmc name [{"text":"Musical Minecarts","color":"light_purple","bold":true},{"text":" - Czas na wejście do wózka","color":"dark_purple","bold":false}]
 bossbar set ac_mmc color pink
 bossbar set ac_mmc max 100
 bossbar set ac_mmc style notched_10
 scoreboard objectives add AC_mmcScores dummy
 scoreboard objectives add AC_mmcDeathCheck deathCount
-bossbar add ac_mrd [{"text":"Murder","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
+bossbar add ac_mrd ac_mrd
+bossbar set ac_mrd name [{"text":"Murder","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
 bossbar set ac_mrd color white
 bossbar set ac_mrd max 300
 scoreboard objectives add AC_mrdDeathCheck deathCount
@@ -527,12 +560,14 @@ scoreboard objectives add AC_mrdKillCheck minecraft.custom:minecraft.player_kill
 scoreboard objectives add AC_mrdPositionX dummy
 scoreboard objectives add AC_mrdPositionZ dummy
 scoreboard objectives add AC_mrdReloading dummy
-bossbar add ac_mzg [{"text":"Maze Games","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_mzg ac_mzg
+bossbar set ac_mzg name [{"text":"Maze Games","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_mzg color purple
 bossbar set ac_mzg max 24000
 bossbar set ac_mzg style notched_20
 scoreboard objectives add AC_mzgRankedKillCount dummy
-bossbar add ac_omc [{"text":"One-Minute Craft","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
+bossbar add ac_omc ac_omc
+bossbar set ac_omc name [{"text":"One-Minute Craft","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
 bossbar set ac_omc color pink
 bossbar set ac_omc max 1200
 bossbar set ac_omc style notched_6
@@ -542,7 +577,8 @@ scoreboard objectives add AC_omcPearl minecraft.used:ender_pearl
 scoreboard objectives add AC_omcRNG dummy
 scoreboard objectives add AC_omcRankedFinishedEarly dummy
 scoreboard objectives add AC_omcRankedRoundsFinished dummy
-bossbar add ac_ovk [{"text":"Overkill","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar add ac_ovk ac_ovk
+bossbar set ac_ovk name [{"text":"Overkill","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_ovk color red
 bossbar set ac_ovk max 12000
 bossbar set ac_ovk style notched_10
@@ -574,27 +610,33 @@ team add ac_ovkArmorLevel1 "OVK - Złoto"
 team modify ac_ovkArmorLevel1 color yellow
 team modify ac_ovkArmorLevel1 nametagVisibility always
 team modify ac_ovkArmorLevel1 prefix [{"text":"Gold ","color":"gold","bold":true},{"text":"/ ","color":"yellow"}]
-bossbar add ac_pct [{"text":"Point Control","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_pct ac_pct
+bossbar set ac_pct name [{"text":"Point Control","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_pct color purple
 bossbar set ac_pct max 18000
 bossbar set ac_pct style notched_12
-bossbar add ac_pct_kl [{"text":"Husaria Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar add ac_pct_kl ac_pct_kl
+bossbar set ac_pct_kl name [{"text":"Husaria Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_kl color red
 bossbar set ac_pct_kl max 300
 bossbar set ac_pct_kl style notched_10
-bossbar add ac_pct_l [{"text":"Husaria Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar add ac_pct_l ac_pct_l
+bossbar set ac_pct_l name [{"text":"Husaria Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_l color red
 bossbar set ac_pct_l max 100
 bossbar set ac_pct_l style notched_10
-bossbar add ac_pct_m [{"text":"Zewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar add ac_pct_m ac_pct_m
+bossbar set ac_pct_m name [{"text":"Zewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_m color red
 bossbar set ac_pct_m max 100
 bossbar set ac_pct_m style notched_10
-bossbar add ac_pct_r [{"text":"Krzyżacy Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar add ac_pct_r ac_pct_r
+bossbar set ac_pct_r name [{"text":"Krzyżacy Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_r color red
 bossbar set ac_pct_r max 100
 bossbar set ac_pct_r style notched_10
-bossbar add ac_pct_kr [{"text":"Krzyżacy Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar add ac_pct_kr ac_pct_kr
+bossbar set ac_pct_kr name [{"text":"Krzyżacy Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_kr color red
 bossbar set ac_pct_kr max 300
 bossbar set ac_pct_kr style notched_10
@@ -613,14 +655,16 @@ team modify ac_pctKnights color gray
 team modify ac_pctKnights friendlyFire false
 team modify ac_pctKnights nametagVisibility always
 team modify ac_pctKnights prefix [{"text":"Krzyż ","color":"gray","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_pgf [{"text":"Pig Fishing","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
+bossbar add ac_pgf ac_pgf
+bossbar set ac_pgf name [{"text":"Pig Fishing","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_pgf color green
 bossbar set ac_pgf max 1800
 bossbar set ac_pgf style notched_12
 scoreboard objectives add AC_pgfCount dummy
 scoreboard objectives add AC_phcScores dummy
 scoreboard objectives add AC_phcDeath deathCount
-bossbar add ac_pkn [{"text":"Parkour Knockout","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
+bossbar add ac_pkn ac_pkn
+bossbar set ac_pkn name [{"text":"Parkour Knockout","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
 bossbar set ac_pkn color pink
 bossbar set ac_pkn max 1200
 bossbar set ac_pkn style notched_6
@@ -630,7 +674,8 @@ scoreboard objectives add AC_pknCheckpoint dummy
 scoreboard objectives add AC_pknCrediting dummy
 scoreboard objectives add AC_pknClock dummy
 scoreboard objectives add AC_pknRankedQuickFinish dummy
-bossbar add ac_pkt [{"text":"Parkour Tag","color":"#8800ff","bold":true},{"text":" - Czas do końca rundy","color":"#440080","bold":false}]
+bossbar add ac_pkt ac_pkt
+bossbar set ac_pkt name [{"text":"Parkour Tag","color":"#8800ff","bold":true},{"text":" - Czas do końca rundy","color":"#440080","bold":false}]
 bossbar set ac_pkt color purple
 bossbar set ac_pkt max 1800
 bossbar set ac_pkt style notched_6
@@ -652,7 +697,8 @@ team modify ac_pktJumpers nametagVisibility always
 team modify ac_pktJumpers prefix [{"text":"Jump ","color":"#ff1d7b","bold":true},{"text":"/ ","color":"gray"}]
 scoreboard objectives add AC_popDeath deathCount
 scoreboard objectives add AC_popTrail dummy
-bossbar add ac_prc [{"text":"Parkour Racing","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_prc ac_prc
+bossbar set ac_prc name [{"text":"Parkour Racing","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_prc color blue
 bossbar set ac_prc max 12000
 bossbar set ac_prc style notched_10
@@ -660,7 +706,8 @@ scoreboard objectives add AC_prcReward dummy
 scoreboard objectives add AC_prcCurrentCheckpoint dummy
 scoreboard objectives add AC_prcFinishPlace dummy
 scoreboard objectives add AC_prcBackToCheckpoint minecraft.used:minecraft.carrot_on_a_stick
-bossbar add ac_prh [{"text":"Prop Hunt","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_prh ac_prh
+bossbar set ac_prh name [{"text":"Prop Hunt","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_prh color purple
 bossbar set ac_prh max 12000
 bossbar set ac_prh style notched_10
@@ -695,13 +742,15 @@ team modify ac_prhProp collisionRule never
 team modify ac_prhProp prefix [{"text":"Prop ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
 team modify ac_prhProp nametagVisibility never
 team modify ac_prhProp seeFriendlyInvisibles false
-bossbar add ac_rpl [{"text":"Replica","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
+bossbar add ac_rpl ac_rpl
+bossbar set ac_rpl name [{"text":"Replica","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_rpl color green
 bossbar set ac_rpl max 1200
 bossbar set ac_rpl style notched_6
 scoreboard objectives add AC_rplGeneration dummy
 scoreboard objectives add AC_rplReward dummy
-bossbar add ac_spb [{"text":"Speed Builders","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
+bossbar add ac_spb ac_spb
+bossbar set ac_spb name [{"text":"Speed Builders","color":"light_purple","bold":true},{"text":" - Czas do końca rundy","color":"dark_purple","bold":false}]
 bossbar set ac_spb color pink
 bossbar set ac_spb max 2400
 scoreboard objectives add AC_spbCheck dummy
@@ -709,7 +758,8 @@ scoreboard objectives add AC_spbPercentage dummy
 scoreboard objectives add AC_spbBlockCount dummy
 scoreboard objectives add AC_spbRankedFinishedEarly dummy
 scoreboard objectives add AC_spbRankedRoundsFinished dummy
-bossbar add ac_spl [{"text":"Spleef","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
+bossbar add ac_spl ac_spl
+bossbar set ac_spl name [{"text":"Spleef","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_spl color green
 bossbar set ac_spl max 6000
 bossbar set ac_spl style notched_10
@@ -717,7 +767,8 @@ scoreboard objectives add AC_splSnowball dummy
 scoreboard players set .-1 AC_splSnowball -1
 scoreboard players set .global AC_splSnowball 1
 scoreboard objectives add AC_splDestroy minecraft.mined:minecraft.snow_block
-bossbar add ac_sso [{"text":"Sector Shootout","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_sso ac_sso
+bossbar set ac_sso name [{"text":"Sector Shootout","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_sso color blue
 bossbar set ac_sso max 12000
 bossbar set ac_sso style notched_10
@@ -731,7 +782,8 @@ scoreboard objectives add AC_ssoBoatDamage dummy
 scoreboard objectives add AC_ssoPointsAtStake dummy
 scoreboard objectives add AC_ssoCheckpoints dummy
 scoreboard objectives add AC_ssoLaps dummy
-bossbar add ac_tcb [{"text":"The Chamber","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
+bossbar add ac_tcb ac_tcb
+bossbar set ac_tcb name [{"text":"The Chamber","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
 bossbar set ac_tcb color white
 bossbar set ac_tcb max 12000
 bossbar set ac_tcb style notched_10
@@ -752,7 +804,8 @@ team add ac_tcbStreak
 team modify ac_tcbStreak color yellow
 team modify ac_tcbStreak friendlyFire true
 team modify ac_tcbStreak prefix [{"text":"🔥 ","color":"gold"},{"text":"/ ","color":"gray"}]
-bossbar add ac_tbk [{"text":"Tobiko","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar add ac_tbk ac_tbk
+bossbar set ac_tbk name [{"text":"Tobiko","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_tbk color red
 bossbar set ac_tbk max 12000
 bossbar set ac_tbk style notched_10
@@ -766,7 +819,8 @@ team add ac_tbkTobiko "TBK - Tobiko"
 team modify ac_tbkTobiko color yellow
 team modify ac_tbkTobiko friendlyFire true
 team modify ac_tbkTobiko prefix [{"text":"Tobiko ","color":"gold",bold:true},{"text":"/ ","color":"gray"}]
-bossbar add ac_tfw [{"text":"Turf Wars","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_tfw ac_tfw
+bossbar set ac_tfw name [{"text":"Turf Wars","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_tfw color purple
 bossbar set ac_tfw max 6000
 bossbar set ac_tfw style notched_10
@@ -779,7 +833,8 @@ team add ac_tfwBlue "TFW - Niebiescy"
 team modify ac_tfwBlue color blue
 team modify ac_tfwBlue friendlyFire false
 team modify ac_tfwBlue prefix [{"text":"Nieb ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_tmf [{"text":"Team Fight","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
+bossbar add ac_tmf ac_tmf
+bossbar set ac_tmf name [{"text":"Team Fight","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_tmf color purple
 bossbar set ac_tmf max 6000
 bossbar set ac_tmf style notched_10
@@ -823,7 +878,8 @@ team modify ac_tmf8 prefix [{"text":"8 ","color":"dark_red","bold":true},{"text"
 scoreboard objectives add AC_tntrun dummy
 scoreboard objectives add AC_tntDeath deathCount
 scoreboard objectives add AC_tntCharge dummy
-bossbar add ac_trl [{"text":"Traffic Lights","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
+bossbar add ac_trl ac_trl
+bossbar set ac_trl name [{"text":"Traffic Lights","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_trl color green
 bossbar set ac_trl max 3600
 bossbar set ac_trl style notched_12
@@ -832,14 +888,16 @@ scoreboard objectives add AC_trlWalkCheckY dummy
 scoreboard objectives add AC_trlWalkCheckZ dummy
 scoreboard objectives add AC_trlReward dummy
 scoreboard objectives add AC_trlTimer dummy
-bossbar add ac_ttr [{"text":"Through The Rings","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
+bossbar add ac_ttr ac_ttr
+bossbar set ac_ttr name [{"text":"Through The Rings","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_ttr color blue
 bossbar set ac_ttr max 1800
 bossbar set ac_ttr style notched_6
 scoreboard objectives add AC_ttrVelocity dummy
 scoreboard objectives add AC_ttrRing dummy
 scoreboard objectives add AC_ttrScores dummy
-bossbar add ac_uws [{"text":"Underwater Skewers","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar add ac_uws ac_uws
+bossbar set ac_uws name [{"text":"Underwater Skewers","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_uws color red
 bossbar set ac_uws max 6000
 bossbar set ac_uws style notched_12

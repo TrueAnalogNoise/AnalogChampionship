@@ -3,6 +3,7 @@ execute as @a[scores={AC_LeftGame=1..},tag=!practice] run function ac:base/queue
 execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 if score gm AC_gamemode = Queue1 AC_QueuedCount run scoreboard players operation @s AC_Queue = Queue1 AC_QueuedCount
 execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 if score gm AC_gamemode = Queue2 AC_QueuedCount run scoreboard players operation @s AC_Queue = Queue2 AC_QueuedCount
 execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 if score gm AC_gamemode = Queue3 AC_QueuedCount run scoreboard players operation @s AC_Queue = Queue3 AC_QueuedCount
+execute as @a[tag=!InQueue] if score @s AC_Queue matches -999 unless score gm AC_gamemode = Queue1 AC_QueuedCount unless score gm AC_gamemode = Queue2 AC_QueuedCount unless score gm AC_gamemode = Queue3 AC_QueuedCount run scoreboard players operation @s AC_queue = last-queue-init AC_misc
 
 execute as @a[tag=!InQueue] if score @s AC_Queue matches -1000..-1 run function ac:base/start-queue
 execute as @a[tag=!InQueue] if score @s AC_Queue matches 1..1000 run function ac:base/start-queue

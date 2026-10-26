@@ -33,6 +33,62 @@ execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concret
 execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete replace white_concrete
 execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete replace blue_concrete
 execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete replace white_concrete
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=north,half=bottom] replace red_concrete_stairs[facing=north,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=north,half=bottom] replace blue_concrete_stairs[facing=north,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=north,half=bottom] replace red_concrete_stairs[facing=north,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=north,half=bottom] replace white_concrete_stairs[facing=north,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=north,half=bottom] replace blue_concrete_stairs[facing=north,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=north,half=bottom] replace white_concrete_stairs[facing=north,half=bottom]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=west,half=bottom] replace red_concrete_stairs[facing=west,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=west,half=bottom] replace blue_concrete_stairs[facing=west,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=west,half=bottom] replace red_concrete_stairs[facing=west,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=west,half=bottom] replace white_concrete_stairs[facing=west,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=west,half=bottom] replace blue_concrete_stairs[facing=west,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=west,half=bottom] replace white_concrete_stairs[facing=west,half=bottom]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=south,half=bottom] replace red_concrete_stairs[facing=south,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=south,half=bottom] replace blue_concrete_stairs[facing=south,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=south,half=bottom] replace red_concrete_stairs[facing=south,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=south,half=bottom] replace white_concrete_stairs[facing=south,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=south,half=bottom] replace blue_concrete_stairs[facing=south,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=south,half=bottom] replace white_concrete_stairs[facing=south,half=bottom]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=east,half=bottom] replace red_concrete_stairs[facing=east,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=east,half=bottom] replace blue_concrete_stairs[facing=east,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=east,half=bottom] replace red_concrete_stairs[facing=east,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=east,half=bottom] replace white_concrete_stairs[facing=east,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=east,half=bottom] replace blue_concrete_stairs[facing=east,half=bottom]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=east,half=bottom] replace white_concrete_stairs[facing=east,half=bottom]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=north,half=top] replace red_concrete_stairs[facing=north,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=north,half=top] replace blue_concrete_stairs[facing=north,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=north,half=top] replace red_concrete_stairs[facing=north,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=north,half=top] replace white_concrete_stairs[facing=north,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=north,half=top] replace blue_concrete_stairs[facing=north,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=north,half=top] replace white_concrete_stairs[facing=north,half=top]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=west,half=top] replace red_concrete_stairs[facing=west,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=west,half=top] replace blue_concrete_stairs[facing=west,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=west,half=top] replace red_concrete_stairs[facing=west,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=west,half=top] replace white_concrete_stairs[facing=west,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=west,half=top] replace blue_concrete_stairs[facing=west,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=west,half=top] replace white_concrete_stairs[facing=west,half=top]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=south,half=top] replace red_concrete_stairs[facing=south,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=south,half=top] replace blue_concrete_stairs[facing=south,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=south,half=top] replace red_concrete_stairs[facing=south,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=south,half=top] replace white_concrete_stairs[facing=south,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=south,half=top] replace blue_concrete_stairs[facing=south,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=south,half=top] replace white_concrete_stairs[facing=south,half=top]
+
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=east,half=top] replace red_concrete_stairs[facing=east,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~ ~-40 ~-20 ~ white_concrete_stairs[facing=east,half=top] replace blue_concrete_stairs[facing=east,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=east,half=top] replace red_concrete_stairs[facing=east,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~1 ~-40 ~-20 ~20 blue_concrete_stairs[facing=east,half=top] replace white_concrete_stairs[facing=east,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=east,half=top] replace blue_concrete_stairs[facing=east,half=top]
+execute at @e[tag=tfwSplit,limit=1] run fill ~40 ~ ~-1 ~-40 ~-20 ~-20 red_concrete_stairs[facing=east,half=top] replace white_concrete_stairs[facing=east,half=top]
 scoreboard players set score AC_tfwCheck 0
 
 team join ac_tfwRed @a[tag=spawn1]

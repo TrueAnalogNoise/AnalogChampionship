@@ -1,6 +1,7 @@
 tellraw @a [{"text":"[SSO] ","bold":true,"color":"dark_green"},{selector:"@s",color:dark_green},{"text":" zakończył wyścig z wynikiem ","color":"green","bold":false},{score:{name:"@s",objective:"AC_ssoScore"}}]
 execute on vehicle run kill @s
 gamemode spectator @s
+tag @s add ssoFinished
 scoreboard players operation @s AC_pointsHeld = @s AC_ssoScore
 scoreboard players operation @s AC_pointsHeld /= 10 int
 

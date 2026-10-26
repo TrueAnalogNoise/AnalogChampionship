@@ -9,8 +9,9 @@ execute if score tbk AC_running matches 1 if score tbk AC_time matches 12000 run
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 12000 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TBK] ","bold":true,"color":"dark_green"},{"text":"The game has begun.","color":"green","bold":false}]
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 12000 run scoreboard players set tbk1 AC_functions 1
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 12000 run function ac:games/tbk/items
+execute if score tbk AC_running matches 1 if score tbk AC_time matches 12000 if score plugin_active AC_misc matches 1 as @a[tag=tobiko] run function ac:games/tbk/fly {p:"p",m:"m"}
 
-execute if score tbk AC_running matches 1 if score tbk1 AC_functions matches 1 run function ac:games/tbk/fly
+execute if score tbk AC_running matches 1 if score tbk1 AC_functions matches 1 unless score plugin_active AC_misc matches 1 run function ac:games/tbk/fly-legacy
 execute if score tbk AC_running matches 1 if score tbk1 AC_functions matches 1 run function ac:games/tbk/health
 execute if score tbk AC_running matches 1 if score tbk1 AC_functions matches 1 run effect give @a[tag=tobiko] glowing 1 1 true
 execute if score tbk AC_running matches 1 if score tbk1 AC_functions matches 1 run effect give @a[tag=tobiko] speed 1 2 true
@@ -66,6 +67,7 @@ execute if score tbk AC_running matches 1 if score tbk AC_time matches 0 run tag
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 0 run scoreboard players set tbk1 AC_functions 0
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 0 run clear @a
 execute if score tbk AC_running matches 1 if score tbk AC_time matches 0 run bossbar set ac_tbk visible false
+execute if score tbk AC_running matches 1 if score tbk AC_time matches 0 if score plugin_active AC_misc matches 1 run function ac:games/tbk/fly-stop {p:"p"}
 execute if score tbk AC_running matches 1 if score tbk AC_time matches -120 run tp @a 0 50 0
 execute if score tbk AC_running matches 1 if score tbk AC_time matches -120 run spawnpoint @a 0 50 0
 execute if score tbk AC_running matches 1 if score tbk AC_time matches -120 run gamemode adventure @a
