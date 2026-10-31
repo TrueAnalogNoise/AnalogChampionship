@@ -17,3 +17,4 @@ execute if score deathmessage AC_misc matches 1 run function ac:base/kills/gener
 function ac:base/lobby/practice/main
 function ac:base/lobby/parkour-backtocheckpoint
 function ac:base/lobby/parkour-checkpoints
+function ac:base/lobby/slots/tick
