@@ -9,6 +9,7 @@ $execute if score random AC_ssoScore matches 7 run summon minecraft:mangrove_che
 $execute if score random AC_ssoScore matches 8 run summon minecraft:oak_chest_boat 2500 56 500 {Invulnerable:1b,Tags:["boat$(value)"]}
 $execute if score random AC_ssoScore matches 9 run summon minecraft:pale_oak_chest_boat 2500 56 500 {Invulnerable:1b,Tags:["boat$(value)"]}
 $execute if score random AC_ssoScore matches 10 run summon minecraft:spruce_chest_boat 2500 56 500 {Invulnerable:1b,Tags:["boat$(value)"]}
+$execute if score random AC_ssoScore matches 11 run summon minecraft:poplar_chest_boat 2500 56 500 {Invulnerable:1b,Tags:["boat$(value)"]}
 
 $tag @a[tag=spawn$(value)] add ssoRacing
 $tag @a[tag=spawn$(value)] add ssoSpawn
