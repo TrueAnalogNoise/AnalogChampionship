@@ -1,12 +1,12 @@
-execute store result score players AC_dtrCurrentCheckpoint run execute if entity @a[team=ac_dtrRunner,gamemode=adventure]
+execute store result score players AC_dtrCurrentCheckpoint if entity @a[team=ac_dtrRunner,gamemode=adventure]
 scoreboard players operation players AC_dtrCurrentCheckpoint /= 2 int
 
-execute store result score area1complete AC_dtrCurrentCheckpoint run execute if entity @a[scores={AC_dtrCurrentZone=2..}]
-execute store result score area2complete AC_dtrCurrentCheckpoint run execute if entity @a[scores={AC_dtrCurrentZone=3..}]
-execute store result score area3complete AC_dtrCurrentCheckpoint run execute if entity @a[scores={AC_dtrCurrentZone=4..}]
-execute store result score area4complete AC_dtrCurrentCheckpoint run execute if entity @a[scores={AC_dtrCurrentZone=5..}]
-execute store result score area5complete AC_dtrCurrentCheckpoint run execute if entity @a[scores={AC_dtrCurrentZone=6..}]
-execute store result score area6complete AC_dtrCurrentCheckpoint run execute if entity @a[scores={AC_dtrCurrentZone=7..}]
+execute store result score area1complete AC_dtrCurrentCheckpoint if entity @a[scores={AC_dtrCurrentZone=2..}]
+execute store result score area2complete AC_dtrCurrentCheckpoint if entity @a[scores={AC_dtrCurrentZone=3..}]
+execute store result score area3complete AC_dtrCurrentCheckpoint if entity @a[scores={AC_dtrCurrentZone=4..}]
+execute store result score area4complete AC_dtrCurrentCheckpoint if entity @a[scores={AC_dtrCurrentZone=5..}]
+execute store result score area5complete AC_dtrCurrentCheckpoint if entity @a[scores={AC_dtrCurrentZone=6..}]
+execute store result score area6complete AC_dtrCurrentCheckpoint if entity @a[scores={AC_dtrCurrentZone=7..}]
 
 execute if score area1complete AC_dtrCurrentCheckpoint > players AC_dtrCurrentCheckpoint if score area1open AC_dtrCurrentCheckpoint matches 1 run function ac:games/dtr/area-close-notify {area:1}
 execute if score area2complete AC_dtrCurrentCheckpoint > players AC_dtrCurrentCheckpoint if score area2open AC_dtrCurrentCheckpoint matches 1 run function ac:games/dtr/area-close-notify {area:2}

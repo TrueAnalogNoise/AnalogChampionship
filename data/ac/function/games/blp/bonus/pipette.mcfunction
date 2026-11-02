@@ -15,5 +15,5 @@ execute if block ~ ~-1 ~ green_wool run scoreboard players set rng AC_blpColorRN
 execute if block ~ ~-1 ~ red_wool run scoreboard players set rng AC_blpColorRNG 14
 execute if block ~ ~-1 ~ black_wool run scoreboard players set rng AC_blpColorRNG 15
 
-execute if block ~ ~-1 ~ air run execute positioned ~ ~-1 ~ run function ac:games/blp/bonus/pipette
-execute if block ~ ~-1 ~ light run execute positioned ~ ~-1 ~ run function ac:games/blp/bonus/pipette
+execute if block ~ ~-1 ~ air positioned ~ ~-1 ~ run function ac:games/blp/bonus/pipette
+execute if block ~ ~-1 ~ light positioned ~ ~-1 ~ run function ac:games/blp/bonus/pipette

@@ -13,16 +13,16 @@ execute if score round AC_pknScores matches 1..6 if score #round6 AC_pknScores >
 execute if score round AC_pknScores matches 1..7 run scoreboard players set #round7 AC_pknScores 2
 execute if score round AC_pknScores matches 1..8 run scoreboard players set #round8 AC_pknScores 1
 
-execute store result score #finished1 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=3..}]
-execute store result score #finished2 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=6..}]
-execute store result score #finished3 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=9..}]
-execute store result score #finished4 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=12..}]
-execute store result score #finished5 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=15..}]
-execute store result score #finished6 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=18..}]
-execute store result score #finished7 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=21..}]
-execute store result score #finished8 AC_pknScores run execute if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=26}]
+execute store result score #finished1 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=3..}]
+execute store result score #finished2 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=6..}]
+execute store result score #finished3 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=9..}]
+execute store result score #finished4 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=12..}]
+execute store result score #finished5 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=15..}]
+execute store result score #finished6 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=18..}]
+execute store result score #finished7 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=21..}]
+execute store result score #finished8 AC_pknScores if entity @a[tag=InGame,gamemode=adventure,scores={AC_pknCheckpoint=26}]
 
-execute store result score #eliminated AC_pknScores run execute if entity @a[tag=InGame,tag=pknEliminated]
+execute store result score #eliminated AC_pknScores if entity @a[tag=InGame,tag=pknEliminated]
 
 execute if score round AC_pknScores matches 1 run scoreboard players operation #round1 AC_pknScores -= #finished1 AC_pknScores
 execute if score round AC_pknScores matches 2 run scoreboard players operation #round2 AC_pknScores -= #finished2 AC_pknScores

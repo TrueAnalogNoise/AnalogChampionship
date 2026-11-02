@@ -1,7 +1,7 @@
 execute as @e[type=#ac:boat_with_chest,x=2453,y=51,z=563,dx=14,dy=2,dz=10] on passengers if score @s AC_ssoCheckpoints matches 0 run scoreboard players add @s AC_ssoCheckpoints 1
+execute as @e[type=#ac:boat_with_chest,x=2453,y=51,z=563,dx=14,dy=2,dz=10] on passengers if score @s AC_ssoCheckpoints matches 0 if score @s AC_ssoLaps matches 1 if entity @a[tag=InGame,tag=!ssoRacing,scores={AC_ssoLaps=1}] run function ac:games/sso/summon-player
 
 execute as @e[type=#ac:boat_with_chest,x=2459,y=55,z=518,dx=10,dy=2,dz=12] on passengers if score @s AC_ssoCheckpoints matches 1 run function ac:games/sso/pass-sector {sector:1}
-execute as @e[type=#ac:boat_with_chest,x=2459,y=55,z=518,dx=10,dy=2,dz=12] on passengers if score @s AC_ssoCheckpoints matches 1 if score @s AC_ssoLaps matches 1 if entity @a[tag=InGame,tag=!ssoRacing,scores={AC_ssoLaps=1}] run function ac:games/sso/summon-player
 execute as @e[type=#ac:boat_with_chest,x=2459,y=55,z=518,dx=10,dy=2,dz=12] on passengers if score @s AC_ssoCheckpoints matches 1 run scoreboard players add @s AC_ssoCheckpoints 1
 
 execute as @e[type=#ac:boat_with_chest,x=2576,y=51,z=557,dx=8,dy=2,dz=12] on passengers if score @s AC_ssoCheckpoints matches 2 run scoreboard players add @s AC_ssoCheckpoints 1

@@ -21,8 +21,8 @@ execute if score switch AC_arbAttack matches 1..200 if score pattern AC_arbRNG m
 execute if score switch AC_arbAttack matches 1..200 if score pattern AC_arbRNG matches 18 run function ac:arb-legacy/1234
 execute if score switch AC_arbAttack matches 1..200 if score pattern AC_arbRNG matches 19 run function ac:arb-legacy/1234fast
 
-execute if score switch AC_arbAttack matches 201.. run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Ostrzał zmienia wariant...","color":"green","bold":false}]
-execute if score switch AC_arbAttack matches 201.. run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Shooting pattern changes...","color":"green","bold":false}]
+execute if score switch AC_arbAttack matches 201.. if score lang AC_lang matches 0 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Ostrzał zmienia wariant...","color":"green","bold":false}]
+execute if score switch AC_arbAttack matches 201.. if score lang AC_lang matches 1 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Shooting pattern changes...","color":"green","bold":false}]
 execute if score switch AC_arbAttack matches 201.. run function ac:arb-legacy/rng/pattern
 execute if score switch AC_arbAttack matches 201.. run scoreboard players reset switch AC_arbAttack
 

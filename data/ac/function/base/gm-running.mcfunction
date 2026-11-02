@@ -1,30 +1,16 @@
-execute if score tnt AC_running matches 1 run function ac:games/tnt/start
-execute if score tnt AC_running matches 1 run function ac:games/tnt/particle
-execute if score tnt AC_running matches 1 run function ac:games/tnt/trail
-execute if score tnt AC_running matches 1 run function ac:games/tnt/lastplayer
-execute if score tnt AC_running matches 1 run function ac:games/tnt/noplayer
-execute if score tnt AC_running matches 1 run function ac:games/tnt/playerdies
-execute if score tnt AC_running matches 1 run function ac:games/tnt/end
+execute if score tnt AC_running matches 1 run function ac:games/tnt/main
 
 execute if score asn AC_running matches 1 run function ac:games/asn/main
 
 execute if score inf AC_running matches 1 run function ac:games/inf/main
-execute if score inf AC_running matches 1 run function ac:games/inf/survivor-passive
 
-execute if score spl AC_running matches 1 run function ac:games/spl/start
-execute if score spl AC_running matches 1 run function ac:games/spl/layer_disappear
-execute if score spl AC_running matches 1 run function ac:games/spl/lastplayer
-execute if score spl AC_running matches 1 run function ac:games/spl/playerdies
-execute if score spl AC_running matches 1 run function ac:games/spl/timeend
-execute if score spl AC_running matches 1 run function ac:games/spl/snowball/main
-execute if score spl AC_running matches 1 run function ac:games/spl/snowball/get
+execute if score spl AC_running matches 1 run function ac:games/spl/main
 
 execute if score hrc AC_running matches 1 run function ac:games/hrc/main
 
 execute if score blp AC_running matches 1 run function ac:games/blp/main
 
 execute if score omc AC_running matches 1 run function ac:games/omc/main
-execute if score omc AC_running matches 1 run function ac:games/omc/craft-detection
 
 execute if score avl AC_running matches 1 run function ac:games/avl/main
 
@@ -34,10 +20,7 @@ execute if score ddb AC_running matches 1 run function ac:games/ddb/main
 
 execute if score bsp AC_running matches 1 run function ac:games/bsp/main
 
-execute if score prc AC_running matches 1 run function ac:games/prc/checkpoints
 execute if score prc AC_running matches 1 run function ac:games/prc/main
-execute if score prc AC_running matches 1 run function ac:games/prc/start
-execute if score prc AC_running matches 1 run function ac:games/prc/end
 
 execute if score bwr AC_running matches 1 run function ac:games/bwr/main
 

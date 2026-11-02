@@ -22,18 +22,18 @@ execute as @e[type=text_display,tag=cstHealthBar] if score baseHealth AC_cstScor
 
 
 execute if score baseHealth AC_cstScores matches ..375 if score 75 AC_cstScores matches 1 as @a[team=ac_cstDefend] at @s run playsound minecraft:ac.jingles.important record @s ~ ~ ~
-execute if score baseHealth AC_cstScores matches ..375 if score 75 AC_cstScores matches 1 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Rdzeń ma 75% życia! ","color":"yellow","bold":false}]
-execute if score baseHealth AC_cstScores matches ..375 if score 75 AC_cstScores matches 1 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"The Core is at 75% health! ","color":"yellow","bold":false}]
+execute if score baseHealth AC_cstScores matches ..375 if score 75 AC_cstScores matches 1 if score lang AC_lang matches 0 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Rdzeń ma 75% życia! ","color":"yellow","bold":false}]
+execute if score baseHealth AC_cstScores matches ..375 if score 75 AC_cstScores matches 1 if score lang AC_lang matches 1 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"The Core is at 75% health! ","color":"yellow","bold":false}]
 execute if score baseHealth AC_cstScores matches ..375 if score 75 AC_cstScores matches 1 run scoreboard players set 75 AC_cstScores 0
 
 execute if score baseHealth AC_cstScores matches ..250 if score 50 AC_cstScores matches 1 as @a[team=ac_cstDefend] at @s run playsound minecraft:ac.jingles.important record @s ~ ~ ~
-execute if score baseHealth AC_cstScores matches ..250 if score 50 AC_cstScores matches 1 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Rdzeń ma 50% życia! ","color":"gold","bold":false}]
-execute if score baseHealth AC_cstScores matches ..250 if score 50 AC_cstScores matches 1 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"The Core is at 50% health! ","color":"gold","bold":false}]
+execute if score baseHealth AC_cstScores matches ..250 if score 50 AC_cstScores matches 1 if score lang AC_lang matches 0 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Rdzeń ma 50% życia! ","color":"gold","bold":false}]
+execute if score baseHealth AC_cstScores matches ..250 if score 50 AC_cstScores matches 1 if score lang AC_lang matches 1 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"The Core is at 50% health! ","color":"gold","bold":false}]
 execute if score baseHealth AC_cstScores matches ..250 if score 50 AC_cstScores matches 1 run scoreboard players set 50 AC_cstScores 0
 
 execute if score baseHealth AC_cstScores matches ..125 if score 25 AC_cstScores matches 1 as @a[team=ac_cstDefend] at @s run playsound minecraft:ac.jingles.important record @s ~ ~ ~
-execute if score baseHealth AC_cstScores matches ..125 if score 25 AC_cstScores matches 1 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Rdzeń ma 25% życia! ","color":"red","bold":false}]
-execute if score baseHealth AC_cstScores matches ..125 if score 25 AC_cstScores matches 1 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"The Core is at 25% health! ","color":"red","bold":false}]
+execute if score baseHealth AC_cstScores matches ..125 if score 25 AC_cstScores matches 1 if score lang AC_lang matches 0 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"Rdzeń ma 25% życia! ","color":"red","bold":false}]
+execute if score baseHealth AC_cstScores matches ..125 if score 25 AC_cstScores matches 1 if score lang AC_lang matches 1 run tellraw @a [{"text":"[CST] ","bold":true,"color":"dark_green"},{"text":"The Core is at 25% health! ","color":"red","bold":false}]
 execute if score baseHealth AC_cstScores matches ..125 if score 25 AC_cstScores matches 1 run scoreboard players set 25 AC_cstScores 0
 
 execute if score baseHealth AC_cstScores matches 376.. run scoreboard players set 75 AC_cstScores 1

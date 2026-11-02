@@ -1,8 +1,8 @@
-execute if score wave AC_aspScores matches 1 run execute as @e[limit=70] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
-execute if score wave AC_aspScores matches 2 run execute as @e[limit=65] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
-execute if score wave AC_aspScores matches 3 run execute as @e[limit=60] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
-execute if score wave AC_aspScores matches 4 run execute as @e[limit=55] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
-execute if score wave AC_aspScores matches 5 run execute as @e[limit=50] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
+execute if score wave AC_aspScores matches 1 as @e[limit=70] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
+execute if score wave AC_aspScores matches 2 as @e[limit=65] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
+execute if score wave AC_aspScores matches 3 as @e[limit=60] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
+execute if score wave AC_aspScores matches 4 as @e[limit=55] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
+execute if score wave AC_aspScores matches 5 as @e[limit=50] run summon minecraft:marker -555 59 -1976 {Tags:["aspMarker","detected"]}
 spreadplayers -500 -2000 4 48 under 57 true @e[type=marker,tag=detected]
 execute store result score spawn AC_aspScores run random value 1..4
 execute as @e[tag=aspMarker,type=minecraft:marker,tag=detected] run tag @s remove detected

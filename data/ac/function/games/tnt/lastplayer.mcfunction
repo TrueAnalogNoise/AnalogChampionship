@@ -1,9 +1,9 @@
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Koniec gry! Zwycięża ","color":"green","bold":false},{"selector":"@a[tag=InGame,gamemode=adventure]"}]
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Game over! The winner is ","color":"green","bold":false},{"selector":"@a[tag=InGame,gamemode=adventure]"}]
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run tellraw @p[tag=InGame,gamemode=adventure] [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"+15≡","color":"gold","bold":false}]
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run scoreboard players add @p[tag=InGame,gamemode=adventure] AC_pointsHeld 15
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run gamemode spectator @a
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run scoreboard players set tnt AC_time 1060
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run kill @e[type=falling_block]
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run function ac:base/endsound
-execute if score tnt AC_running matches 1 run execute if score tnt1 AC_functions matches 1 run execute if score InGame AC_playercount matches 1 run scoreboard players set tnt1 AC_functions 0
+execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Koniec gry! Zwycięża ","color":"green","bold":false},{"selector":"@a[tag=InGame,gamemode=adventure]"}]
+execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"Game over! The winner is ","color":"green","bold":false},{"selector":"@a[tag=InGame,gamemode=adventure]"}]
+tellraw @p[tag=InGame,gamemode=adventure] [{"text":"[TNT] ","bold":true,"color":"dark_green"},{"text":"+15≡","color":"gold","bold":false}]
+scoreboard players add @p[tag=InGame,gamemode=adventure] AC_pointsHeld 15
+gamemode spectator @a
+scoreboard players set tnt AC_time 1060
+kill @e[type=falling_block]
+function ac:base/endsound
+scoreboard players set tnt1 AC_functions 0

@@ -1,5 +1,5 @@
 execute if score jedzie AC_infCount matches 1 run scoreboard players add interval AC_infCount 1
-execute if score jedzie AC_infCount matches 1 run execute if score interval AC_infCount matches 40.. run scoreboard players set interval AC_infCount 0
+execute if score jedzie AC_infCount matches 1 if score interval AC_infCount matches 40.. run scoreboard players set interval AC_infCount 0
 execute if score jedzie AC_infCount matches 0 run scoreboard players set interval AC_infCount 0
 
 ##zamknij/otwórz windę
@@ -32,24 +32,24 @@ execute if block 1560 107 960 polished_blackstone_button[powered=true] run funct
 execute if score jedzie AC_infCount matches 1 run function ac:games/inf/elevator-close
 
 ##piętro wyżej
-execute if block 1563 52 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 60 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 68 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 76 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 84 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 92 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 100 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
-execute if block 1563 108 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 52 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 60 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 68 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 76 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 84 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 92 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 100 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
+execute if block 1563 108 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches 7.. run scoreboard players add pietro AC_infCount 1
 
 ##piętro niżej
-execute if block 1563 50 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 58 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 66 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 74 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 82 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 90 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 98 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
-execute if block 1563 106 966 polished_blackstone_button[powered=true] run execute unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 50 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 58 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 66 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 74 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 82 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 90 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 98 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
+execute if block 1563 106 966 polished_blackstone_button[powered=true] unless score jedzie AC_infCount matches 1 unless score pietro AC_infCount matches ..0 run scoreboard players remove pietro AC_infCount 1
 
 ##jedź
 execute if block 1563 50 965 polished_blackstone_button[powered=true] run scoreboard players set jedzie AC_infCount 1

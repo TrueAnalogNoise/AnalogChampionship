@@ -1,7 +1,7 @@
 scoreboard players set #100 AC_pointBuffer 100
 scoreboard players set #2 AC_pointBuffer 2
 
-execute store result score @s AC_hknAttack run execute as @e[type=horse,nbt={HurtTime:10s},tag=!hknTimer] on passengers run scoreboard players get @s AC_hknVelocity
+execute store result score @s AC_hknAttack as @e[type=horse,nbt={HurtTime:10s},tag=!hknTimer] on passengers run scoreboard players get @s AC_hknVelocity
 
 execute store result score #loss AC_hknVelocity run random value 100..250
 execute as @e[type=horse,nbt={HurtTime:10s},tag=!hknTimer] on passengers run scoreboard players operation @s AC_hknVelocity -= #loss AC_hknVelocity

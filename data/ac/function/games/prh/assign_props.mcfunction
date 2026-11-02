@@ -1,39 +1,39 @@
 execute as @e[type=block_display] if entity @s[tag=prh] store result score @s AC_prhRNG run random value 0..17
 
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 0 run data modify entity @s block_state set value {id:"minecraft:tnt"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 1 run data modify entity @s block_state set value {id:"minecraft:oak_wood"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 2 run data modify entity @s block_state set value {id:"minecraft:note_block"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 3 run data modify entity @s block_state set value {id:"minecraft:birch_planks"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 4 run data modify entity @s block_state set value {id:"minecraft:gold_block"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 5 run data modify entity @s block_state set value {id:"minecraft:hay_block"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 6 run data modify entity @s block_state set value {id:"minecraft:piston",properties:{facing:"up"}}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 7 run data modify entity @s block_state set value {id:"minecraft:barrel",properties:{facing:"up"}}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 8 run data modify entity @s block_state set value {id:"minecraft:spruce_wood"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 9 run data modify entity @s block_state set value {id:"minecraft:flower_pot"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 10 run data modify entity @s block_state set value {id:"minecraft:diamond_block"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 11 run data modify entity @s block_state set value {id:"minecraft:white_carpet"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 12 run data modify entity @s block_state set value {id:"minecraft:cobblestone"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 13 run data modify entity @s block_state set value {id:"minecraft:white_wool"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 14 run data modify entity @s block_state set value {id:"minecraft:crafting_table"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 15 run data modify entity @s block_state set value {id:"minecraft:emerald_block"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 16 run data modify entity @s block_state set value {id:"minecraft:iron_block"}
-execute if score prh AC_chosenMap matches 0 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 17 run data modify entity @s block_state set value {id:"minecraft:netherite_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 0 run data modify entity @s block_state set value {id:"minecraft:tnt"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 1 run data modify entity @s block_state set value {id:"minecraft:oak_wood"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 2 run data modify entity @s block_state set value {id:"minecraft:note_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 3 run data modify entity @s block_state set value {id:"minecraft:birch_planks"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 4 run data modify entity @s block_state set value {id:"minecraft:gold_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 5 run data modify entity @s block_state set value {id:"minecraft:hay_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 6 run data modify entity @s block_state set value {id:"minecraft:piston",properties:{facing:"up"}}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 7 run data modify entity @s block_state set value {id:"minecraft:barrel",properties:{facing:"up"}}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 8 run data modify entity @s block_state set value {id:"minecraft:spruce_wood"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 9 run data modify entity @s block_state set value {id:"minecraft:flower_pot"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 10 run data modify entity @s block_state set value {id:"minecraft:diamond_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 11 run data modify entity @s block_state set value {id:"minecraft:white_carpet"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 12 run data modify entity @s block_state set value {id:"minecraft:cobblestone"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 13 run data modify entity @s block_state set value {id:"minecraft:white_wool"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 14 run data modify entity @s block_state set value {id:"minecraft:crafting_table"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 15 run data modify entity @s block_state set value {id:"minecraft:emerald_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 16 run data modify entity @s block_state set value {id:"minecraft:iron_block"}
+execute if score prh AC_chosenMap matches 0 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 17 run data modify entity @s block_state set value {id:"minecraft:netherite_block"}
 
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 0 run data modify entity @s block_state set value {id:"minecraft:tnt"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 1 run data modify entity @s block_state set value {id:"minecraft:dead_bush"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 2 run data modify entity @s block_state set value {id:"minecraft:smooth_red_sandstone"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 3 run data modify entity @s block_state set value {id:"minecraft:acacia_planks"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 4 run data modify entity @s block_state set value {id:"minecraft:gold_block"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 5 run data modify entity @s block_state set value {id:"minecraft:hay_block"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 6 run data modify entity @s block_state set value {id:"minecraft:piston",properties:{facing:"up"}}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 7 run data modify entity @s block_state set value {id:"minecraft:barrel",properties:{facing:"up"}}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 8 run data modify entity @s block_state set value {id:"minecraft:red_concrete_powder"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 9 run data modify entity @s block_state set value {id:"minecraft:flower_pot"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 10 run data modify entity @s block_state set value {id:"minecraft:diamond_block"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 11 run data modify entity @s block_state set value {id:"minecraft:white_carpet"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 12 run data modify entity @s block_state set value {id:"minecraft:smooth_sandstone"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 13 run data modify entity @s block_state set value {id:"minecraft:white_wool"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 14 run data modify entity @s block_state set value {id:"minecraft:crafting_table"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 15 run data modify entity @s block_state set value {id:"minecraft:emerald_block"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 16 run data modify entity @s block_state set value {id:"minecraft:iron_block"}
-execute if score prh AC_chosenMap matches 1 run execute as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 17 run data modify entity @s block_state set value {id:"minecraft:netherite_block"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 0 run data modify entity @s block_state set value {id:"minecraft:tnt"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 1 run data modify entity @s block_state set value {id:"minecraft:dead_bush"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 2 run data modify entity @s block_state set value {id:"minecraft:smooth_red_sandstone"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 3 run data modify entity @s block_state set value {id:"minecraft:acacia_planks"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 4 run data modify entity @s block_state set value {id:"minecraft:gold_block"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 5 run data modify entity @s block_state set value {id:"minecraft:hay_block"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 6 run data modify entity @s block_state set value {id:"minecraft:piston",properties:{facing:"up"}}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 7 run data modify entity @s block_state set value {id:"minecraft:barrel",properties:{facing:"up"}}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 8 run data modify entity @s block_state set value {id:"minecraft:red_concrete_powder"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 9 run data modify entity @s block_state set value {id:"minecraft:flower_pot"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 10 run data modify entity @s block_state set value {id:"minecraft:diamond_block"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 11 run data modify entity @s block_state set value {id:"minecraft:white_carpet"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 12 run data modify entity @s block_state set value {id:"minecraft:smooth_sandstone"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 13 run data modify entity @s block_state set value {id:"minecraft:white_wool"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 14 run data modify entity @s block_state set value {id:"minecraft:crafting_table"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 15 run data modify entity @s block_state set value {id:"minecraft:emerald_block"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 16 run data modify entity @s block_state set value {id:"minecraft:iron_block"}
+execute if score prh AC_chosenMap matches 1 as @e[type=block_display,tag=prh] if score @s AC_prhRNG matches 17 run data modify entity @s block_state set value {id:"minecraft:netherite_block"}

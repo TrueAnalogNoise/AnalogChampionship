@@ -16,7 +16,7 @@ $execute if score @s AC_prhStunCooldown matches 281..300 run data modify storage
 $execute if score @s AC_prhStunCooldown matches 0 if score lang AC_lang matches 0 run data modify storage ac_prh $(id).stunCooldown set value "Gotowy"
 $execute if score @s AC_prhStunCooldown matches 0 if score lang AC_lang matches 1 run data modify storage ac_prh $(id).stunCooldown set value "Ready"
 
-$execute unless score @s AC_prhTauntCooldown matches 0 run execute store result storage ac_prh $(id).tauntCooldown int 1 run scoreboard players get @s AC_prhTauntCooldown
+$execute unless score @s AC_prhTauntCooldown matches 0 store result storage ac_prh $(id).tauntCooldown int 1 run scoreboard players get @s AC_prhTauntCooldown
 $execute if score @s AC_prhTauntCooldown matches 0 if score lang AC_lang matches 0 run data modify storage ac_prh $(id).tauntCooldown set value "Gotowy"
 $execute if score @s AC_prhTauntCooldown matches 0 if score lang AC_lang matches 1 run data modify storage ac_prh $(id).tauntCooldown set value "Ready"
 

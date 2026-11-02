@@ -18,6 +18,6 @@ execute as @a[gamemode=adventure,tag=spawn14] at @s unless entity @e[type=marker
 execute as @a[gamemode=adventure,tag=spawn15] at @s unless entity @e[type=marker,tag=spawn15] run summon marker ~ ~ ~ {Tags:["spawn15","trl"]}
 execute as @a[gamemode=adventure,tag=spawn16] at @s unless entity @e[type=marker,tag=spawn16] run summon marker ~ ~ ~ {Tags:["spawn16","trl"]}
 
-execute as @e[type=marker,tag=trl] at @s run execute store result score @s AC_trlWalkCheckX run data get entity @s Pos[0] 10
-execute as @e[type=marker,tag=trl] at @s run execute store result score @s AC_trlWalkCheckY run data get entity @s Pos[1] 10
-execute as @e[type=marker,tag=trl] at @s run execute store result score @s AC_trlWalkCheckZ run data get entity @s Pos[2] 10
+execute as @e[type=marker,tag=trl] at @s store result score @s AC_trlWalkCheckX run data get entity @s Pos[0] 10
+execute as @e[type=marker,tag=trl] at @s store result score @s AC_trlWalkCheckY run data get entity @s Pos[1] 10
+execute as @e[type=marker,tag=trl] at @s store result score @s AC_trlWalkCheckZ run data get entity @s Pos[2] 10

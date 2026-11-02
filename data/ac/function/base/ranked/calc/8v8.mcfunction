@@ -1,13 +1,12 @@
 scoreboard players set @s AC_pointsRankedTimeMultiplier 10
 
 
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[gamemode=adventure,tag=InGame,team=ac_ddbBlue] if score yellow AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 10
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[gamemode=spectator,tag=InGame,team=ac_ddbBlue] if score yellow AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 5
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[gamemode=adventure,tag=InGame,team=ac_ddbYellow] if score yellow AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld -10
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[gamemode=adventure,tag=InGame,team=ac_ddbYellow] if score blue AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 10
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[gamemode=spectator,tag=InGame,team=ac_ddbYellow] if score blue AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 5
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[gamemode=adventure,tag=InGame,team=ac_ddbBlue] if score blue AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld -10
-execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=ac-compensate] run scoreboard players set @s AC_pointsRankedHeld 0
+execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=!ddbDead,tag=InGame,team=ac_ddbBlue] if score yellow AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 10
+execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=ddbDead,tag=InGame,team=ac_ddbBlue] if score yellow AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 5
+execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=InGame,team=ac_ddbYellow] if score yellow AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld -10
+execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=!ddbDead,tag=InGame,team=ac_ddbYellow] if score blue AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 10
+execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=ddbDead,tag=InGame,team=ac_ddbYellow] if score blue AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld 5
+execute if score NowPlaying AC_CurrentlyPlayed matches 10 if entity @s[tag=InGame,team=ac_ddbBlue] if score blue AC_dodgebolt matches 0 run scoreboard players set @s AC_pointsRankedHeld -10
 
 
 execute if score NowPlaying AC_CurrentlyPlayed matches 14 if entity @s[tag=InGame,team=ac_ctfNorth] if data storage ac:ranked {ctf_winner:"north"} run scoreboard players set @s AC_pointsRankedHeld 10
@@ -82,6 +81,8 @@ execute if score NowPlaying AC_CurrentlyPlayed matches 37 if data storage ac:ran
 execute if score NowPlaying AC_CurrentlyPlayed matches 37 if data storage ac:ranked {cst_win_condition:4} run scoreboard players set @s[team=ac_cstAttack] AC_pointsRankedHeld -20
 execute if score NowPlaying AC_CurrentlyPlayed matches 37 if data storage ac:ranked {cst_win_condition:4} run scoreboard players set @s[team=ac_cstDefend] AC_pointsRankedHeld 20
 
+
+execute if entity @s[tag=ac-compensate] run scoreboard players set @s AC_pointsRankedHeld 0
 
 scoreboard players operation @s AC_pointsRankedHeld *= @s AC_pointsRankedTimeMultiplier
 scoreboard players operation @s AC_pointsRankedHeld /= 10 int

@@ -1,5 +1,5 @@
-execute unless entity @a[gamemode=spectator,tag=!hunter] as @a[tag=hunter] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[PRH] ","bold":true,"color":"dark_green"},{"text":"Nie ma martwych Propów. Kogo próbujesz przywołać?","color":"red","bold":false}]
-execute unless entity @a[gamemode=spectator,tag=!hunter] as @a[tag=hunter] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[PRH] ","bold":true,"color":"dark_green"},{"text":"There are no dead Props. Who do you want to summon?","color":"red","bold":false}]
+execute unless entity @a[gamemode=spectator,tag=!hunter] as @a[tag=hunter] if score lang AC_lang matches 0 run tellraw @s [{"text":"[PRH] ","bold":true,"color":"dark_green"},{"text":"Nie ma martwych Propów. Kogo próbujesz przywołać?","color":"red","bold":false}]
+execute unless entity @a[gamemode=spectator,tag=!hunter] as @a[tag=hunter] if score lang AC_lang matches 1 run tellraw @s [{"text":"[PRH] ","bold":true,"color":"dark_green"},{"text":"There are no dead Props. Who do you want to summon?","color":"red","bold":false}]
 execute unless entity @a[gamemode=spectator,tag=!hunter] as @a[tag=hunter] run return run scoreboard players remove @s AC_prhSummonHunter 1
 
 clear @a[gamemode=spectator,tag=!hunter]

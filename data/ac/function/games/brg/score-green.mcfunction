@@ -1,5 +1,5 @@
-execute if entity @s[tag=brgGreen] run execute if score lang AC_lang matches 0 run tellraw @s [{"text":"[BRG] ","bold":true,"color":"dark_green"},{"text":"No i po co to zrobiłeś? Teraz umrzesz.","color":"red","bold":false}]
-execute if entity @s[tag=brgGreen] run execute if score lang AC_lang matches 1 run tellraw @s [{"text":"[BRG] ","bold":true,"color":"dark_green"},{"text":"Why did you do this? Now you'll die.","color":"red","bold":false}]
+execute if entity @s[tag=brgGreen] if score lang AC_lang matches 0 run tellraw @s [{"text":"[BRG] ","bold":true,"color":"dark_green"},{"text":"No i po co to zrobiłeś? Teraz umrzesz.","color":"red","bold":false}]
+execute if entity @s[tag=brgGreen] if score lang AC_lang matches 1 run tellraw @s [{"text":"[BRG] ","bold":true,"color":"dark_green"},{"text":"Why did you do this? Now you'll die.","color":"red","bold":false}]
 execute if entity @s[tag=brgGreen] run return 0
 
 execute if entity @s[tag=!brgGreen] unless score green AC_brgScore matches 0 run scoreboard players remove green AC_brgScore 1
@@ -21,11 +21,11 @@ execute as @a[tag=brgGreen] at @s run playsound minecraft:ac.jingles.ping-a3 rec
 execute if score lang AC_lang matches 0 run title @a[tag=brgGreen] actionbar [{"text":"Gracz ","bold":true,"color":"green"},{"selector":"@s"},{"text":" strzelił gola waszej drużynie!","color":"green"}]
 execute if score lang AC_lang matches 1 run title @a[tag=brgGreen] actionbar [{"text":"Player ","bold":true,"color":"green"},{"selector":"@s"},{"text":" has scored a goal on your team!","color":"green"}]
 
-execute if score green AC_brgScore matches 0 run execute if score lang AC_lang matches 0 run title @a[tag=brgGreen] title [{"text":"Brak punktów!","color":"red"}]
-execute if score green AC_brgScore matches 0 run execute if score lang AC_lang matches 0 run title @a[tag=brgGreen] subtitle [{"text":"Nie odrodzisz się po śmierci!","color":"red"}]
-execute if score green AC_brgScore matches 0 run execute if score lang AC_lang matches 1 run title @a[tag=brgGreen] title [{"text":"No points left!","color":"red"}]
-execute if score green AC_brgScore matches 0 run execute if score lang AC_lang matches 1 run title @a[tag=brgGreen] subtitle [{"text":"You will no longer respawn!","color":"red"}]
-execute if score green AC_brgScore matches 0 run execute at @a[tag=brgGreen] run playsound minecraft:ac.jingles.bed-destroyed record @a[tag=brgGreen] ~ ~ ~
+execute if score green AC_brgScore matches 0 if score lang AC_lang matches 0 run title @a[tag=brgGreen] title [{"text":"Brak punktów!","color":"red"}]
+execute if score green AC_brgScore matches 0 if score lang AC_lang matches 0 run title @a[tag=brgGreen] subtitle [{"text":"Nie odrodzisz się po śmierci!","color":"red"}]
+execute if score green AC_brgScore matches 0 if score lang AC_lang matches 1 run title @a[tag=brgGreen] title [{"text":"No points left!","color":"red"}]
+execute if score green AC_brgScore matches 0 if score lang AC_lang matches 1 run title @a[tag=brgGreen] subtitle [{"text":"You will no longer respawn!","color":"red"}]
+execute if score green AC_brgScore matches 0 at @a[tag=brgGreen] run playsound minecraft:ac.jingles.bed-destroyed record @a[tag=brgGreen] ~ ~ ~
 execute if score green AC_brgScore matches 0 run fill 1499 100 41 1501 100 43 barrier
 execute if score green AC_brgScore matches 0 run tag @a[tag=brgGreen] add noGoals
 

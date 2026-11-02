@@ -141,5 +141,6 @@ tag @a remove jgtJuggernaut
 tag @a remove pknEliminated
 tag @a remove ssoRacing
 tag @a remove ssoSpawn
+tag @a remove ddbDead
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Usunięto graczom online tagi z trybów gry.","color":"gray","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Removed player tags from online players.","color":"gray","bold":false}]

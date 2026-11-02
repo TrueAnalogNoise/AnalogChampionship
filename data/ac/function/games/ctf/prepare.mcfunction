@@ -1,5 +1,5 @@
-execute if score IGOverall AC_playercount matches ..1 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Za mało graczy! (Wymaganych jest 2) Nastąpi teleportacja na spawn.","color":"red","bold":false}]
-execute if score IGOverall AC_playercount matches ..1 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Too little players! (2 are required) You will be teleported back to spawn.","color":"red","bold":false}]
+execute if score IGOverall AC_playercount matches ..1 if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Za mało graczy! (Wymaganych jest 2) Nastąpi teleportacja na spawn.","color":"red","bold":false}]
+execute if score IGOverall AC_playercount matches ..1 if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Too little players! (2 are required) You will be teleported back to spawn.","color":"red","bold":false}]
 execute if score IGOverall AC_playercount matches ..1 run tp @a 0 50 0
 execute if score IGOverall AC_playercount matches ..1 run gamemode adventure @a
 execute if score IGOverall AC_playercount matches ..1 run bossbar set ac_ctf visible false

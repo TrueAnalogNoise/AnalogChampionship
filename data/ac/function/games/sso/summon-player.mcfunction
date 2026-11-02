@@ -6,4 +6,4 @@ execute store result storage ac:sso.spawned value int 1 run scoreboard players g
 function ac:games/sso/spawn-next-boat with storage ac:sso.spawned
 
 scoreboard players set timer AC_ssoScore 220
-scoreboard players set next-player AC_ssoScore 600
+scoreboard players set next-player AC_ssoScore 400

@@ -110,7 +110,7 @@ execute if score 4 AC_dtrTraps matches 1 if score 4-2 AC_dtrTraps matches 1 run 
 execute if score 5 AC_dtrTraps matches 30 run kill @a[x=-1503,y=50,z=1068,dy=2,dx=6,dz=9,tag=InGame,gamemode=adventure]
 
 ## ściana z lawy
-execute if score 10-active AC_dtrTraps matches 1 run execute as @a[x=-1541,y=37,z=1078,dx=11,dz=12,dy=7,tag=InGame,gamemode=adventure] at @s run tp @s ~-0.8 ~ ~
+execute if score 10-active AC_dtrTraps matches 1 as @a[x=-1541,y=37,z=1078,dx=11,dz=12,dy=7,tag=InGame,gamemode=adventure] at @s run tp @s ~-0.8 ~ ~
 execute if score 10-active AC_dtrTraps matches 1 run particle minecraft:portal -1543 43 1084 0 1 1 5 30
 
 ## prewencja zaglądania do dispenserów

@@ -2,12 +2,12 @@ scoreboard players set #20 AC_cstRespawnTimeSeconds 20
 scoreboard players remove @s AC_cstRespawnTime 1
 scoreboard players operation @s AC_cstRespawnTimeSeconds = @s AC_cstRespawnTime
 scoreboard players operation @s AC_cstRespawnTimeSeconds /= #20 AC_cstRespawnTimeSeconds
-execute if score @s AC_cstRespawnTime matches 1.. run execute if score lang AC_lang matches 0 run title @s title {"text":"Nie żyjesz!","color":"red"}
-execute if score @s AC_cstRespawnTime matches 1.. run execute if score lang AC_lang matches 1 run title @s title {"text":"You died!","color":"red"}
-execute if score @s AC_cstRespawnTime matches 1.. run execute if score lang AC_lang matches 0 run title @s subtitle [{"text":"Odrodzisz się za ","color":"gray"},{"score":{"name":"@s","objective":"AC_cstRespawnTimeSeconds"},"color":"white"},{"text":"...","color":"gray"}]
-execute if score @s AC_cstRespawnTime matches 1.. run execute if score lang AC_lang matches 1 run title @s subtitle [{"text":"Respawning in ","color":"gray"},{"score":{"name":"@s","objective":"AC_cstRespawnTimeSeconds"},"color":"white"},{"text":"...","color":"gray"}]
-execute if score @s AC_cstRespawnTime matches ..0 run execute if score lang AC_lang matches 0 run title @s title {"text":"Odrodzono!","color":"green"}
-execute if score @s AC_cstRespawnTime matches ..0 run execute if score lang AC_lang matches 1 run title @s title {"text":"Respawned!","color":"green"}
+execute if score @s AC_cstRespawnTime matches 1.. if score lang AC_lang matches 0 run title @s title {"text":"Nie żyjesz!","color":"red"}
+execute if score @s AC_cstRespawnTime matches 1.. if score lang AC_lang matches 1 run title @s title {"text":"You died!","color":"red"}
+execute if score @s AC_cstRespawnTime matches 1.. if score lang AC_lang matches 0 run title @s subtitle [{"text":"Odrodzisz się za ","color":"gray"},{"score":{"name":"@s","objective":"AC_cstRespawnTimeSeconds"},"color":"white"},{"text":"...","color":"gray"}]
+execute if score @s AC_cstRespawnTime matches 1.. if score lang AC_lang matches 1 run title @s subtitle [{"text":"Respawning in ","color":"gray"},{"score":{"name":"@s","objective":"AC_cstRespawnTimeSeconds"},"color":"white"},{"text":"...","color":"gray"}]
+execute if score @s AC_cstRespawnTime matches ..0 if score lang AC_lang matches 0 run title @s title {"text":"Odrodzono!","color":"green"}
+execute if score @s AC_cstRespawnTime matches ..0 if score lang AC_lang matches 1 run title @s title {"text":"Respawned!","color":"green"}
 execute if score @s AC_cstRespawnTime matches ..0 run title @s subtitle {"text":""}
 execute if score @s AC_cstRespawnTime matches ..0 run gamemode adventure @s
 execute if score @s AC_cstRespawnTime matches ..0 if entity @s[tag=spawn1] run tp @s -2023 70 1379 -90 0

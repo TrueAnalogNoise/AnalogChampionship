@@ -1,26 +1,26 @@
-execute if score box AC_chosenMap matches 0 run execute store success score win-red AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1497 44 -1501 all run function ac:games/box/round-redfilled
-execute if score box AC_chosenMap matches 1 run execute store success score win-red AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1497 44 -1501 all run function ac:games/box/round-redfilled
-execute if score box AC_chosenMap matches 2 run execute store success score win-red AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1497 44 -1501 all run function ac:games/box/round-redfilled
-execute if score box AC_chosenMap matches 3 run execute store success score win-red AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1497 44 -1501 all run function ac:games/box/round-redfilled
-execute if score box AC_chosenMap matches 4 run execute store success score win-red AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1497 44 -1501 all run function ac:games/box/round-redfilled
+execute if score box AC_chosenMap matches 0 store success score win-red AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1497 44 -1501 all run function ac:games/box/round-redfilled
+execute if score box AC_chosenMap matches 1 store success score win-red AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1497 44 -1501 all run function ac:games/box/round-redfilled
+execute if score box AC_chosenMap matches 2 store success score win-red AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1497 44 -1501 all run function ac:games/box/round-redfilled
+execute if score box AC_chosenMap matches 3 store success score win-red AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1497 44 -1501 all run function ac:games/box/round-redfilled
+execute if score box AC_chosenMap matches 4 store success score win-red AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1497 44 -1501 all run function ac:games/box/round-redfilled
 
-execute if score box AC_chosenMap matches 0 run execute store success score win-yellow AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1497 44 -1497 all run function ac:games/box/round-yellowfilled
-execute if score box AC_chosenMap matches 1 run execute store success score win-yellow AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1497 44 -1497 all run function ac:games/box/round-yellowfilled
-execute if score box AC_chosenMap matches 2 run execute store success score win-yellow AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1497 44 -1497 all run function ac:games/box/round-yellowfilled
-execute if score box AC_chosenMap matches 3 run execute store success score win-yellow AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1497 44 -1497 all run function ac:games/box/round-yellowfilled
-execute if score box AC_chosenMap matches 4 run execute store success score win-yellow AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1497 44 -1497 all run function ac:games/box/round-yellowfilled
+execute if score box AC_chosenMap matches 0 store success score win-yellow AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1497 44 -1497 all run function ac:games/box/round-yellowfilled
+execute if score box AC_chosenMap matches 1 store success score win-yellow AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1497 44 -1497 all run function ac:games/box/round-yellowfilled
+execute if score box AC_chosenMap matches 2 store success score win-yellow AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1497 44 -1497 all run function ac:games/box/round-yellowfilled
+execute if score box AC_chosenMap matches 3 store success score win-yellow AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1497 44 -1497 all run function ac:games/box/round-yellowfilled
+execute if score box AC_chosenMap matches 4 store success score win-yellow AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1497 44 -1497 all run function ac:games/box/round-yellowfilled
 
-execute if score box AC_chosenMap matches 0 run execute store success score win-green AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1493 44 -1497 all run function ac:games/box/round-greenfilled
-execute if score box AC_chosenMap matches 1 run execute store success score win-green AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1493 44 -1497 all run function ac:games/box/round-greenfilled
-execute if score box AC_chosenMap matches 2 run execute store success score win-green AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1493 44 -1497 all run function ac:games/box/round-greenfilled
-execute if score box AC_chosenMap matches 3 run execute store success score win-green AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1493 44 -1497 all run function ac:games/box/round-greenfilled
-execute if score box AC_chosenMap matches 4 run execute store success score win-green AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1493 44 -1497 all run function ac:games/box/round-greenfilled
+execute if score box AC_chosenMap matches 0 store success score win-green AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1493 44 -1497 all run function ac:games/box/round-greenfilled
+execute if score box AC_chosenMap matches 1 store success score win-green AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1493 44 -1497 all run function ac:games/box/round-greenfilled
+execute if score box AC_chosenMap matches 2 store success score win-green AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1493 44 -1497 all run function ac:games/box/round-greenfilled
+execute if score box AC_chosenMap matches 3 store success score win-green AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1493 44 -1497 all run function ac:games/box/round-greenfilled
+execute if score box AC_chosenMap matches 4 store success score win-green AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1493 44 -1497 all run function ac:games/box/round-greenfilled
 
-execute if score box AC_chosenMap matches 0 run execute store success score win-blue AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1493 44 -1501 all run function ac:games/box/round-bluefilled
-execute if score box AC_chosenMap matches 1 run execute store success score win-blue AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1493 44 -1501 all run function ac:games/box/round-bluefilled
-execute if score box AC_chosenMap matches 2 run execute store success score win-blue AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1493 44 -1501 all run function ac:games/box/round-bluefilled
-execute if score box AC_chosenMap matches 3 run execute store success score win-blue AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1493 44 -1501 all run function ac:games/box/round-bluefilled
-execute if score box AC_chosenMap matches 4 run execute store success score win-blue AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1493 44 -1501 all run function ac:games/box/round-bluefilled
+execute if score box AC_chosenMap matches 0 store success score win-blue AC_boxCheck if blocks 1499 51 -1501 1501 51 -1499 1493 44 -1501 all run function ac:games/box/round-bluefilled
+execute if score box AC_chosenMap matches 1 store success score win-blue AC_boxCheck if blocks 999 51 -1501 1001 51 -1499 1493 44 -1501 all run function ac:games/box/round-bluefilled
+execute if score box AC_chosenMap matches 2 store success score win-blue AC_boxCheck if blocks -1501 50 -1501 -1499 50 -1499 1493 44 -1501 all run function ac:games/box/round-bluefilled
+execute if score box AC_chosenMap matches 3 store success score win-blue AC_boxCheck if blocks -1501 49 -1001 -1499 49 -999 1493 44 -1501 all run function ac:games/box/round-bluefilled
+execute if score box AC_chosenMap matches 4 store success score win-blue AC_boxCheck if blocks 2001 51 1499 1999 51 1501 1493 44 -1501 all run function ac:games/box/round-bluefilled
 
 
 execute as @a[tag=InGame] if entity @s[scores={AC_boxPlaceRed=1..}] run scoreboard players add totalRed AC_boxCheck 1

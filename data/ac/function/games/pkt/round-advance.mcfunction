@@ -5,8 +5,8 @@ clear @a[tag=InGame]
 execute if score round AC_pktScores matches 1 run function ac:games/pkt/assign-roles
 execute if score round AC_pktScores matches 3 run function ac:games/pkt/assign-roles
 execute if score round AC_pktScores matches 5 run function ac:games/pkt/assign-roles
-execute if score round AC_pktScores matches 1..6 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"Runda ","color":"green","bold":false},{"score":{"name":"round","objective":"AC_pktScores"}}]
-execute if score round AC_pktScores matches 1..6 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"Round ","color":"green","bold":false},{"score":{"name":"round","objective":"AC_pktScores"}}]
+execute if score round AC_pktScores matches 1..6 if score lang AC_lang matches 0 run tellraw @a [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"Runda ","color":"green","bold":false},{"score":{"name":"round","objective":"AC_pktScores"}}]
+execute if score round AC_pktScores matches 1..6 if score lang AC_lang matches 1 run tellraw @a [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"Round ","color":"green","bold":false},{"score":{"name":"round","objective":"AC_pktScores"}}]
 
 execute if score pkt AC_chosenMap matches 0 run fill -1004 54 1520 -996 51 1520 barrier replace air
 execute if score pkt AC_chosenMap matches 0 run fill -1005 54 1480 -995 51 1480 barrier replace air
