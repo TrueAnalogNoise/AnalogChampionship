@@ -57,6 +57,8 @@ execute if score prh2 AC_functions matches 1 as @a[team=ac_prhProp] if score @s 
 execute if score prh2 AC_functions matches 1 as @a[team=ac_prhProp] if score @s AC_prhDeath matches 1.. if entity @s run scoreboard players reset @a AC_prhKills
 execute if score prh2 AC_functions matches 1 as @a[team=ac_prhProp] if score @s AC_prhDeath matches 1.. if entity @s run scoreboard players reset @a AC_prhDeath
 
+execute if score prh1 AC_functions matches 1 as @a[team=ac_prhProp] at @s if entity @s[gamemode=spectator] unless entity @a[team=ac_prhHunter,distance=..2] run spectate @r[team=ac_prhHunter]
+
 execute if score prh2 AC_functions matches 1 store result score count AC_prhHunterCount if entity @a[team=ac_prhHunter]
 execute if score prh2 AC_functions matches 1 as @a[team=ac_prhHunter] unless score count AC_prhHunterCount matches 5.. if score @s AC_prhSummonHunter matches 1.. run function ac:games/prh/summon_hunter
 execute if score prh2 AC_functions matches 1 as @a[team=ac_prhHunter] if score count AC_prhHunterCount matches 5.. if score @s AC_prhSummonHunter matches 1.. if score lang AC_lang matches 0 run tellraw @s [{"text":"[PRH] ","bold":true,"color":"dark_green"},{"text":"Przywołałeś(-aś) już maksymalną ilość Łowców.","color":"red","bold":false}]
