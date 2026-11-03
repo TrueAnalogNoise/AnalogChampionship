@@ -72,7 +72,8 @@ execute if score IGOverall AC_playercount matches 16.. at @a[tag=hunter] run sum
 
 team join ac_prhProp @e[type=minecraft:block_display,tag=prh]
 
-scoreboard players set current AC_rankedPlaceFinished 16
+scoreboard players operation current AC_rankedPlaceFinished = IGOverall AC_playercount
+scoreboard players remove current AC_rankedPlaceFinished 1
 
 scoreboard players set no-q AC_misc 1
 
