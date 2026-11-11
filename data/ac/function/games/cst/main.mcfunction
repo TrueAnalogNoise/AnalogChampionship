@@ -50,8 +50,8 @@ execute as @a[tag=InGame,tag=cstArsonist] at @s if block ~ ~ ~ water run damage 
 execute as @a[tag=cstScout] run effect give @s speed 1 0 true
 execute as @a[tag=cstSniper] run effect give @s slowness 1 0 true
 execute as @a[tag=cstArsonist] run effect give @s fire_resistance 1 1 true
-execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-2025.5,y=70,z=1372.5,dx=14,dy=5,dz=24] run damage @s 9 indirect_magic
-execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-1985.5,y=70,z=1372.5,dx=14,dy=5,dz=24] run damage @s 9 indirect_magic
+execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-2025.5,y=70,z=1372.5,dx=14,dy=5,dz=23] run damage @s 9 indirect_magic
+execute as @a[tag=InGame,team=ac_cstAttack] at @s if entity @s[x=-1985.5,y=70,z=1372.5,dx=14,dy=5,dz=23] run damage @s 9 indirect_magic
 execute as @a[tag=InGame,team=ac_cstDefend] at @s if entity @s[x=-2055,y=51,z=1603,dx=111,dy=51,dz=49] run damage @s 9 indirect_magic
 execute as @a[tag=InGame] at @s if entity @s[x=-2055,y=43,z=1345,dx=111,dy=-15,dz=310] run damage @s 100 indirect_magic
 
