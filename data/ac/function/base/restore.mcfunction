@@ -616,27 +616,27 @@ bossbar set ac_pct color purple
 bossbar set ac_pct max 18000
 bossbar set ac_pct style notched_12
 bossbar add ac_pct_kl ac_pct_kl
-bossbar set ac_pct_kl name [{"text":"Husaria Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar set ac_pct_kl name [{"text":"Punkt Husaria Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_kl color red
 bossbar set ac_pct_kl max 300
 bossbar set ac_pct_kl style notched_10
 bossbar add ac_pct_l ac_pct_l
-bossbar set ac_pct_l name [{"text":"Husaria Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar set ac_pct_l name [{"text":"Punkt Husaria Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_l color red
 bossbar set ac_pct_l max 100
 bossbar set ac_pct_l style notched_10
 bossbar add ac_pct_m ac_pct_m
-bossbar set ac_pct_m name [{"text":"Zewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar set ac_pct_m name [{"text":"Punkt Zewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_m color red
 bossbar set ac_pct_m max 100
 bossbar set ac_pct_m style notched_10
 bossbar add ac_pct_r ac_pct_r
-bossbar set ac_pct_r name [{"text":"Krzyżacy Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar set ac_pct_r name [{"text":"Punkt Krzyżacy Wewnętrzny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_r color red
 bossbar set ac_pct_r max 100
 bossbar set ac_pct_r style notched_10
 bossbar add ac_pct_kr ac_pct_kr
-bossbar set ac_pct_kr name [{"text":"Krzyżacy Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
+bossbar set ac_pct_kr name [{"text":"Punkt Krzyżacy Krytyczny","color":"red","bold":true},{"text":" - Postęp przejęcia","color":"dark_red","bold":false}]
 bossbar set ac_pct_kr color red
 bossbar set ac_pct_kr max 300
 bossbar set ac_pct_kr style notched_10

@@ -27,6 +27,7 @@ team modify gracz friendlyFire false
 team modify gracz nametagVisibility never
 
 scoreboard players set @a AC_mzgRankedKillCount 0
+scoreboard players reset @a AC_rankedTimeFinished
 
 scoreboard players set mzg AC_time 24500
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 46
