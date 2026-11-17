@@ -1,3 +1,5 @@
+execute if score afr AC_running matches 1 if score afr AC_time matches 1200 run function ac:base/overtime-global-start {time:60,mode:1}
+
 execute if score arb AC_running matches 1 if score arb AC_time matches 600 run function ac:base/overtime-global-start {time:30,mode:1}
 
 execute if score asn AC_running matches 1 if score asn AC_time matches 600 run function ac:base/overtime-global-start {time:30,mode:1}

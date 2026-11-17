@@ -67,20 +67,178 @@ execute as @e[type=marker,tag=ac_afr,tag=spawn_iron] at @s run item replace bloc
 
 ## OUTER RING
 #outer_purple_iron
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=outer_purple_iron] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=outer_purple_iron] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=outer_purple_iron] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #outer_blue_1
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.21 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.23 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_common
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_common
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_1] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #outer_blue_2
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.21 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.23 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_common
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_common
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_2] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #outer_blue_iron
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_iron] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_iron] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=outer_blue_iron] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #outer_lightblue
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_common
+execute as @e[type=marker,tag=ac_afr,tag=outer_lightblue] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_common
+execute as @e[type=marker,tag=ac_afr,tag=outer_lightblue] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
 
 ## INNER RING
 #inner_lime_1
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.21 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.23 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_1] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_lime_2
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.21 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.23 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_2] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_lime_3
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_3] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_3] at @s run item replace block ~ ~ ~ container.11 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_3] at @s run item replace block ~ ~ ~ container.15 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_lime_iron
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_iron] at @s run item replace block ~ ~ ~ container.3 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_iron] at @s run item replace block ~ ~ ~ container.4 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_iron] at @s run item replace block ~ ~ ~ container.5 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_lime_iron] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_yellow_iron
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_iron] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_iron] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_common
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_iron] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_yellow_gold
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_gold] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_gold] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_gold] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_gold] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_yellow_gold] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_orange_iron_1
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_1] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_1] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_1] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_1] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_1] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_orange_iron_2
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_2] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_2] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_2] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_2] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_uncommon
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_iron_2] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_orange_gold_1
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_1] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_1] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_1] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_1] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_1] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
 #inner_orange_gold_2
-#master_chest
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_2] at @s run item replace block ~ ~ ~ container.24 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_2] at @s run item replace block ~ ~ ~ container.20 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_2] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:bombs_and_bubbles
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_2] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_rare
+execute as @e[type=marker,tag=ac_afr,tag=inner_orange_gold_2] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+#master_chest - skrzynka na środku
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_epic
+execute as @e[type=marker,tag=ac_afr,tag=master_chest] at @s run item replace block ~ ~ ~ container.4 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_weapons_epic
+execute as @e[type=marker,tag=ac_afr,tag=master_chest] at @s run item replace block ~ ~ ~ container.22 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_epic
+execute as @e[type=marker,tag=ac_afr,tag=master_chest] at @s run item replace block ~ ~ ~ container.12 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_armor_epic
+execute as @e[type=marker,tag=ac_afr,tag=master_chest] at @s run item replace block ~ ~ ~ container.14 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0
+
+loot replace entity @e[limit=1,type=item_display,tag=afrLoot] container.0 loot ac:afr_other_epic
+execute as @e[type=marker,tag=ac_afr,tag=master_chest] at @s run item replace block ~ ~ ~ container.13 from entity @e[limit=1,type=item_display,tag=afrLoot] container.0

@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:stone_sword",
-          "weight": 45,
+          "weight": 55,
           "modifier": [
             {
               "type": "minecraft:set_components",
@@ -30,7 +30,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:copper_sword",
-          "weight": 35,
+          "weight": 25,
           "modifier": [
             {
               "type": "minecraft:set_components",
@@ -53,7 +53,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 20,
+          "weight": 15,
           "modifier": [
             {
               "type": "minecraft:set_components",
@@ -76,30 +76,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:diamond_sword",
-          "weight": 10,
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:unbreakable": {}
-              }
-            },
-            {
-              "type": "minecraft:enchant_randomly",
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": {
-                  "type": "minecraft:constant",
-                  "value": 0.35
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_sword",
-          "weight": 1,
+          "weight": 5,
           "modifier": [
             {
               "type": "minecraft:set_components",
@@ -168,30 +145,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_axe",
-          "weight": 4,
-          "modifier": [
-            {
-              "type": "minecraft:set_components",
-              "components": {
-                "minecraft:unbreakable": {}
-              }
-            },
-            {
-              "type": "minecraft:enchant_randomly",
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": {
-                  "type": "minecraft:constant",
-                  "value": 0.35
-                }
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_axe",
-          "weight": 1,
+          "weight": 2,
           "modifier": [
             {
               "type": "minecraft:set_components",
@@ -214,7 +168,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bow",
-          "weight": 30,
+          "weight": 40,
           "modifier": [
             {
               "type": "minecraft:set_components",
@@ -237,7 +191,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:crossbow",
-          "weight": 20,
+          "weight": 30,
           "modifier": [
             {
               "type": "minecraft:set_components",

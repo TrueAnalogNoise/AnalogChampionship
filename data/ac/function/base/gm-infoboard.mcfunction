@@ -544,3 +544,15 @@ execute if score info AC_misc matches 46 run execute if score lang AC_lang match
 • Players have to get the best gear in order to be the last in the corridor maze\n\
 • The game offers rooms with varying difficulty levels - the harder they are, the better loot they provide\n\
 • Search for special orange rooms, where you can craft, enchant and trade with villagers","bold":false,"color":"yellow"}]
+
+# // Air Force Royale //
+execute if score info AC_misc matches 47 run execute if score lang AC_lang matches 0 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Air Force Royale","bold":true,color:gold},{"text":"\n\
+• Gracze znajdują się w kompleksie wysp powietrznych\n\
+• Zadaniem jest przetrwać jak najdłużej i eliminować konkurencję\n\
+• Skrzynki są tierowane - im bliżej środka, tym lepszy loot\n\
+• Gra trwa 10 minut lub do ostatniej osoby","bold":false,"color":"yellow"}]
+execute if score info AC_misc matches 47 run execute if score lang AC_lang matches 1 run data modify entity @e[tag=lobbyInfoboard,limit=1] text set value [{"text":"Air Force Royale","bold":true,color:gold},{"text":"\n\
+• Players are in a sky island complex\n\
+• The task is to survive the longest and eliminate your opponents\n\
+• Chests are tiered - the closer to the middle, the better the loot\n\
+• The game lasts 10 minutes, or until there's only one survivor","bold":false,"color":"yellow"}]

@@ -9,5 +9,6 @@ execute if score l AC_gamemode matches 8 run data modify storage ac_modes set se
 execute if score l AC_gamemode matches 9 run data modify storage ac_modes set set value "Horse Knockout"
 execute if score l AC_gamemode matches 10 run data modify storage ac_modes set set value "Tobiko"
 execute if score l AC_gamemode matches 11 run data modify storage ac_modes set set value "Sector Shootout"
+execute if score l AC_gamemode matches 12 run data modify storage ac_modes set set value "Air Force Royale"
 
 title @a actionbar {interpret:true,"storage":"ac_modes","nbt":"set","bold":true,"color":"gold"}

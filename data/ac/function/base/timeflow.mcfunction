@@ -1,4 +1,5 @@
 execute store result bossbar minecraft:ac_time value run scoreboard players get wait AC_time
+execute store result bossbar minecraft:ac_afr value run scoreboard players get afr AC_time
 execute store result bossbar minecraft:ac_arb value run scoreboard players get arb AC_time
 execute store result bossbar minecraft:ac_asn value run scoreboard players get asn AC_time
 execute store result bossbar minecraft:ac_avl value run scoreboard players get avl AC_time
@@ -47,6 +48,7 @@ execute if score auto AC_running matches 1 unless score wait AC_time matches ..-
 execute if score auto AC_running matches 1 if score wait AC_time matches 0 run bossbar set minecraft:ac_time visible false
 execute if score auto AC_running matches 1 if score wait AC_time matches -1..61 run function ac:auto/start-game
 execute if score wait AC_running matches 1 run scoreboard players remove wait AC_time 1
+execute if score afr AC_running matches 1 run scoreboard players remove afr AC_time 1
 execute if score arb AC_running matches 1 run scoreboard players remove arb AC_time 1
 execute if score asn AC_running matches 1 run scoreboard players remove asn AC_time 1
 execute if score asp AC_running matches 1 run scoreboard players remove asp AC_time 1

@@ -14,6 +14,15 @@
   ],
   "actions": [
     {
+      "label": "Air Force Royale",
+      "tooltip": [{"text":"• Gracze znajdują się w kompleksie wysp powietrznych\n• Zadaniem jest przetrwać jak najdłużej i eliminować konkurencję\n• Skrzynki są tierowane - im bliżej środka, tym lepszy loot\n• Gra trwa 10 minut lub do ostatniej osoby","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 47"
+      }
+    },
+    {
       "label": "Anvil Spleef",
       "tooltip": [{"text":"• Celem graczy jest nie zginąć, czy to przez spadek do próżni, czy przez przygniecenie kowadłem\n• Kowadła, które dotykają ziemi zostawiają dziurę\n• Ostatni gracz na arenie wygrywa\n• Ta gra nie ma limitu czasowego, natomiast staje się coraz trudniejsza co 45 sekund","bold":false,"color":"gray"}],
       "width": 150,
@@ -425,15 +434,6 @@
       "action": {
         "type": "run_command",
         "command": "/trigger AC_Queue set 42"
-      }
-    },
-    {
-      "label": "-----",
-      "tooltip": [{"text":"• Ten tryb zostanie udostępniony wkrótce!","bold":false,"color":"red"}],
-      "width": 150,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger AC_Queue set 47"
       }
     },
     {

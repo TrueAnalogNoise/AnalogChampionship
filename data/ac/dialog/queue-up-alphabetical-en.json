@@ -14,6 +14,15 @@
   ],
   "actions": [
     {
+      "label": "Air Force Royale",
+      "tooltip": [{"text":"• Players are in a sky island complex\n• The task is to survive the longest and eliminate your opponents\n• Chests are tiered - the closer to the middle, the better the loot\n• The game lasts 10 minutes, or until there's only one survivor","bold":false,"color":"gray"}],
+      "width": 150,
+      "action": {
+        "type": "run_command",
+        "command": "/trigger AC_Queue set 47"
+      }
+    },
+    {
       "label": "Anvil Spleef",
       "tooltip": [{"text":"• The objective is to not die, whether by falling to the void, or by being squished by an anvil\n• Anvils that touched the ground leave a hole\n• The last player on the arena wins\n• This game has no time limit, but it gets harder every 45 seconds","bold":false,"color":"gray"}],
       "width": 125,
@@ -425,15 +434,6 @@
       "action": {
         "type": "run_command",
         "command": "/trigger AC_Queue set 42"
-      }
-    },
-    {
-      "label": "-----",
-      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
-      "width": 150,
-      "action": {
-        "type": "run_command",
-        "command": "/trigger AC_Queue set 47"
       }
     },
     {

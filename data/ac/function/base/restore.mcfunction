@@ -170,6 +170,13 @@ scoreboard objectives add AC_practicePKNSeconds dummy
 scoreboard objectives add AC_practicePKNMiliseconds dummy
 scoreboard objectives add AC_practicePKNLastRecordedZ dummy
 scoreboard objectives add AC_practiceRPLOptions dummy
+bossbar add ac_afr ac_afr
+bossbar set ac_afr name [{"text":"Air Force Royale","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
+bossbar set ac_afr color red
+bossbar set ac_afr max 12000
+bossbar set ac_afr style notched_10
+scoreboard objectives add AC_afrRankedKillCount dummy
+scoreboard objectives add AC_afrPickaxe dummy
 bossbar add ac_arb ac_arb
 bossbar set ac_arb name [{"text":"Arrow Barrage","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_arb color blue

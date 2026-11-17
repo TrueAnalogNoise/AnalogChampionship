@@ -428,8 +428,8 @@
       }
     },
     {
-      "label": "-----",
-      "tooltip": [{"text":"• Ten tryb zostanie udostępniony wkrótce!","bold":false,"color":"red"}],
+      "label": "Air Force Royale",
+      "tooltip": [{"text":"• Gracze znajdują się w kompleksie wysp powietrznych\n• Zadaniem jest przetrwać jak najdłużej i eliminować konkurencję\n• Skrzynki są tierowane - im bliżej środka, tym lepszy loot\n• Gra trwa 10 minut lub do ostatniej osoby","bold":false,"color":"gray"}],
       "width": 150,
       "action": {
         "type": "run_command",

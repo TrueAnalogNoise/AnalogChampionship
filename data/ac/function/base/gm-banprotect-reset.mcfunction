@@ -46,3 +46,4 @@ scoreboard players set MTL AC_banprotected 0
 scoreboard players set TTR AC_banprotected 0
 scoreboard players set SSO AC_banprotected 0
 scoreboard players set MZG AC_banprotected 0
+scoreboard players set AFR AC_banprotected 0

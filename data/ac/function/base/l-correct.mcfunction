@@ -8,7 +8,8 @@ execute unless score 30 AC_gamemode matches 0 if score l AC_gamemode matches 7 r
 execute unless score 34 AC_gamemode matches 0 if score l AC_gamemode matches 8 run scoreboard players add l AC_gamemode 1
 execute unless score 36 AC_gamemode matches 0 if score l AC_gamemode matches 9 run scoreboard players add l AC_gamemode 1
 execute unless score 38 AC_gamemode matches 0 if score l AC_gamemode matches 10 run scoreboard players add l AC_gamemode 1
-execute unless score 45 AC_gamemode matches 0 if score l AC_gamemode matches 11 run scoreboard players set l AC_gamemode 1
+execute unless score 45 AC_gamemode matches 0 if score l AC_gamemode matches 11 run scoreboard players add l AC_gamemode 1
+execute unless score 47 AC_gamemode matches 0 if score l AC_gamemode matches 12 run scoreboard players set l AC_gamemode 1
 
 execute unless score 12 AC_gamemode matches 0 if score l AC_gamemode matches 1 run scoreboard players add l AC_gamemode 1
 execute unless score 13 AC_gamemode matches 0 if score l AC_gamemode matches 2 run scoreboard players add l AC_gamemode 1
@@ -20,7 +21,8 @@ execute unless score 30 AC_gamemode matches 0 if score l AC_gamemode matches 7 r
 execute unless score 34 AC_gamemode matches 0 if score l AC_gamemode matches 8 run scoreboard players add l AC_gamemode 1
 execute unless score 36 AC_gamemode matches 0 if score l AC_gamemode matches 9 run scoreboard players add l AC_gamemode 1
 execute unless score 38 AC_gamemode matches 0 if score l AC_gamemode matches 10 run scoreboard players add l AC_gamemode 1
-execute unless score 45 AC_gamemode matches 0 if score l AC_gamemode matches 11 run function ac:base/l-correct
+execute unless score 45 AC_gamemode matches 0 if score l AC_gamemode matches 11 run scoreboard players add l AC_gamemode 1
+execute unless score 47 AC_gamemode matches 0 if score l AC_gamemode matches 12 run function ac:base/l-correct
 
 execute if score l AC_gamemode matches 1 run scoreboard players set gm AC_gamemode 12
 execute if score l AC_gamemode matches 2 run scoreboard players set gm AC_gamemode 13

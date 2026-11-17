@@ -90,6 +90,8 @@ execute if score sso AC_running matches 1 run function ac:games/sso/main
 
 execute if score mzg AC_running matches 1 run function ac:games/mzg/main
 
+execute if score afr AC_running matches 1 run function ac:games/afr/main
+
 ##wycofane
 #execute if score tcb AC_running matches 1 run function ac:games/tcb/start
 #execute if score tcb AC_running matches 1 run function ac:games/tcb/streak

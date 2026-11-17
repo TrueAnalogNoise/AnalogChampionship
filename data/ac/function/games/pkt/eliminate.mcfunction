@@ -15,5 +15,5 @@ execute as @a[scores={AC_deathmessage=1..}] at @s if entity @s run scoreboard pl
 execute as @a[scores={AC_deathmessage=1..}] at @s if entity @s if score lang AC_lang matches 0 run tellraw @p[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..}] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+20≡ (Bonus za eliminację)","color":"gold","bold":false}]
 execute as @a[scores={AC_deathmessage=1..}] at @s if entity @s if score lang AC_lang matches 1 run tellraw @p[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..}] [{"text":"[PKT] ","bold":true,"color":"dark_green"},{"text":"+20≡ (Bonus for elimination)","color":"gold","bold":false}]
 
-execute as @a[scores={AC_deathmessage=1..}] if entity @s run gamemode spectator @s
+execute as @a[scores={AC_deathmessage=1..},tag=!pktHunter] if entity @s run gamemode spectator @s
 execute as @a[scores={AC_deathmessage=1..}] if entity @s as @a[tag=InGame,gamemode=adventure,scores={AC_killmessage=1..},tag=pktHunter] at @s run playsound minecraft:ac.jingles.success record @s ~ ~ ~

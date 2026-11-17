@@ -48,6 +48,7 @@ execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 43 ru
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 44 run function ac:base/gm-ban-mode {"mode":"TTR","next_page":"ban2"}
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 45 run function ac:base/gm-ban-mode {"mode":"SSO","next_page":"ban2"}
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 46 run function ac:base/gm-ban-mode {"mode":"MZG","next_page":"ban2"}
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 47 run function ac:base/gm-ban-mode {"mode":"AFR","next_page":"ban2"}
 
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches 1.. run scoreboard players operation @s AC_FirstBan = @s AC_banDetect
 
@@ -97,6 +98,7 @@ execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -43 u
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -44 unless score @s AC_FirstBan matches 44 run function ac:base/gm-ban-mode {"mode":"TTR","next_page":"finished"}
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -45 unless score @s AC_FirstBan matches 45 run function ac:base/gm-ban-mode {"mode":"SSO","next_page":"finished"}
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -46 unless score @s AC_FirstBan matches 46 run function ac:base/gm-ban-mode {"mode":"MZG","next_page":"finished"}
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -47 unless score @s AC_FirstBan matches 47 run function ac:base/gm-ban-mode {"mode":"AFR","next_page":"finished"}
 
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -1 if score @s AC_FirstBan matches 1 run dialog show @s ac:tournament-duplicate
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -2 if score @s AC_FirstBan matches 2 run dialog show @s ac:tournament-duplicate
@@ -144,6 +146,7 @@ execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -43 i
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -44 if score @s AC_FirstBan matches 44 run dialog show @s ac:tournament-duplicate
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -45 if score @s AC_FirstBan matches 45 run dialog show @s ac:tournament-duplicate
 execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -46 if score @s AC_FirstBan matches 46 run dialog show @s ac:tournament-duplicate
+execute as @a[scores={AC_hasBanned=0..1}] if score @s AC_banDetect matches -47 if score @s AC_FirstBan matches 47 run dialog show @s ac:tournament-duplicate
 
 scoreboard players reset @a AC_banDetect
 execute as @a if score @s AC_hasBanned matches 0..1 run scoreboard players enable @a AC_banDetect

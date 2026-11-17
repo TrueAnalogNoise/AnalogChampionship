@@ -106,7 +106,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:iron_helmet",
+              "name": "minecraft:chainmail_helmet",
               "weight": 1,
               "modifier": [
                 {
@@ -129,7 +129,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:iron_chestplate",
+              "name": "minecraft:chainmail_chestplate",
               "weight": 1,
               "modifier": [
                 {
@@ -152,7 +152,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:iron_leggings",
+              "name": "minecraft:chainmail_leggings",
               "weight": 1,
               "modifier": [
                 {
@@ -175,104 +175,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:iron_boots",
-              "weight": 1,
-              "modifier": [
-                {
-                  "type": "minecraft:set_components",
-                  "components": {
-                    "minecraft:unbreakable": {}
-                  }
-                },
-                {
-                  "type": "minecraft:enchant_randomly",
-                  "condition": {
-                    "type": "minecraft:random_chance",
-                    "chance": {
-                      "type": "minecraft:constant",
-                      "value": 0.25
-                    }
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:group",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_helmet",
-              "weight": 1,
-              "modifier": [
-                {
-                  "type": "minecraft:set_components",
-                  "components": {
-                    "minecraft:unbreakable": {}
-                  }
-                },
-                {
-                  "type": "minecraft:enchant_randomly",
-                  "condition": {
-                    "type": "minecraft:random_chance",
-                    "chance": {
-                      "type": "minecraft:constant",
-                      "value": 0.25
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_chestplate",
-              "weight": 1,
-              "modifier": [
-                {
-                  "type": "minecraft:set_components",
-                  "components": {
-                    "minecraft:unbreakable": {}
-                  }
-                },
-                {
-                  "type": "minecraft:enchant_randomly",
-                  "condition": {
-                    "type": "minecraft:random_chance",
-                    "chance": {
-                      "type": "minecraft:constant",
-                      "value": 0.25
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_leggings",
-              "weight": 1,
-              "modifier": [
-                {
-                  "type": "minecraft:set_components",
-                  "components": {
-                    "minecraft:unbreakable": {}
-                  }
-                },
-                {
-                  "type": "minecraft:enchant_randomly",
-                  "condition": {
-                    "type": "minecraft:random_chance",
-                    "chance": {
-                      "type": "minecraft:constant",
-                      "value": 0.25
-                    }
-                  }
-                }
-              ]
-            },
-            {
-              "type": "minecraft:item",
-              "name": "minecraft:diamond_boots",
+              "name": "minecraft:chainmail_boots",
               "weight": 1,
               "modifier": [
                 {

@@ -49,7 +49,7 @@ execute if score gm AC_gamemode matches 43 run data modify storage ac_modes set 
 execute if score gm AC_gamemode matches 44 run data modify storage ac_modes set set value "Through The Rings"
 execute if score gm AC_gamemode matches 45 run data modify storage ac_modes set set value "Sector Shootout"
 execute if score gm AC_gamemode matches 46 run data modify storage ac_modes set set value "Maze Games"
-#execute if score gm AC_gamemode matches 47 run data modify storage ac_modes set set value "Air Force Royale"
+execute if score gm AC_gamemode matches 47 run data modify storage ac_modes set set value "Air Force Royale"
 #execute if score gm AC_gamemode matches 48 run data modify storage ac_modes set set value "Dropper"
 
 

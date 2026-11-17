@@ -437,12 +437,12 @@
       }
     },
     {
-      "label": "-----",
-      "tooltip": [{"text":"• This gamemode is coming soon!","bold":false,"color":"red"}],
+      "label": "Air Force Royale",
+      "tooltip": [{"text":"• Players are in a sky island complex\n• The task is to survive the longest and eliminate your opponents\n• Chests are tiered - the closer to the middle, the better the loot\n• The game lasts 10 minutes, or until there's only one survivor","bold":false,"color":"gray"}],
       "width": 150,
       "action": {
         "type": "run_command",
-        "command": "/trigger AC_Queue set 48"
+        "command": "/trigger AC_Queue set 47"
       }
     },
     {

@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:zoglin_spawn_egg",
+          "name": "minecraft:vex_spawn_egg",
           "weight": 1,
           "modifier": [
             {

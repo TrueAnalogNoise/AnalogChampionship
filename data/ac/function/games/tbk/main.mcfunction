@@ -14,7 +14,7 @@ execute if score tbk AC_time matches 12000 if score plugin_active AC_misc matche
 execute if score tbk1 AC_functions matches 1 unless score plugin_active AC_misc matches 1 run function ac:games/tbk/fly-legacy
 execute if score tbk1 AC_functions matches 1 run function ac:games/tbk/health
 execute if score tbk1 AC_functions matches 1 run effect give @a[tag=tobiko] glowing 1 1 true
-execute if score tbk1 AC_functions matches 1 run effect give @a[tag=tobiko] speed 1 2 true
+execute if score tbk1 AC_functions matches 1 unless score plugin_active AC_misc matches 1 run effect give @a[tag=tobiko] speed 1 2 true
 execute if score tbk1 AC_functions matches 1 run item replace entity @a[tag=tobiko] hotbar.0 with carrot_on_a_stick[item_model="ac:bazooka",custom_data={bazooka:1}]
 execute if score tbk1 AC_functions matches 1 run function ac:games/tbk/snowball/main
 

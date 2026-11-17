@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "minecraft:netherite_helmet",
+              "name": "minecraft:iron_helmet",
               "weight": 1,
               "modifier": [
                 {
@@ -32,7 +32,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:netherite_chestplate",
+              "name": "minecraft:iron_chestplate",
               "weight": 1,
               "modifier": [
                 {
@@ -55,7 +55,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:netherite_leggings",
+              "name": "minecraft:iron_leggings",
               "weight": 1,
               "modifier": [
                 {
@@ -78,7 +78,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:netherite_boots",
+              "name": "minecraft:iron_boots",
               "weight": 1,
               "modifier": [
                 {

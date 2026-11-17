@@ -43,7 +43,8 @@ execute unless score 42 AC_gamemode matches 0 if score gm AC_gamemode matches 42
 execute unless score 43 AC_gamemode matches 0 if score gm AC_gamemode matches 43 run scoreboard players add gm AC_gamemode 1
 execute unless score 44 AC_gamemode matches 0 if score gm AC_gamemode matches 44 run scoreboard players add gm AC_gamemode 1
 execute unless score 45 AC_gamemode matches 0 if score gm AC_gamemode matches 45 run scoreboard players add gm AC_gamemode 1
-execute unless score 46 AC_gamemode matches 0 if score gm AC_gamemode matches 46 run scoreboard players set gm AC_gamemode 1
+execute unless score 46 AC_gamemode matches 0 if score gm AC_gamemode matches 46 run scoreboard players add gm AC_gamemode 1
+execute unless score 47 AC_gamemode matches 0 if score gm AC_gamemode matches 47 run scoreboard players set gm AC_gamemode 1
 
 execute unless score 01 AC_gamemode matches 0 if score gm AC_gamemode matches 1 run scoreboard players add gm AC_gamemode 1
 execute unless score 02 AC_gamemode matches 0 if score gm AC_gamemode matches 2 run scoreboard players add gm AC_gamemode 1
@@ -90,6 +91,7 @@ execute unless score 42 AC_gamemode matches 0 if score gm AC_gamemode matches 42
 execute unless score 43 AC_gamemode matches 0 if score gm AC_gamemode matches 43 run scoreboard players add gm AC_gamemode 1
 execute unless score 44 AC_gamemode matches 0 if score gm AC_gamemode matches 44 run scoreboard players add gm AC_gamemode 1
 execute unless score 45 AC_gamemode matches 0 if score gm AC_gamemode matches 45 run scoreboard players add gm AC_gamemode 1
+execute unless score 46 AC_gamemode matches 0 if score gm AC_gamemode matches 46 run scoreboard players add gm AC_gamemode 1
 
-execute unless score 46 AC_gamemode matches 0 if score gm AC_gamemode matches 46 run function ac:base/gm-correct
+execute unless score 47 AC_gamemode matches 0 if score gm AC_gamemode matches 47 run function ac:base/gm-correct
 execute if score draw AC_misc matches 60 run scoreboard players add draw AC_misc 1

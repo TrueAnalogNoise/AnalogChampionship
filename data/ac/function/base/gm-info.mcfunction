@@ -545,6 +545,18 @@ execute if score gm AC_gamemode matches 46 run execute if score lang AC_lang mat
 • The game offers rooms with varying difficulty levels - the harder they are, the better loot they provide\n\
 • Search for special orange rooms, where you can craft, enchant and trade with villagers","bold":false,"color":"gray"}]
 
+# // Air Force Royale //
+execute if score gm AC_gamemode matches 47 run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Air Force Royale","bold":true},{"text":"\n\
+• Gracze znajdują się w kompleksie wysp powietrznych\n\
+• Zadaniem jest przetrwać jak najdłużej i eliminować konkurencję\n\
+• Skrzynki są tierowane - im bliżej środka, tym lepszy loot\n\
+• Gra trwa 10 minut lub do ostatniej osoby","bold":false,"color":"gray"}]
+execute if score gm AC_gamemode matches 47 run execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Air Force Royale","bold":true},{"text":"\n\
+• Players are in a sky island complex\n\
+• The task is to survive the longest and eliminate your opponents\n\
+• Chests are tiered - the closer to the middle, the better the loot\n\
+• The game lasts 10 minutes, or until there's only one survivor","bold":false,"color":"gray"}]
+
 
 # // Obstacle Course //
 # execute if block -23 58 48 calcite run execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[AC] ","bold":true,"color":"white"},{"text":"Obstacle Course","bold":false},{"text":"\n\

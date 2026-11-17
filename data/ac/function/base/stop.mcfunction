@@ -259,3 +259,6 @@ bossbar set minecraft:ac_sso visible false
 # // Maze Games //
 scoreboard players set mzg AC_running 0
 bossbar set minecraft:ac_mzg visible false
+# // Air Force Royale //
+scoreboard players set afr AC_running 0
+bossbar set minecraft:ac_afr visible false
