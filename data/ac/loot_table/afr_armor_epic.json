@@ -1,0 +1,204 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_helmet",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_chestplate",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_leggings",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:netherite_boots",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_helmet",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_chestplate",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_leggings",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:diamond_boots",
+              "weight": 1,
+              "modifier": [
+                {
+                  "type": "minecraft:set_components",
+                  "components": {
+                    "minecraft:unbreakable": {}
+                  }
+                },
+                {
+                  "type": "minecraft:enchant_randomly",
+                  "condition": {
+                    "type": "minecraft:random_chance",
+                    "chance": {
+                      "type": "minecraft:constant",
+                      "value": 0.75
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

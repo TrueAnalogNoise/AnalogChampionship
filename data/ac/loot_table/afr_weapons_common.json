@@ -1,0 +1,125 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_sword",
+          "weight": 30,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_sword",
+          "weight": 25,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_sword",
+          "weight": 20,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "weight": 10,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.25
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 2,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.25
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

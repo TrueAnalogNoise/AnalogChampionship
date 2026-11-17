@@ -1,0 +1,194 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 15,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 7,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "diamond_axe",
+          "weight": 10,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "weight": 3,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_spear",
+          "weight": 3,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_spear",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 3,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:mace",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {}
+              }
+            },
+            {
+              "type": "minecraft:enchant_randomly",
+              "condition": {
+                "type": "minecraft:random_chance",
+                "chance": {
+                  "type": "minecraft:constant",
+                  "value": 0.75
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

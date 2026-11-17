@@ -1,0 +1,145 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_damage",
+              "minecraft:item_name": "Bomba szkody"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_levitate",
+              "minecraft:item_name": "Bomba lewitacji"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_heal",
+              "minecraft:item_name": "Bomba regeneracji"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_blind",
+              "minecraft:item_name": "Bomba oślepienia"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_glow",
+              "minecraft:item_name": "Bomba świecenia"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:regen_bubble",
+              "minecraft:item_name": "Bańka regeneracji",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:invis_bubble",
+              "minecraft:item_name": "Bańka niewidzialności",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:levit_bubble",
+              "minecraft:item_name": "Bańka lewitacji",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:speed_bubble",
+              "minecraft:item_name": "Bańka prędkości",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:res_bubble",
+              "minecraft:item_name": "Bańka odporności",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

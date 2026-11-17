@@ -1,0 +1,145 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_damage",
+              "minecraft:item_name": "Bomb of Harming"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_levitate",
+              "minecraft:item_name": "Bomb of Levitation"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_heal",
+              "minecraft:item_name": "Bomb of Regeneration"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_blind",
+              "minecraft:item_name": "Bomb of Blindness"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:bomb_glow",
+              "minecraft:item_name": "Bomb of Glowing"
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:regen_bubble",
+              "minecraft:item_name": "Bubble of Regeneration",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:invis_bubble",
+              "minecraft:item_name": "Bubble of Invisibility",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:levit_bubble",
+              "minecraft:item_name": "Bubble of Levitation",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:speed_bubble",
+              "minecraft:item_name": "Bubble of Speed",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint",
+          "weight": 1,
+          "modifier": {
+            "type": "minecraft:set_components",
+            "components": {
+              "minecraft:item_model": "ac:res_bubble",
+              "minecraft:item_name": "Bubble of Resistance",
+              "minecraft:consumable": {
+                "consume_seconds": 65535
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
