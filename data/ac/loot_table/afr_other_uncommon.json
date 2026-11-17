@@ -123,8 +123,8 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:tnt",
-          "weight": 15,
+          "name": "minecraft:bee_spawn_egg",
+          "weight": 10,
           "modifier": [
             {
               "type": "minecraft:set_count",
@@ -141,7 +141,20 @@
                   {
                     "blocks": "#ac:allblocks"
                   }
-                ]
+                ],
+                "minecraft:entity_data": {
+                  "id": "minecraft:tnt",
+                  "Motion": [
+                    0,
+                    0.25,
+                    0
+                  ],
+                  "fuse": 80
+                },
+                "minecraft:item_model": "minecraft:tnt",
+                "minecraft:item_name": {
+                  "text": "TNT"
+                }
               }
             }
           ]

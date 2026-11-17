@@ -87,7 +87,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:tnt",
+          "name": "minecraft:bee_spawn_egg",
           "weight": 10,
           "modifier": [
             {
@@ -105,7 +105,17 @@
                   {
                     "blocks": "#ac:allblocks"
                   }
-                ]
+                ],
+                "minecraft:entity_data": {
+                  "id": "minecraft:tnt",
+                  "Motion": [
+                    0,
+                    0.25,
+                    0
+                  ],
+                  "fuse": 80
+                },
+                "minecraft:item_model": "minecraft:tnt"
               }
             }
           ]
@@ -138,14 +148,6 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:set_count",
-          "count": {
-            "type": "minecraft:uniform",
-            "min": 1,
-            "max": 3
-          }
         }
       ]
     }

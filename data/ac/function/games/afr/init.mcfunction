@@ -6,6 +6,7 @@ forceload add 2506 1831 2331 2169
 fill 2669 -6 1831 2331 72 2169 air
 function ac:games/afr/generate
 
+kill @e[type=item]
 gamemode spectator @a
 tp @a 2500 100 2000
 

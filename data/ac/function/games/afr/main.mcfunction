@@ -23,7 +23,7 @@ execute if score afr AC_time matches 1..12000 as @a[scores={AC_deathmessage=1..}
 execute if score afr AC_time matches 1..12000 as @a[scores={AC_deathmessage=1..},gamemode=spectator] if entity @s run tellraw @a [{"text":"[AFR] ","bold":true,"color":"dark_green"},{selector:"@s",color:dark_red,bold:true},{"text":" został(a) wyeliminowany/a! Pozostało graczy: ","color":"red","bold":false},{score:{name:"players_left",objective:"AC_afrRankedKillCount"},color:dark_red,bold:true}]
 
 execute if score afr AC_time matches 1..12000 as @a[tag=InGame] run function ac:games/afr/inventory
-execute if score InGame AC_playercount matches 1 as @a[gamemode=adventure] run function ac:games/afr/win
+execute if score InGame AC_playercount matches 1 if score afr AC_time matches 1..12000 as @a[gamemode=adventure] run function ac:games/afr/win
 
 execute if score InGame AC_playercount matches 0 if score afr AC_time matches 1..12000 if score lang AC_lang matches 0 run tellraw @a [{"text":"[AFR] ","bold":true,"color":"dark_green"},{"text":"Koniec gry! Brak zwycięzcy","color":"red","bold":false}] 
 execute if score InGame AC_playercount matches 0 if score afr AC_time matches 1..12000 if score lang AC_lang matches 1 run tellraw @a [{"text":"[AFR] ","bold":true,"color":"dark_green"},{"text":"Game over! No winner","color":"red","bold":false}]
