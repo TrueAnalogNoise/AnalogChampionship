@@ -10,7 +10,8 @@ execute if score dtr AC_time matches 12020 if score lang AC_lang matches 1 run t
 
 execute if score dtr AC_time matches 12000 if score lang AC_lang matches 0 run tellraw @a [{"text":"[DTR] ","bold":true,"color":"dark_green"},{"text":"Bieg rozpoczyna się!","color":"red","bold":false}]
 execute if score dtr AC_time matches 12000 if score lang AC_lang matches 1 run tellraw @a [{"text":"[DTR] ","bold":true,"color":"dark_green"},{"text":"The run begins!","color":"red","bold":false}]
-execute if score dtr AC_time matches 12000 run fill -1501 50 1011 -1499 52 1011 air
+execute if score dtr AC_time matches 12000 if score dtr AC_chosenMap matches 1 run fill -1501 50 1011 -1499 52 1011 air
+execute if score dtr AC_time matches 12000 if score dtr AC_chosenMap matches 2 run fill 2003 30 497 2003 30 502 air
 execute if score dtr AC_time matches 12000 run scoreboard players set dtr1 AC_functions 1
 execute if score dtr AC_time matches 12000 run scoreboard players set dtr2 AC_functions 1
 execute if score dtr AC_time matches 12000 run scoreboard players set dtr3 AC_functions 1
@@ -18,6 +19,7 @@ execute if score dtr AC_time matches 12000 run item replace entity @a[tag=InGame
 
 execute if score dtr AC_time matches 12000 run scoreboard players set multiplier AC_placeReward 10
 execute if score dtr AC_time matches 12000 run scoreboard players operation reward AC_placeReward = InGame AC_playercount
+
 
 execute if score dtr1 AC_functions matches 1 run function ac:games/dtr/traps
 execute if score dtr1 AC_functions matches 1 run function ac:games/dtr/area-main
@@ -28,6 +30,11 @@ execute if score dtr1 AC_functions matches 1 if score regen AC_misc matches 4 ru
 execute if score dtr1 AC_functions matches 1 as @a[team=ac_dtrRunner,scores={AC_killmessage=1..}] if entity @a[team=ac_dtrDeath,scores={AC_deathmessage=1..}] run function ac:games/dtr/death-inherit
 execute if score dtr1 AC_functions matches 1 as @a[team=ac_dtrRunner,scores={AC_deathmessage=1..}] if entity @s run function ac:games/dtr/death-credit
 execute if score dtr1 AC_functions matches 1 run gamemode spectator @a[scores={AC_deathmessage=1..},tag=dtrNoRespawn]
+
+execute if score dtr1 AC_functions matches 1 if score dtr AC_chosenMap matches 2 run effect give @a[x=2076,y=30,z=497,dx=6,dz=6,dy=1] levitation 3 6 true
+execute if score dtr1 AC_functions matches 1 if score dtr AC_chosenMap matches 2 run effect give @a[x=1940,y=125,z=457,dx=206,dz=21,dy=14] jump_boost 1 1 true
+execute if score dtr1 AC_functions matches 1 if score dtr AC_chosenMap matches 2 run effect give @a[x=1940,y=125,z=457,dx=206,dz=21,dy=14] slow_falling 1 0 true
+execute if score dtr1 AC_functions matches 1 if score dtr AC_chosenMap matches 2 run effect give @a[x=1940,y=125,z=457,dx=177,dz=3,dy=14] speed 1 2 true
 
 execute if score dtr2 AC_functions matches 1 unless entity @a[team=ac_dtrRunner,gamemode=adventure] run scoreboard players set dtr AC_time 0
 
@@ -52,6 +59,7 @@ execute if score dtr AC_time matches -100 run gamemode adventure @a
 execute if score dtr AC_time matches -100 run spawnpoint @a 0 50 0
 execute if score dtr AC_time matches -100 run forceload remove -1498 1011
 execute if score dtr AC_time matches -100 run forceload remove -1505 1056
+execute if score dtr AC_time matches -100 run forceload remove 1942 521 2155 451
 execute if score dtr AC_time matches -100 run bossbar set minecraft:ac_dtr visible false
 execute if score dtr AC_time matches -100 run function ac:auto/invoke
 execute if score dtr AC_time matches -100 run scoreboard players set dtr AC_running 0

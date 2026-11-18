@@ -1,0 +1,9 @@
+fill 2079 47 476 2079 47 474 red_concrete
+fill 2076 43 468 2074 43 468 red_concrete
+fill 2078 46 464 2080 46 464 red_concrete
+fill 2076 48 457 2074 48 457 red_concrete
+fill 2069 47 460 2067 47 460 red_concrete
+fill 2066 43 464 2066 43 466 red_concrete
+fill 2062 43 476 2060 43 476 red_concrete
+fill 2059 45 470 2059 45 468 red_concrete
+fill 2059 45 466 2059 45 464 red_concrete

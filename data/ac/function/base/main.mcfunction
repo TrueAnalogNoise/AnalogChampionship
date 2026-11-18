@@ -109,9 +109,6 @@ execute if score no-q AC_misc matches 1 run execute as @e[type=item] run data me
 execute if score NowPlaying AC_CurrentlyPlayed matches 0 run effect give @a[tag=!pvpZone,tag=!practice,distance=..256] instant_health 1 10 true
 execute if score NowPlaying AC_CurrentlyPlayed matches 0 run gamerule natural_health_regeneration false
 
-# anty niesmialy
-op @a[tag=dev]
-
 # tck query
 execute store result score tickrate AC_misc run tick query
 execute if score tickrate AC_misc matches 21.. run scoreboard players remove @a AC_statsTimePlayed 1

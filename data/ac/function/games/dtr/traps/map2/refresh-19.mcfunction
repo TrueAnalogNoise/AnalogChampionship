@@ -1,0 +1,1 @@
+fill 2021 -1 503 2025 -1 503 iron_trapdoor[facing=south,half=top,open=false]

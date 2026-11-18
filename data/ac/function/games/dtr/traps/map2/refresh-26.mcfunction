@@ -1,0 +1,1 @@
+fill 1983 127 461 1983 127 467 ladder[facing=west]

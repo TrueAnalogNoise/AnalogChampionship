@@ -1,0 +1,9 @@
+fill 2074 46 475 2074 46 473 green_concrete
+fill 2075 45 467 2075 45 465 green_concrete
+fill 2077 46 455 2077 46 455 green_concrete
+fill 2065 47 455 2065 47 457 green_concrete
+fill 2068 46 463 2068 46 465 green_concrete
+fill 2068 43 469 2068 43 471 green_concrete
+fill 2057 47 474 2057 47 472 green_concrete
+fill 2059 47 467 2057 47 467 green_concrete
+fill 2058 45 461 2058 45 459 green_concrete

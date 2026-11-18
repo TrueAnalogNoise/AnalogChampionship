@@ -1,0 +1,9 @@
+fill 2075 44 471 2075 44 469 blue_concrete
+fill 2078 47 461 2078 47 459 blue_concrete
+fill 2071 46 456 2070 46 456 blue_concrete
+fill 2065 44 460 2065 44 462 blue_concrete
+fill 2066 43 474 2066 43 476 blue_concrete
+fill 2063 46 474 2061 46 474 blue_concrete
+fill 2056 42 470 2056 42 468 blue_concrete
+fill 2056 48 463 2056 48 461 blue_concrete
+fill 2055 45 458 2055 45 456 blue_concrete

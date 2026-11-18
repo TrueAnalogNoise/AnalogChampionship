@@ -42,6 +42,10 @@ $execute if score gm AC_gamemode matches 21 run tellraw @s [{text:"[Mapa 2 - Kuc
 $execute if score gm AC_gamemode matches 22 run tellraw @s [{text:"[Mapa 1 - OG]",click_event:{action:"run_command",command:"function ac:menu/force-map {return:\"$(return)\",map:\"0\",mode:\"prh\"}"}}]
 $execute if score gm AC_gamemode matches 22 run tellraw @s [{text:"[Mapa 2 - Pustynia]",click_event:{action:"run_command",command:"function ac:menu/force-map {return:\"$(return)\",map:\"1\",mode:\"prh\"}"}}]
 
+## Death Run
+$execute if score gm AC_gamemode matches 27 run tellraw @s [{text:"[Mapa 1 - OG]",click_event:{action:"run_command",command:"function ac:menu/force-map {return:\"$(return)\",map:\"1\",mode:\"dtr\"}"}}]
+$execute if score gm AC_gamemode matches 27 run tellraw @s [{text:"[Mapa 2 - Blackstone]",click_event:{action:"run_command",command:"function ac:menu/force-map {return:\"$(return)\",map:\"2\",mode:\"dtr\"}"}}]
+
 ## Parkour Tag
 $execute if score gm AC_gamemode matches 29 run tellraw @s [{text:"[Mapa 1 - Miedź]",click_event:{action:"run_command",command:"function ac:menu/force-map {return:\"$(return)\",map:\"0\",mode:\"pkt\"}"}}]
 $execute if score gm AC_gamemode matches 29 run tellraw @s [{text:"[Mapa 2 - Fabryka Pierdolec]",click_event:{action:"run_command",command:"function ac:menu/force-map {return:\"$(return)\",map:\"1\",mode:\"pkt\"}"}}]

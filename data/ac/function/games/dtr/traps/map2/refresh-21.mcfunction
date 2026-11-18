@@ -1,0 +1,1 @@
+fill 2049 0 506 2049 0 509 iron_trapdoor[facing=west,half=top,open=false]

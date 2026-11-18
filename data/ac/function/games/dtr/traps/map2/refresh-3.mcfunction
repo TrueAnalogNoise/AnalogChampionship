@@ -1,0 +1,1 @@
+scoreboard players set 3-active AC_dtrTraps 0
