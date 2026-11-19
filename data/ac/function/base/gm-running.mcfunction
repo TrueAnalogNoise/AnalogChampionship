@@ -92,16 +92,27 @@ execute if score mzg AC_running matches 1 run function ac:games/mzg/main
 
 execute if score afr AC_running matches 1 run function ac:games/afr/main
 
-##wycofane
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/start
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/streak
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/playerdies
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/death-cooldown
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/arrowkiller
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/finished
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/timeend
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/end
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/grenade/main
-#execute if score tcb AC_running matches 1 run function ac:games/tcb/grenade/timer
+##legacy
 
-execute if score hhh AC_running matches 1 run function ac:games/legacy/hhh/main
+execute if score arb-l AC_running matches 1 run function ac:games/legacy/arb/main
+
+execute if score hhh-l AC_running matches 1 run function ac:games/legacy/hhh/main
+
+execute if score ctf-l AC_running matches 1 run function ac:games/legacy/ctf/main
+
+execute if score bed-l AC_running matches 1 run function ac:games/legacy/bed/main
+
+# \/ \/ do uproszczenia do ac:games/legacy/tcb/main
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/start
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/streak
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/playerdies
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/death-cooldown
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/arrowkiller
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/finished
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/timeend
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/end
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/grenade/main
+#execute if score tcb-l AC_running matches 1 run function ac:games/legacy/tcb/grenade/timer
+
+##experimental 
+execute if score pkn-e AC_running matches 1 run function ac:games/experimental/pkn-endless/main

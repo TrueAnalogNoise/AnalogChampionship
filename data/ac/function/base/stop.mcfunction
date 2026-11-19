@@ -67,17 +67,6 @@ bossbar set minecraft:ac_hrc visible false
 scoreboard players set mfl AC_running 0
 scoreboard players set mfl1 AC_functions 0
 bossbar set minecraft:ac_mfl visible false
-# // Murder //
-execute as @e[type=armor_stand,tag=mrdCrossbow] at @s run tp @s ~ ~-1000 ~
-execute if block -78 -44 -143 calcite run setblock 6 -24 9 redstone_block
-fill -100 -43 -139 -103 -43 -139 air
-scoreboard players reset @a AC_mrdReloading
-scoreboard players reset @a AC_mrdDeathCheck
-scoreboard players reset @a AC_mrdKillCheck
-setblock -79 -43 -138 air
-setblock -101 -43 -143 air
-setblock -94 -43 -142 air
-bossbar set minecraft:ac_mrd visible false
 # // Assassins //
 scoreboard players set asn AC_running 0
 scoreboard players set asn1 AC_functions 0
@@ -262,3 +251,30 @@ bossbar set minecraft:ac_mzg visible false
 # // Air Force Royale //
 scoreboard players set afr AC_running 0
 bossbar set minecraft:ac_afr visible false
+
+## LEGACY & EXPERIMENTAL
+# // Arrow Barrage //
+scoreboard players set arb-l AC_running 0
+# // Hoe Hoe Hoe //
+scoreboard players set hhh-l AC_running 0
+# // Capture The Flag 4v12 //
+scoreboard players set ctf-l AC_running 0
+# // Bed Wars 4v12 //
+scoreboard players set bed-l AC_running 0
+# // The Chamber //
+scoreboard players set tcb-l AC_running 0
+# // Murder //
+scoreboard players set mrd-l AC_running 0
+execute as @e[type=armor_stand,tag=mrdCrossbow] at @s run tp @s ~ ~-1000 ~
+execute if block -78 -44 -143 calcite run setblock 6 -24 9 redstone_block
+fill -100 -43 -139 -103 -43 -139 air
+scoreboard players reset @a AC_mrdReloading
+scoreboard players reset @a AC_mrdDeathCheck
+scoreboard players reset @a AC_mrdKillCheck
+setblock -79 -43 -138 air
+setblock -101 -43 -143 air
+setblock -94 -43 -142 air
+bossbar set minecraft:ac_mrd visible false
+
+# // Parkour Knockout Endless //
+scoreboard players set pkn-e AC_running 0

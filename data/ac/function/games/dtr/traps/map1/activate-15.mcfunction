@@ -1,5 +1,5 @@
 setblock -1565 49 979 air
-scoreboard players add 15 AC_dtrTraps 1
+scoreboard players set 15 AC_dtrTraps 1
 
 fill -1559 46 987 -1559 46 984 iron_trapdoor[half=bottom,facing=east,open=true]
 fill -1558 46 987 -1558 46 984 iron_trapdoor[half=bottom,facing=west,open=true]

@@ -27,5 +27,5 @@ scoreboard players set ctfEastTotal AC_playercount 1
 
 function ac:base/protip
 
-scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed 14
-scoreboard players set NowPlaying AC_CurrentlyPlayed 14
+scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed -3
+scoreboard players set NowPlaying AC_CurrentlyPlayed -3

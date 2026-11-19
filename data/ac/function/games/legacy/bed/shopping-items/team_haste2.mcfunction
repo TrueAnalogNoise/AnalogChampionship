@@ -1,0 +1,16 @@
+tag @s add Haste2
+tag @s remove Haste1
+
+execute if entity @s[team=ac_bedRed] unless score redHaste2 AC_bedMessageControl matches 1.. at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+execute if entity @s[team=ac_bedYellow] unless score yellowHaste2 AC_bedMessageControl matches 1.. at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+execute if entity @s[team=ac_bedGreen] unless score greenHaste2 AC_bedMessageControl matches 1.. at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+execute if entity @s[team=ac_bedBlue] unless score redHaste2 AC_bedMessageControl matches 1.. at @s run playsound minecraft:ac.jingles.buy record @s ~ ~ ~
+
+execute if entity @s[team=ac_bedRed] store result score redHaste2 AC_bedMessageControl unless score redHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Pośpiech II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedRed] store result score redHaste2 AC_bedMessageControl unless score redHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Haste II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedYellow] store result score yellowHaste2 AC_bedMessageControl unless score yellowHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Pośpiech II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedYellow] store result score yellowHaste2 AC_bedMessageControl unless score yellowHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Haste II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedGreen] store result score greenHaste2 AC_bedMessageControl unless score greenHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Pośpiech II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedGreen] store result score greenHaste2 AC_bedMessageControl unless score greenHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Haste II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedBlue] store result score blueHaste2 AC_bedMessageControl unless score blueHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 0 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Twoja drużyna posiada teraz Pośpiech II","color":"aqua","bold":false}]
+execute if entity @s[team=ac_bedBlue] store result score blueHaste2 AC_bedMessageControl unless score blueHaste2 AC_bedMessageControl matches 1.. if score lang AC_lang matches 1 run tellraw @s [{"text":"[BED] ","bold":true,"color":"dark_green"},{"text":"Your team now has Haste II","color":"aqua","bold":false}]

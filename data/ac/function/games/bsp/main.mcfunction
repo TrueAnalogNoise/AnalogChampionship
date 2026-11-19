@@ -35,6 +35,9 @@ execute if score bsp AC_time matches 1200 if score lang AC_lang matches 0 run te
 execute if score bsp AC_time matches 1200 if score lang AC_lang matches 1 run tellraw @a [{"text":"[BSP] ","bold":true,"color":"dark_green"},{"text":"Middle platform has disappeared.","color":"red","bold":false}]
 execute if score bsp AC_time matches 1200 run fill -514 40 -14 -486 40 14 air
 
+execute as @e[type=arrow] run data remove entity @s Owner
+execute as @e[type=arrow] run data modify entity @s damage set value 0
+
 execute if score bsp1 AC_functions matches 1 as @a[scores={AC_bspDeath=1..},gamemode=adventure] run scoreboard players add @a[tag=InGame,gamemode=adventure] AC_pointsHeld 5
 execute if score bsp1 AC_functions matches 1 as @a[scores={AC_bspDeath=1..},gamemode=adventure] run tellraw @a[tag=InGame,gamemode=adventure] [{"text":"[BSP] ","bold":true,"color":"dark_green"},{"text":"+5≡","color":"gold","bold":false}]
 execute if score bsp1 AC_functions matches 1 as @a[scores={AC_bspDeath=1..},gamemode=adventure] run gamemode spectator @s

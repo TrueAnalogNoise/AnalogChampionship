@@ -15,6 +15,7 @@ execute if score afr AC_time matches 9600 if score lang AC_lang matches 0 run te
 execute if score afr AC_time matches 9600 if score lang AC_lang matches 1 run tellraw @a [{"text":"[AFR] ","bold":true,"color":"dark_green"},{"text":"Caution! Map border starts shrinking!","color":"yellow","bold":false}]
 execute if score afr AC_time matches 1..9600 run function ac:base/border/shrink
 
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{afr:1}}}}]
 execute as @a[tag=InGame,gamemode=adventure] if score @s AC_CurrentY matches ..-7 run kill @s
 
 scoreboard players operation players_left AC_afrRankedKillCount = InGame AC_playercount

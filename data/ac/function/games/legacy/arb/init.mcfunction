@@ -6,7 +6,7 @@ gamemode adventure @a[tag=InGame]
 forceload add -489 428 -514 500
 tp @a -500 61 487
 team modify gracz collisionRule never
-function ac:arb-legacy/rng/map
+function ac:games/legacy/arb/rng/map
 
 scoreboard players set arb AC_time 6120
 spawnpoint @a -500 61 487

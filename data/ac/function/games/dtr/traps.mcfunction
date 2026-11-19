@@ -175,11 +175,9 @@ execute if score dtr AC_chosenMap matches 2 if block 2027 52 466 polished_blacks
 execute if score dtr AC_chosenMap matches 2 if block 1995 50 467 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-15
 execute if score dtr AC_chosenMap matches 2 if block 1993 1 482 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-16
 execute if score dtr AC_chosenMap matches 2 if block 1993 1 500 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-17
-execute if score dtr AC_chosenMap matches 2 if block 1993 1 513 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18
-execute if score dtr AC_chosenMap matches 2 if block 2012 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18
-execute if score dtr AC_chosenMap matches 2 if block 2026 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18
-execute if score dtr AC_chosenMap matches 2 if block 2037 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18
-execute if score dtr AC_chosenMap matches 2 if block 2046 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18
+execute if score dtr AC_chosenMap matches 2 if block 2012 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18 {kolor:"1"}
+execute if score dtr AC_chosenMap matches 2 if block 2026 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18 {kolor:"2"}
+execute if score dtr AC_chosenMap matches 2 if block 2037 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-18 {kolor:"3"}
 execute if score dtr AC_chosenMap matches 2 if block 2023 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-19
 execute if score dtr AC_chosenMap matches 2 if block 2036 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-20
 execute if score dtr AC_chosenMap matches 2 if block 2047 1 517 polished_blackstone_button[powered=true] run function ac:games/dtr/traps/map2/activate-21
@@ -220,11 +218,9 @@ execute if score dtr AC_chosenMap matches 2 if score 14 AC_dtrTraps matches 601 
 execute if score dtr AC_chosenMap matches 2 if score 15 AC_dtrTraps matches 301 run setblock 1995 50 467 polished_blackstone_button[face=wall,facing=east]
 execute if score dtr AC_chosenMap matches 2 if score 16 AC_dtrTraps matches 201 run setblock 1993 1 482 polished_blackstone_button[face=floor,facing=east]
 execute if score dtr AC_chosenMap matches 2 if score 17 AC_dtrTraps matches 201 run setblock 1993 1 500 polished_blackstone_button[face=floor,facing=east]
-execute if score dtr AC_chosenMap matches 2 if score 18 AC_dtrTraps matches 301 run setblock 1993 1 513 polished_blackstone_button[face=floor,facing=east]
 execute if score dtr AC_chosenMap matches 2 if score 18 AC_dtrTraps matches 301 run setblock 2012 1 517 polished_blackstone_button[face=floor,facing=north]
 execute if score dtr AC_chosenMap matches 2 if score 18 AC_dtrTraps matches 301 run setblock 2026 1 517 polished_blackstone_button[face=floor,facing=north]
 execute if score dtr AC_chosenMap matches 2 if score 18 AC_dtrTraps matches 301 run setblock 2037 1 517 polished_blackstone_button[face=floor,facing=north]
-execute if score dtr AC_chosenMap matches 2 if score 18 AC_dtrTraps matches 301 run setblock 2046 1 517 polished_blackstone_button[face=floor,facing=north]
 execute if score dtr AC_chosenMap matches 2 if score 19 AC_dtrTraps matches 401 run setblock 2023 1 517 polished_blackstone_button[face=floor,facing=north]
 execute if score dtr AC_chosenMap matches 2 if score 20 AC_dtrTraps matches 401 run setblock 2036 1 517 polished_blackstone_button[face=floor,facing=north]
 execute if score dtr AC_chosenMap matches 2 if score 21 AC_dtrTraps matches 401 run setblock 2047 1 517 polished_blackstone_button[face=floor,facing=north]

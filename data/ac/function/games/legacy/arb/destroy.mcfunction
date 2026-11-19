@@ -1,5 +1,5 @@
 # 1 minuta gry
-execute if score arb AC_time matches 4880 as @e[limit=55] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20}
+execute if score arb AC_time matches 4880 as @e[limit=55] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20,Radius:0}
 execute if score arb AC_time matches 4880 run spreadplayers -500 487 0 12 under 60 false @e[type=minecraft:area_effect_cloud,tag=arbMap]
 execute if score arb AC_time matches 4880 at @e[type=minecraft:area_effect_cloud,tag=arbMap] run fill ~ ~-1 ~ ~ ~-1 ~ white_wool replace quartz_pillar
 execute if score arb AC_time matches 4860 if score lang AC_lang matches 0 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Zejdź z wełny! Mapa zmniejszy się za 3...","color":"yellow","bold":false}]
@@ -14,7 +14,7 @@ execute if score arb AC_time matches 4820 if score lang AC_lang matches 1 run te
 execute if score arb AC_time matches 4820 run fill -515 59 472 -485 59 502 black_wool replace red_wool
 execute if score arb AC_time matches 4800 run fill -515 59 472 -485 59 502 air replace black_wool
 # 2 minuta gry
-execute if score arb AC_time matches 3680 as @e[limit=65] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20}
+execute if score arb AC_time matches 3680 as @e[limit=65] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20,Radius:0}
 execute if score arb AC_time matches 3680 run spreadplayers -500 487 0 12 under 60 false @e[type=minecraft:area_effect_cloud,tag=arbMap]
 execute if score arb AC_time matches 3680 at @e[type=minecraft:area_effect_cloud,tag=arbMap] run fill ~ ~-1 ~ ~ ~-1 ~ white_wool replace quartz_pillar
 execute if score arb AC_time matches 3660 if score lang AC_lang matches 0 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Zejdź z wełny! Mapa zmniejszy się za 3...","color":"yellow","bold":false}]
@@ -29,7 +29,7 @@ execute if score arb AC_time matches 3620 if score lang AC_lang matches 1 run te
 execute if score arb AC_time matches 3620 run fill -515 59 472 -485 59 502 black_wool replace red_wool
 execute if score arb AC_time matches 3600 run fill -515 59 472 -485 59 502 air replace black_wool
 # 3 minuta gry
-execute if score arb AC_time matches 2480 as @e[limit=75] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20}
+execute if score arb AC_time matches 2480 as @e[limit=75] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20,Radius:0}
 execute if score arb AC_time matches 2480 run spreadplayers -500 487 0 12 under 60 false @e[type=minecraft:area_effect_cloud,tag=arbMap]
 execute if score arb AC_time matches 2480 at @e[type=minecraft:area_effect_cloud,tag=arbMap] run fill ~ ~-1 ~ ~ ~-1 ~ white_wool replace quartz_pillar
 execute if score arb AC_time matches 2460 if score lang AC_lang matches 0 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Zejdź z wełny! Mapa zmniejszy się za 3...","color":"yellow","bold":false}]
@@ -44,7 +44,7 @@ execute if score arb AC_time matches 2420 if score lang AC_lang matches 1 run te
 execute if score arb AC_time matches 2420 run fill -515 59 472 -485 59 502 black_wool replace red_wool
 execute if score arb AC_time matches 2400 run fill -515 59 472 -485 59 502 air replace black_wool
 # 4 minuta gry
-execute if score arb AC_time matches 1280 as @e[limit=85] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20}
+execute if score arb AC_time matches 1280 as @e[limit=85] run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["arbMap"],Duration:20,Radius:0}
 execute if score arb AC_time matches 1280 run spreadplayers -500 487 0 12 under 60 false @e[type=minecraft:area_effect_cloud,tag=arbMap]
 execute if score arb AC_time matches 1280 at @e[type=minecraft:area_effect_cloud,tag=arbMap] run fill ~ ~-1 ~ ~ ~-1 ~ white_wool replace quartz_pillar
 execute if score arb AC_time matches 1260 if score lang AC_lang matches 0 run tellraw @a [{"text":"[ARB] ","bold":true,"color":"dark_green"},{"text":"Zejdź z wełny! Mapa zmniejszy się za 3...","color":"yellow","bold":false}]

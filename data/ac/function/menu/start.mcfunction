@@ -40,8 +40,7 @@ tellraw @s [{"text":"Mnożnik punktów: ","color":"gray","bold":false},\
 {"text":"[x2.0] ","color":"yellow","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/multiplier-x2"},"hover_event":{"action":"show_text","value":"Podwaja punkty za kolejne gry"}},\
 {"text":"[x3.0] ","color":"gold","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/multiplier-x3"},"hover_event":{"action":"show_text","value":"Potraja punkty za kolejne gry"}},\
 {"text":"[x4.0] ","color":"red","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/multiplier-x4"},"hover_event":{"action":"show_text","value":"Poczwarza punkty za kolejne gry"}},\
-{"text":"[x5.0] ","color":"black","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/multiplier-x5"},"hover_event":{"action":"show_text","value":"Popiątnia punkty za kolejne gry"}},\
-{"text":"[x2147483647] ","color":"dark_purple","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/multiplier-x2147483647"},"hover_event":{"action":"show_text","value":"Po max integeruje punkty za kolejne gry (po chuj? idk)"}}]
+{"text":"[x5.0] ","color":"black","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/multiplier-x5"},"hover_event":{"action":"show_text","value":"Popiątnia punkty za kolejne gry"}}]
 tellraw @s [{"text":"Mnożnik rankingowy: ","color":"gray","bold":false},\
 {"text":"[x1.0] ","color":"white","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/ranked/multiplier-x1"},"hover_event":{"action":"show_text","value":"Wyłącza mnożnik punktów rankingowych"}},\
 {"text":"[x2.0] ","color":"yellow","bold":false,"click_event":{"action":"run_command","command":"/function ac:base/ranked/multiplier-x2"},"hover_event":{"action":"show_text","value":"Podwaja punkty rankingowe za kolejne gry"}},\

@@ -1,5 +1,5 @@
 setblock -1528 44 1096 air
-scoreboard players add 9 AC_dtrTraps 1
+scoreboard players set 9 AC_dtrTraps 1
 
 execute store result score 9-choose AC_dtrTraps run random value 1..2
 execute if score 9-choose AC_dtrTraps matches 1 run fill -1541 39 1095 -1538 39 1097 air destroy

@@ -247,6 +247,17 @@
                 "min": 1,
                 "max": 2
               }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:can_place_on": [
+                  {
+                    "blocks": "#ac:allblocks"
+                  }
+                ]
+              }
             }
           ]
         }

@@ -22,10 +22,24 @@ execute if score dtr AC_chosenMap matches 1 run tp @a[tag=spawn14] -1494 50 999 
 execute if score dtr AC_chosenMap matches 1 run tp @a[tag=spawn15] -1494 50 997 0 0
 execute if score dtr AC_chosenMap matches 1 run tp @a[tag=spawn16] -1494 50 995 0 0
 
-execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1056 stone_button[face=floor,facing=east]
-execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1057 stone_button[face=floor,facing=east]
-execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1061 stone_button[face=floor,facing=east]
-execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1062 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1027 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1043 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1045 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1068 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1506 51 1093 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1521 51 1110 stone_button[face=floor,facing=south]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1101 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1096 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1084 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1071 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1063 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1038 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1528 44 1006 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1565 49 979 stone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 1 run setblock -1538 49 973 stone_button[face=floor,facing=south]
+execute if score dtr AC_chosenMap matches 1 run setblock -1514 49 979 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1514 49 981 stone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 1 run setblock -1514 49 983 stone_button[face=floor,facing=west]
 
 execute if score dtr AC_chosenMap matches 1 run scoreboard players set 3 AC_dtrTraps 0
 execute if score dtr AC_chosenMap matches 1 run scoreboard players set 4 AC_dtrTraps 0
@@ -55,7 +69,42 @@ execute if score dtr AC_chosenMap matches 2 run tp @a[tag=spawn14] 1994 30 495 -
 execute if score dtr AC_chosenMap matches 2 run tp @a[tag=spawn15] 1994 30 497 -90 0
 execute if score dtr AC_chosenMap matches 2 run tp @a[tag=spawn16] 1994 30 499 -90 0
 
-execute if score dtr AC_chosenMap matches 1 run setblock 2064 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2015 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2027 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2045 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2059 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2069 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2079 31 505 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2084 49 486 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 2084 49 465 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 2084 49 464 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 2084 49 463 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 2084 49 462 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 2084 49 456 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 2027 52 466 polished_blackstone_button[face=floor,facing=west]
+execute if score dtr AC_chosenMap matches 2 run setblock 1995 50 467 polished_blackstone_button[face=wall,facing=east]
+execute if score dtr AC_chosenMap matches 2 run setblock 1993 1 482 polished_blackstone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 2 run setblock 1993 1 500 polished_blackstone_button[face=floor,facing=east]
+execute if score dtr AC_chosenMap matches 2 run setblock 2012 1 517 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2026 1 517 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2037 1 517 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2023 1 517 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2036 1 517 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2047 1 517 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 1958 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run fill 1970 126 469 1971 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run fill 1973 126 469 1974 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run fill 1976 126 469 1977 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 1984 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 1989 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2004 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2032 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2058 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2100 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2125 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2129 126 469 polished_blackstone_button[face=floor,facing=north]
+execute if score dtr AC_chosenMap matches 2 run setblock 2133 126 469 polished_blackstone_button[face=floor,facing=north]
+
 
 execute if score dtr AC_chosenMap matches 2 run fill 2060 30 503 2060 31 503 air
 execute if score dtr AC_chosenMap matches 2 run fill 2069 30 497 2069 31 497 air

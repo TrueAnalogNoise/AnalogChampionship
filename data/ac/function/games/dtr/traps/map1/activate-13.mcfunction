@@ -1,5 +1,5 @@
 setblock -1528 44 1038 air
-scoreboard players add 13 AC_dtrTraps 1
+scoreboard players set 13 AC_dtrTraps 1
 
 difficulty normal
 fill -1540 47 1028 -1532 47 1048 redstone_block replace barrier

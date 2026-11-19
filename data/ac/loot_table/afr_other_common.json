@@ -115,7 +115,10 @@
                   ],
                   "fuse": 80
                 },
-                "minecraft:item_model": "minecraft:tnt"
+                "minecraft:item_model": "minecraft:tnt",
+                "minecraft:item_name": {
+                  "text": "TNT"
+                }
               }
             }
           ]
@@ -129,7 +132,20 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:creeper_spawn_egg",
-          "weight": 1
+          "weight": 1,
+           "modifier": [
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:can_place_on": [
+                  {
+                    "blocks": "#ac:allblocks"
+                  }
+                ]
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
