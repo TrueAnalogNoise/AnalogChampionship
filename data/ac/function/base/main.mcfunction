@@ -93,6 +93,7 @@ execute as @a[scores={AC_LeftGame=1..}] if score NowPlaying AC_CurrentlyPlayed m
 execute if score quit-detection AC_misc matches 1 as @a[tag=InGame,scores={AC_LeftGame=1..}] if score @s AC_CurrentlyPlayed matches 1.. if score NowPlaying AC_CurrentlyPlayed matches 0 run function ac:base/quit-detected
 execute if score combatlog AC_misc matches 1 as @a if entity @s[tag=InGame,scores={AC_LeftGame=1..,AC_combatlog=1..}] run function ac:base/combatlog-detected
 execute as @a[scores={AC_LeftGame=1..}] run scoreboard players reset @s AC_Queue
+execute as @a[scores={AC_LeftGame=1..}] run tag @s remove InQueue
 execute as @a[scores={AC_LeftGame=1..,AC_CurrentGameID=1..}] unless score NowPlaying AC_CurrentlyPlayed matches 1.. run scoreboard players reset @s AC_CurrentGameID
 execute as @a[scores={AC_LeftGame=1..}] if score @s AC_CurrentlyPlayed matches 1.. if score NowPlaying AC_CurrentlyPlayed matches 0 run tp @s 0 50 0
 execute as @a[scores={AC_LeftGame=1..}] if score @s AC_CurrentlyPlayed matches 1.. if score NowPlaying AC_CurrentlyPlayed matches 0 run clear @s

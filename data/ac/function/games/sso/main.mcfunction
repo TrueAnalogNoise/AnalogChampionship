@@ -27,6 +27,7 @@ execute if score sso AC_time matches 1..12000 unless entity @a[tag=InGame,gamemo
 execute if score sso AC_time matches 0 run gamemode spectator @a
 execute if score sso AC_time matches 0 run function ac:base/endsound
 execute if score sso AC_time matches 0 run function ac:base/remove-spawn-tags
+execute if score sso AC_time matches 0 run tag @a remove ssoFinished
 execute if score sso AC_time matches 0 run tag @a remove ssoRacing
 execute if score sso AC_time matches 0 run tag @a remove ssoSpawn
 execute if score sso AC_time matches 0 run bossbar set minecraft:ac_sso visible false

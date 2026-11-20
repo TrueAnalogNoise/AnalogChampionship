@@ -141,6 +141,6 @@ execute if score @s AC_CurrentlyPlayed matches 46 run tellraw @s [{"text":"[AC] 
 execute if score @s AC_CurrentlyPlayed matches 47 run scoreboard players remove @s AC_points 200
 execute if score @s AC_CurrentlyPlayed matches 47 run tellraw @s [{"text":"[AC] ","bold":true,"color":"white"},{"text":"-200≡","color":"red","bold":false}]
 
-execute if score @s AC_IsGameRanked matches 1.. run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Ponieważ twoja ostatnia gra była rankingowa, tracisz dodatkowo ","color":"#0059ff","bold":false},{"text":"100Ⓡ","color":"#00bfff","bold":true}]
-execute if score @s AC_IsGameRanked matches 1.. run scoreboard players remove @s AC_pointsRanked 100
-execute if score @s AC_IsGameRanked matches 1.. run scoreboard players set @s AC_IsGameRanked 0
+execute if score @s AC_CurrentlyPlayed matches 1.. if score @s AC_IsGameRanked matches 1.. run tellraw @s [{"text":"[R] ","bold":true,"color":"white"},{"text":"Ponieważ twoja ostatnia gra była rankingowa, tracisz dodatkowo ","color":"#0059ff","bold":false},{"text":"100Ⓡ","color":"#00bfff","bold":true}]
+execute if score @s AC_CurrentlyPlayed matches 1.. if score @s AC_IsGameRanked matches 1.. run scoreboard players remove @s AC_pointsRanked 100
+execute if score @s AC_CurrentlyPlayed matches 1.. if score @s AC_IsGameRanked matches 1.. run scoreboard players set @s AC_IsGameRanked 0
