@@ -31,6 +31,8 @@
       ]
     },
     "disallowed_faces": [],
-    "item_damage_per_use": 0
+    "loot": "ac:hhh_check",
+    "drop_strategy": "from_middle",
+    "item_damage_per_use": 1
   }
 ]

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "diamond",
+          "weight": 1,
+          "modifier": [
+            {
+              "type": "set_components",
+              "components": {
+                "custom_data": {
+                  "hhh": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

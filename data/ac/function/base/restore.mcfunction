@@ -884,9 +884,8 @@ bossbar set ac_hhh-l name [{"text":"Hoe Hoe Hoe","color":"white","bold":true},{"
 bossbar set ac_hhh-l color white
 bossbar set ac_hhh-l max 3600
 bossbar set ac_hhh-l style notched_12
-scoreboard objectives add AC_hhhUsedHoe minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add AC_hhhTotalWool dummy
-scoreboard objectives add AC_hhhRaycastCheck dummy
+scoreboard objectives add AC_hhh-lUsedHoe minecraft.used:minecraft.stick
+scoreboard objectives add AC_hhh-lTotalWool minecraft.used:minecraft.stick
 
 bossbar add ac_ctf-l ac_ctf-l
 bossbar set ac_ctf-l name [{"text":"Capture The Flag Legacy","color":"white","bold":true},{"text":" - Czas gry","color":"gray","bold":false}]

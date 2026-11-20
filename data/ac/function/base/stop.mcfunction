@@ -35,57 +35,57 @@ scoreboard players set tnt1 AC_functions 0
 scoreboard players set inf AC_running 0
 scoreboard players set inf1 AC_functions 0
 scoreboard players set inf2 AC_functions 0
-bossbar set minecraft:ac_inf visible false
+bossbar set ac_inf visible false
 # // Spleef //
 scoreboard players set spl AC_running 0
 scoreboard players set spl1 AC_functions 0
 scoreboard players set spl2 AC_functions 0
-bossbar set minecraft:ac_spl visible false
+bossbar set ac_spl visible false
 # // Parkour Racing //
 scoreboard players reset @a AC_prcFinishPlace
 scoreboard players set prc AC_running 0
 scoreboard players set prc1 AC_functions 0
 scoreboard players set prc2 AC_functions 0
-bossbar set minecraft:ac_prc visible false
+bossbar set ac_prc visible false
 # // Block Party //
 scoreboard players set blp AC_running 0
 scoreboard players set blp1 AC_functions 0
 scoreboard players set blp2 AC_functions 0
 scoreboard players set blp3 AC_functions 0
-bossbar set minecraft:ac_blp visible false
+bossbar set ac_blp visible false
 # // One-Minute Craft //
 scoreboard players set omc AC_running 0
 scoreboard players set omc1 AC_functions 0
 scoreboard players set omc2 AC_functions 0
-bossbar set minecraft:ac_omc visible false
+bossbar set ac_omc visible false
 # // Horse Racing //
 scoreboard players set hrc AC_running 0
 scoreboard players set hrc1 AC_functions 0
 kill @e[type=horse,x=883,y=51,z=902,dy=14,dx=301,dz=195]
-bossbar set minecraft:ac_hrc visible false
+bossbar set ac_hrc visible false
 # // Minefield //
 scoreboard players set mfl AC_running 0
 scoreboard players set mfl1 AC_functions 0
-bossbar set minecraft:ac_mfl visible false
+bossbar set ac_mfl visible false
 # // Assassins //
 scoreboard players set asn AC_running 0
 scoreboard players set asn1 AC_functions 0
 scoreboard players set asn2 AC_functions 0
 scoreboard players set asn3 AC_functions 0
-bossbar set minecraft:ac_asn visible false
+bossbar set ac_asn visible false
 # // Avalanche //
 scoreboard players set avl AC_running 0
 scoreboard players set avl1 AC_functions 0
-bossbar set minecraft:ac_avl visible false
+bossbar set ac_avl visible false
 # // Dodgebolt //
 scoreboard players set ddb AC_running 0
 scoreboard players set ddb1 AC_functions 0
 kill @e[type=arrow]
-bossbar set minecraft:ac_ddb visible false
+bossbar set ac_ddb visible false
 # // Bow Spleef //
 scoreboard players set bsp AC_running 0
 scoreboard players set bsp1 AC_functions 0
-bossbar set minecraft:ac_bsp visible false
+bossbar set ac_bsp visible false
 # // Bow Rush //
 kill @e[type=arrow]
 kill @e[type=marker,tag=bwr]
@@ -95,26 +95,19 @@ scoreboard players set bwr1 AC_functions 0
 scoreboard players set bwr2 AC_functions 0
 execute as @a run attribute @s max_health modifier remove bwr
 scoreboard players reset @a AC_bwrMeleePenalty
-bossbar set minecraft:ac_bwr visible false
+bossbar set ac_bwr visible false
 # // Capture The Flag //
 scoreboard players set ctf AC_running 0
 scoreboard players set ctf1 AC_functions 0
 scoreboard players set ctf2 AC_functions 0
 scoreboard players set ctf3 AC_functions 0
 scoreboard players reset @a AC_ctfDeath
-bossbar set minecraft:ac_ctf visible false
-# // The Chamber //
-scoreboard players set tcb AC_running 0
-scoreboard players set tcb1 AC_functions 0
-scoreboard players set tcb2 AC_functions 0
-scoreboard players set tcb3 AC_functions 0
-scoreboard players reset @a AC_tcbDeathCheck
-bossbar set minecraft:ac_tcb visible false
+bossbar set ac_ctf visible false
 # // Arrow Barrage //
 scoreboard players set arb AC_running 0
 scoreboard players set arb1 AC_functions 0
 scoreboard players set arb2 AC_functions 0
-bossbar set minecraft:ac_arb visible false
+bossbar set ac_arb visible false
 # // Popcorn //
 scoreboard players set pop AC_running 0
 scoreboard players set pop1 AC_functions 0
@@ -125,7 +118,7 @@ scoreboard players set prh2 AC_functions 0
 scoreboard players reset @a AC_prhDeath
 scoreboard players reset @a AC_prhKills
 scoreboard players reset @a AC_prhSummonHunter
-bossbar set minecraft:ac_prh visible false
+bossbar set ac_prh visible false
 kill @e[type=block_display,tag=prh]
 # // Bed Wars //
 scoreboard players set bed AC_running 0
@@ -136,133 +129,139 @@ scoreboard players set bed4 AC_functions 0
 scoreboard players set bed5 AC_functions 0
 scoreboard players set bed6 AC_functions 0
 scoreboard players reset @a AC_bedDeathCheck
-bossbar set minecraft:ac_bed visible false
-# // Hoe Hoe Hoe //
-scoreboard players set hhh AC_running 0
-scoreboard players set hhh1 AC_functions 0
-bossbar set minecraft:ac_hhh visible false
+bossbar set ac_bed visible false
 # // Speed Builders //
 scoreboard players set spb AC_running 0
 scoreboard players set spb1 AC_functions 0
 scoreboard players set spb2 AC_functions 0
 scoreboard players set spb3 AC_functions 0
-bossbar set minecraft:ac_spb visible false
+bossbar set ac_spb visible false
 # // Labirynth //
 scoreboard players set lbr AC_running 0
 scoreboard players set lbr1 AC_functions 0
-bossbar set minecraft:ac_lbr visible false
+bossbar set ac_lbr visible false
 # // Battle Box //
 scoreboard players set box AC_running 0
-bossbar set minecraft:ac_box visible false
+bossbar set ac_box visible false
 # // The Bridge //
 scoreboard players set brg AC_running 0
 scoreboard players set brg1 AC_functions 0
 scoreboard players set brg2 AC_functions 0
-bossbar set minecraft:ac_brg visible false
+bossbar set ac_brg visible false
 # // Team Fight //
 scoreboard players set tmf AC_running 0
 scoreboard players set tmf1 AC_functions 0
-bossbar set minecraft:ac_tmf visible false
+bossbar set ac_tmf visible false
 # // Point Control //
 scoreboard players set pct AC_running 0
 scoreboard players set pct1 AC_functions 0
-bossbar set minecraft:ac_pct visible false
+bossbar set ac_pct visible false
 # // Replica //
 scoreboard players set rpl AC_running 0
 scoreboard players set rpl1 AC_functions 0
-bossbar set minecraft:ac_rpl visible false
+bossbar set ac_rpl visible false
 # // Death Run //
 scoreboard players set dtr AC_running 0
 scoreboard players set dtr1 AC_functions 0
 scoreboard players set dtr2 AC_functions 0
-bossbar set minecraft:ac_dtr visible false
+bossbar set ac_dtr visible false
 # // Turf Wars //
 scoreboard players set tfw AC_running 0
 scoreboard players set tfw1 AC_functions 0
-bossbar set minecraft:ac_tfw visible false
+bossbar set ac_tfw visible false
 # // Parkour Tag //
 scoreboard players set pkt AC_running 0
 scoreboard players set pkt1 AC_functions 0
-bossbar set minecraft:ac_pkt visible false
+bossbar set ac_pkt visible false
 # // Parkour Knockout //
 scoreboard players set pkn AC_running 0
 scoreboard players set pkn1 AC_functions 0
 scoreboard players set pkn2 AC_functions 0
-bossbar set minecraft:ac_pkn visible false
+bossbar set ac_pkn visible false
 # // Traffic Lights //
 scoreboard players set trl AC_running 0
 scoreboard players set trl1 AC_functions 0
 scoreboard players set trl2 AC_functions 0
-bossbar set minecraft:ac_trl visible false
+bossbar set ac_trl visible false
 # // Anvil Spleef //
 scoreboard players set asp AC_running 0
 scoreboard players set asp1 AC_functions 0
 # // Musical Minecarts //
 scoreboard players set mmc AC_running 0
-bossbar set minecraft:ac_mmc visible false
+bossbar set ac_mmc visible false
 # // Pharaoh's Curse //
 scoreboard players set phc AC_running 0
 scoreboard players set phc1 AC_functions 0
 # // Overkill //
 scoreboard players set ovk AC_running 0
 scoreboard players set ovk1 AC_functions 0
-bossbar set minecraft:ac_ovk visible false
+bossbar set ac_ovk visible false
 # // Pig Fishing //
 scoreboard players set pgf AC_running 0
 scoreboard players set pgf1 AC_functions 0
-bossbar set minecraft:ac_pgf visible false
+bossbar set ac_pgf visible false
 # // Horse Knockout //
 scoreboard players set hkn AC_running 0
 scoreboard players set hkn1 AC_functions 0
-bossbar set minecraft:ac_hkn visible false
+bossbar set ac_hkn visible false
 # // Castled //
 scoreboard players set cst AC_running 0
-bossbar set minecraft:ac_cst visible false
+bossbar set ac_cst visible false
 # // Tobiko //
 scoreboard players set tbk AC_running 0
 scoreboard players set tbk1 AC_functions 0
-bossbar set minecraft:ac_tbk visible false
+bossbar set ac_tbk visible false
 # // The Lab //
 scoreboard players set lab AC_running 0
 scoreboard players set lab1 AC_functions 0
-bossbar set minecraft:ac_lab visible false
+bossbar set ac_lab visible false
 # // King Of The Hill //
 scoreboard players set koh AC_running 0
 scoreboard players set koh1 AC_functions 0
-bossbar set minecraft:ac_koh visible false
+bossbar set ac_koh visible false
 # // Juggernaut //
 scoreboard players set jgt AC_running 0
-bossbar set minecraft:ac_jgt visible false
+bossbar set ac_jgt visible false
 # // Underwater Skewers //
 scoreboard players set uws AC_running 0
-bossbar set minecraft:ac_uws visible false
+bossbar set ac_uws visible false
 # // Mow The Lawn //
 scoreboard players set mtl AC_running 0
-bossbar set minecraft:ac_mtl visible false
+bossbar set ac_mtl visible false
 # // Through The Rings //
 scoreboard players set ttr AC_running 0
-bossbar set minecraft:ac_ttr visible false
+bossbar set ac_ttr visible false
 # // Sector Shootout //
 scoreboard players set sso AC_running 0
-bossbar set minecraft:ac_sso visible false
+bossbar set ac_sso visible false
 # // Maze Games //
 scoreboard players set mzg AC_running 0
-bossbar set minecraft:ac_mzg visible false
+bossbar set ac_mzg visible false
 # // Air Force Royale //
 scoreboard players set afr AC_running 0
-bossbar set minecraft:ac_afr visible false
+bossbar set ac_afr visible false
 
 ## LEGACY & EXPERIMENTAL
 # // Arrow Barrage //
 scoreboard players set arb-l AC_running 0
+scoreboard players set arb-l1 AC_functions 0
+scoreboard players set arb-l2 AC_functions 0
+bossbar set ac_arb-l visible false
 # // Hoe Hoe Hoe //
 scoreboard players set hhh-l AC_running 0
+scoreboard players set hhh-l1 AC_functions 0
+bossbar set ac_hhh-l visible false
 # // Capture The Flag 4v12 //
 scoreboard players set ctf-l AC_running 0
 # // Bed Wars 4v12 //
 scoreboard players set bed-l AC_running 0
 # // The Chamber //
 scoreboard players set tcb-l AC_running 0
+scoreboard players set tcb-l1 AC_functions 0
+scoreboard players set tcb-l2 AC_functions 0
+scoreboard players set tcb-l3 AC_functions 0
+scoreboard players reset @a AC_tcbDeathCheck
+bossbar set ac_tcb-l visible false
 # // Murder //
 scoreboard players set mrd-l AC_running 0
 execute as @e[type=armor_stand,tag=mrdCrossbow] at @s run tp @s ~ ~-1000 ~
@@ -274,7 +273,7 @@ scoreboard players reset @a AC_mrdKillCheck
 setblock -79 -43 -138 air
 setblock -101 -43 -143 air
 setblock -94 -43 -142 air
-bossbar set minecraft:ac_mrd visible false
+bossbar set ac_mrd-l visible false
 
 # // Parkour Knockout Endless //
 scoreboard players set pkn-e AC_running 0

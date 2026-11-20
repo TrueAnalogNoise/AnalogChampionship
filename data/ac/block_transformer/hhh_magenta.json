@@ -1,0 +1,38 @@
+[
+  {
+    "block_state_provider": {
+      "type": "minecraft:rule_based",
+      "rules": [
+        {
+          "if_true": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:grass_block"
+                ]
+              },
+              {
+                "type": "minecraft:matching_block_tag",
+                "offset": [
+                  0,
+                  1,
+                  0
+                ],
+                "tag": "minecraft:air"
+              }
+            ]
+          },
+          "then": {
+            "id": "minecraft:magenta_wool"
+          }
+        }
+      ]
+    },
+    "disallowed_faces": [],
+    "loot": "ac:hhh_check",
+    "drop_strategy": "from_middle",
+    "item_damage_per_use": 1
+  }
+]
