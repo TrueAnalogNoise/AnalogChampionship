@@ -21,7 +21,7 @@ gamerule fall_damage true
 
 execute if score lang AC_lang matches 0 run tellraw @a[tag=spawn17] [{"text":"[AFR] ","bold":true,"color":"dark_green"},{"text":"Gra przewiduje max. 16 graczy. Zostałeś umieszczony w trybie obserwatora.","color":"yellow","bold":false}]
 execute if score lang AC_lang matches 1 run tellraw @a[tag=spawn17] [{"text":"[AFR] ","bold":true,"color":"dark_green"},{"text":"This minigame has a 16-player limit. You have been put in Spectator Mode.","color":"yellow","bold":false}]
-scoreboard players set afr AC_time 12300
+scoreboard players set afr AC_time 12400
 
 team join gracz @a[tag=InGame]
 team modify gracz friendlyFire true
