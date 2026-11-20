@@ -8,13 +8,13 @@ tp @a -500 61 487
 team modify gracz collisionRule never
 function ac:games/legacy/arb/rng/map
 
-scoreboard players set arb AC_time 6120
+scoreboard players set arb-l AC_time 6120
 spawnpoint @a -500 61 487
-bossbar set minecraft:ac_arb visible true
-bossbar set minecraft:ac_arb players @a
+bossbar set minecraft:ac_arb-l visible true
+bossbar set minecraft:ac_arb-l players @a
 effect give @a minecraft:regeneration 307 127 true
-scoreboard players reset @a AC_arbDeathCheck
-scoreboard players set switch AC_arbAttack 0
+scoreboard players reset @a ac_arb-lDeathCheck
+scoreboard players set switch ac_arb-lAttack 0
 function ac:base/protip
 
 scoreboard players set @a[tag=InGame] AC_CurrentlyPlayed -1

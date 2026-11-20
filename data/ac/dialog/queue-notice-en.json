@@ -34,7 +34,7 @@
         "label": "Join",
         "action": {
         "type": "run_command",
-        "command": "trigger AC_Queue set -999"
+        "command": "trigger AC_trigger set -5"
         }
     },
     "no": {

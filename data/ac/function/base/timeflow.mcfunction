@@ -44,9 +44,11 @@ execute store result bossbar minecraft:ac_tmf value run scoreboard players get t
 execute store result bossbar minecraft:ac_trl value run scoreboard players get trl AC_time
 execute store result bossbar minecraft:ac_ttr value run scoreboard players get ttr AC_time
 execute store result bossbar minecraft:ac_uws value run scoreboard players get uws AC_time
+
 execute if score auto AC_running matches 1 unless score wait AC_time matches ..-1 run scoreboard players remove wait AC_time 1
 execute if score auto AC_running matches 1 if score wait AC_time matches 0 run bossbar set minecraft:ac_time visible false
 execute if score auto AC_running matches 1 if score wait AC_time matches -1..61 run function ac:auto/start-game
+
 execute if score wait AC_running matches 1 run scoreboard players remove wait AC_time 1
 execute if score afr AC_running matches 1 run scoreboard players remove afr AC_time 1
 execute if score arb AC_running matches 1 run scoreboard players remove arb AC_time 1
@@ -63,7 +65,6 @@ execute if score cst AC_running matches 1 run scoreboard players remove cst AC_t
 execute if score ctf AC_running matches 1 run scoreboard players remove ctf AC_time 1
 execute if score ddb AC_running matches 1 run scoreboard players remove ddb AC_time 1
 execute if score dtr AC_running matches 1 run scoreboard players remove dtr AC_time 1
-execute if score hhh AC_running matches 1 run scoreboard players remove hhh AC_time 1
 execute if score hkn AC_running matches 1 run scoreboard players remove hkn AC_time 1
 execute if score hrc AC_running matches 1 run scoreboard players remove hrc AC_time 1
 execute if score inf AC_running matches 1 run scoreboard players remove inf AC_time 1
@@ -90,10 +91,18 @@ execute if score spb AC_running matches 1 run scoreboard players remove spb AC_t
 execute if score spl AC_running matches 1 run scoreboard players remove spl AC_time 1
 execute if score sso AC_running matches 1 run scoreboard players remove sso AC_time 1
 execute if score tbk AC_running matches 1 run scoreboard players remove tbk AC_time 1
-execute if score tcb AC_running matches 1 run scoreboard players remove tcb AC_time 1
 execute if score tfw AC_running matches 1 run scoreboard players remove tfw AC_time 1
 execute if score tmf AC_running matches 1 run scoreboard players remove tmf AC_time 1
 execute if score tnt AC_running matches 1 run scoreboard players remove tnt AC_time 1
 execute if score trl AC_running matches 1 run scoreboard players remove trl AC_time 1
 execute if score ttr AC_running matches 1 run scoreboard players remove ttr AC_time 1
 execute if score uws AC_running matches 1 run scoreboard players remove uws AC_time 1
+
+execute if score arb-l AC_running matches 1 run scoreboard players remove arb-l AC_time 1
+execute if score hhh-l AC_running matches 1 run scoreboard players remove hhh-l AC_time 1
+execute if score ctf-l AC_running matches 1 run scoreboard players remove ctf-l AC_time 1
+execute if score bed-l AC_running matches 1 run scoreboard players remove bed-l AC_time 1
+execute if score tcb-l AC_running matches 1 run scoreboard players remove tcb-l AC_time 1
+execute if score mrd-l AC_running matches 1 run scoreboard players remove mrd-l AC_time 1
+
+execute if score pkn-e AC_running matches 1 run scoreboard players remove pkn-e AC_time 1

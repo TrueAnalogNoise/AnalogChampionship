@@ -2,14 +2,14 @@ summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["buildlimit"],Duration:50,Radius
 execute if score ctf AC_chosenMap matches 0 run spreadplayers 0 -1000 0 90 false @e[type=minecraft:area_effect_cloud,tag=buildlimit]
 execute if score ctf AC_chosenMap matches 1 run spreadplayers 1000 -1000 0 90 false @e[type=minecraft:area_effect_cloud,tag=buildlimit]
 
-scoreboard players set north1 AC_ctfFlagStatus 0
-scoreboard players set north2 AC_ctfFlagStatus 0
-scoreboard players set east1 AC_ctfFlagStatus 0
-scoreboard players set east2 AC_ctfFlagStatus 0
-scoreboard players set south1 AC_ctfFlagStatus 0
-scoreboard players set south2 AC_ctfFlagStatus 0
-scoreboard players set west1 AC_ctfFlagStatus 0
-scoreboard players set west2 AC_ctfFlagStatus 0
+scoreboard players set north1 ac_ctf-lFlagStatus 0
+scoreboard players set north2 ac_ctf-lFlagStatus 0
+scoreboard players set east1 ac_ctf-lFlagStatus 0
+scoreboard players set east2 ac_ctf-lFlagStatus 0
+scoreboard players set south1 ac_ctf-lFlagStatus 0
+scoreboard players set south2 ac_ctf-lFlagStatus 0
+scoreboard players set west1 ac_ctf-lFlagStatus 0
+scoreboard players set west2 ac_ctf-lFlagStatus 0
 execute if score lang AC_lang matches 0 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"Koniec czasu! Rozpoczyna się Nagła Śmierć!","color":"dark_red","bold":true}]
 execute if score lang AC_lang matches 1 run tellraw @a [{"text":"[CTF] ","bold":true,"color":"dark_green"},{"text":"The time has ended! Deathmatch begins!","color":"dark_red","bold":true}]
 clear @a orange_banner

@@ -398,26 +398,11 @@ team modify ac_ctfNorth collisionRule pushOtherTeams
 team modify ac_ctfNorth color red
 team modify ac_ctfNorth friendlyFire false
 team modify ac_ctfNorth prefix [{"text":"North ","color":"red","bold":true},{"text":"/ ","color":"gray"}]
-team add ac_ctfEast "CTF - Wschód"
-team modify ac_ctfEast collisionRule pushOtherTeams
-team modify ac_ctfEast color yellow
-team modify ac_ctfEast friendlyFire false
-team modify ac_ctfEast prefix [{"text":"East ","color":"yellow","bold":true},{"text":"/ ","color":"gray"}]
 team add ac_ctfSouth "CTF - Południe"
 team modify ac_ctfSouth collisionRule pushOtherTeams
-team modify ac_ctfSouth color dark_green
+team modify ac_ctfSouth color blue
 team modify ac_ctfSouth friendlyFire false
-team modify ac_ctfSouth prefix [{"text":"South ","color":"dark_green","bold":true},{"text":"/ ","color":"gray"}]
-team add ac_ctfWest "CTF - Zachód"
-team modify ac_ctfWest collisionRule pushOtherTeams
-team modify ac_ctfWest color blue
-team modify ac_ctfWest friendlyFire false
-team modify ac_ctfWest prefix [{"text":"West ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
-team add ac_ctfJungler "CTF - Junglerzy"
-team modify ac_ctfJungler collisionRule pushOtherTeams
-team modify ac_ctfJungler color aqua
-team modify ac_ctfJungler friendlyFire false
-team modify ac_ctfJungler prefix [{"text":"Jung ","color":"aqua","bold":true},{"text":"/ ","color":"gray"}]
+team modify ac_ctfSouth prefix [{"text":"South ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
 bossbar add ac_ddb ac_ddb
 bossbar set ac_ddb name [{"text":"Dodgebolt","color":"#8800ff","bold":true},{"text":" - Czas do końca gry","color":"#440080","bold":false}]
 bossbar set ac_ddb color purple
@@ -453,14 +438,6 @@ team add ac_dtrDeath "DTR - Śmierci"
 team modify ac_dtrDeath color dark_purple
 team modify ac_dtrDeath friendlyFire false
 team modify ac_dtrDeath prefix [{"text":"Śmierć ","color":"dark_purple","bold":true},{"text":"/ ","color":"gray"}]
-bossbar add ac_hhh ac_hhh
-bossbar set ac_hhh name [{"text":"Hoe Hoe Hoe","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
-bossbar set ac_hhh color white
-bossbar set ac_hhh max 3600
-bossbar set ac_hhh style notched_12
-scoreboard objectives add AC_hhhUsedHoe minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add AC_hhhTotalWool dummy
-scoreboard objectives add AC_hhhRaycastCheck dummy
 bossbar add ac_hkn ac_hkn
 bossbar set ac_hkn name [{"text":"Horse Knockout","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_hkn color blue
@@ -789,28 +766,6 @@ scoreboard objectives add AC_ssoBoatDamage dummy
 scoreboard objectives add AC_ssoPointsAtStake dummy
 scoreboard objectives add AC_ssoCheckpoints dummy
 scoreboard objectives add AC_ssoLaps dummy
-bossbar add ac_tcb ac_tcb
-bossbar set ac_tcb name [{"text":"The Chamber","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
-bossbar set ac_tcb color white
-bossbar set ac_tcb max 12000
-bossbar set ac_tcb style notched_10
-scoreboard objectives add AC_tcbDeathCheck deathCount
-scoreboard objectives add AC_tcbKillCheck minecraft.custom:minecraft.player_kills
-scoreboard objectives add AC_tcbKillCount minecraft.custom:minecraft.player_kills
-scoreboard objectives add AC_tcbKillStreak minecraft.custom:minecraft.player_kills
-scoreboard objectives add AC_tcbRespawnTime dummy
-scoreboard objectives add AC_tcbGrenadeCount dummy
-scoreboard objectives add AC_tcbGrenadeVisFix dummy
-scoreboard players set .-1 AC_tcbGrenadeVisFix -1
-scoreboard players set .global AC_tcbGrenadeVisFix 1
-scoreboard objectives add AC_tcbGrenadeDetect minecraft.used:minecraft.snowball
-scoreboard objectives add AC_tcbGrenadeThrower dummy
-scoreboard objectives add AC_tcbGrenadeBuffer dummy
-scoreboard objectives add AC_tcbShutdownCheck minecraft.custom:minecraft.player_kills
-team add ac_tcbStreak
-team modify ac_tcbStreak color yellow
-team modify ac_tcbStreak friendlyFire true
-team modify ac_tcbStreak prefix [{"text":"🔥 ","color":"gold"},{"text":"/ ","color":"gray"}]
 bossbar add ac_tbk ac_tbk
 bossbar set ac_tbk name [{"text":"Tobiko","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_tbk color red
@@ -882,9 +837,11 @@ team add ac_tmf8 "TMF - Drużyna 8"
 team modify ac_tmf8 color dark_red
 team modify ac_tmf8 friendlyFire false
 team modify ac_tmf8 prefix [{"text":"8 ","color":"dark_red","bold":true},{"text":"/ ","color":"gray"}]
+
 scoreboard objectives add AC_tntrun dummy
 scoreboard objectives add AC_tntDeath deathCount
 scoreboard objectives add AC_tntCharge dummy
+
 bossbar add ac_trl ac_trl
 bossbar set ac_trl name [{"text":"Traffic Lights","color":"green","bold":true},{"text":" - Czas do końca gry","color":"dark_green","bold":false}]
 bossbar set ac_trl color green
@@ -895,6 +852,7 @@ scoreboard objectives add AC_trlWalkCheckY dummy
 scoreboard objectives add AC_trlWalkCheckZ dummy
 scoreboard objectives add AC_trlReward dummy
 scoreboard objectives add AC_trlTimer dummy
+
 bossbar add ac_ttr ac_ttr
 bossbar set ac_ttr name [{"text":"Through The Rings","color":"blue","bold":true},{"text":" - Czas do końca gry","color":"dark_blue","bold":false}]
 bossbar set ac_ttr color blue
@@ -903,12 +861,94 @@ bossbar set ac_ttr style notched_6
 scoreboard objectives add AC_ttrVelocity dummy
 scoreboard objectives add AC_ttrRing dummy
 scoreboard objectives add AC_ttrScores dummy
+
 bossbar add ac_uws ac_uws
 bossbar set ac_uws name [{"text":"Underwater Skewers","color":"red","bold":true},{"text":" - Czas do końca gry","color":"dark_red","bold":false}]
 bossbar set ac_uws color red
 bossbar set ac_uws max 6000
 bossbar set ac_uws style notched_12
 scoreboard objectives add AC_uwsAttackTimer dummy
+
+# legacy & experimental
+bossbar add ac_arb-l ac_arb-l
+bossbar set ac_arb-l name [{"text":"Arrow Barrage Legacy","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
+bossbar set ac_arb-l color white
+bossbar set ac_arb-l max 6000
+bossbar set ac_arb-l style notched_10
+scoreboard objectives add ac_arb-lDeathCheck dummy
+scoreboard objectives add ac_arb-lAttack dummy
+scoreboard objectives add ac_arb-lArrow dummy
+
+bossbar add ac_hhh-l ac_hhh-l
+bossbar set ac_hhh-l name [{"text":"Hoe Hoe Hoe","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
+bossbar set ac_hhh-l color white
+bossbar set ac_hhh-l max 3600
+bossbar set ac_hhh-l style notched_12
+scoreboard objectives add AC_hhhUsedHoe minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add AC_hhhTotalWool dummy
+scoreboard objectives add AC_hhhRaycastCheck dummy
+
+bossbar add ac_ctf-l ac_ctf-l
+bossbar set ac_ctf-l name [{"text":"Capture The Flag Legacy","color":"white","bold":true},{"text":" - Czas gry","color":"gray","bold":false}]
+bossbar set ac_ctf-l color white
+bossbar set ac_ctf-l max 24000
+bossbar set ac_ctf-l style notched_20
+scoreboard objectives add AC_ctf-lFlagStatus dummy
+scoreboard objectives add AC_ctf-lTeamStatus dummy
+scoreboard objectives add AC_ctf-lDeath deathCount
+scoreboard objectives add AC_ctf-lKills minecraft.custom:minecraft.player_kills
+scoreboard objectives add AC_ctf-lRespawnTime dummy
+scoreboard objectives add AC_ctf-lConqDetect dummy
+scoreboard objectives add AC_ctf-lDeathmatch dummy
+scoreboard objectives add AC_ctf-lItemGen dummy
+team add ac_ctf-lNorth "CTF Legacy - Północ"
+team modify ac_ctf-lNorth collisionRule pushOtherTeams
+team modify ac_ctf-lNorth color red
+team modify ac_ctf-lNorth friendlyFire false
+team modify ac_ctf-lNorth prefix [{"text":"North ","color":"red","bold":true},{"text":"/ ","color":"gray"}]
+team add ac_ctf-lEast "CTF Legacy - Wschód"
+team modify ac_ctf-lEast collisionRule pushOtherTeams
+team modify ac_ctf-lEast color yellow
+team modify ac_ctf-lEast friendlyFire false
+team modify ac_ctf-lEast prefix [{"text":"East ","color":"yellow","bold":true},{"text":"/ ","color":"gray"}]
+team add ac_ctf-lSouth "CTF Legacy - Południe"
+team modify ac_ctf-lSouth collisionRule pushOtherTeams
+team modify ac_ctf-lSouth color dark_green
+team modify ac_ctf-lSouth friendlyFire false
+team modify ac_ctf-lSouth prefix [{"text":"South ","color":"dark_green","bold":true},{"text":"/ ","color":"gray"}]
+team add ac_ctf-lWest "CTF Legacy - Zachód"
+team modify ac_ctf-lWest collisionRule pushOtherTeams
+team modify ac_ctf-lWest color blue
+team modify ac_ctf-lWest friendlyFire false
+team modify ac_ctf-lWest prefix [{"text":"West ","color":"blue","bold":true},{"text":"/ ","color":"gray"}]
+team add ac_ctf-lJungler "CTF Legacy - Junglerzy"
+team modify ac_ctf-lJungler collisionRule pushOtherTeams
+team modify ac_ctf-lJungler color aqua
+team modify ac_ctf-lJungler friendlyFire false
+team modify ac_ctf-lJungler prefix [{"text":"Jung ","color":"aqua","bold":true},{"text":"/ ","color":"gray"}]
+
+bossbar add ac_tcb-l ac_tcb
+bossbar set ac_tcb-l name [{"text":"The Chamber","color":"white","bold":true},{"text":" - Czas do końca gry","color":"gray","bold":false}]
+bossbar set ac_tcb-l color white
+bossbar set ac_tcb-l max 12000
+bossbar set ac_tcb-l style notched_10
+scoreboard objectives add AC_tcbDeathCheck deathCount
+scoreboard objectives add AC_tcbKillCheck minecraft.custom:minecraft.player_kills
+scoreboard objectives add AC_tcbKillCount minecraft.custom:minecraft.player_kills
+scoreboard objectives add AC_tcbKillStreak minecraft.custom:minecraft.player_kills
+scoreboard objectives add AC_tcbRespawnTime dummy
+scoreboard objectives add AC_tcbGrenadeCount dummy
+scoreboard objectives add AC_tcbGrenadeVisFix dummy
+scoreboard players set .-1 AC_tcbGrenadeVisFix -1
+scoreboard players set .global AC_tcbGrenadeVisFix 1
+scoreboard objectives add AC_tcbGrenadeDetect minecraft.used:minecraft.snowball
+scoreboard objectives add AC_tcbGrenadeThrower dummy
+scoreboard objectives add AC_tcbGrenadeBuffer dummy
+scoreboard objectives add AC_tcbShutdownCheck minecraft.custom:minecraft.player_kills
+team add ac_tcbStreak
+team modify ac_tcbStreak color yellow
+team modify ac_tcbStreak friendlyFire true
+team modify ac_tcbStreak prefix [{"text":"🔥 ","color":"gold"},{"text":"/ ","color":"gray"}]
 
 # stats, lost refers to last place
 scoreboard objectives add AC_statsGamesPlayed dummy
